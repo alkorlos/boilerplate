@@ -1,0 +1,22 @@
+.button-green {
+	display: block;
+	padding: 12px 29px;
+
+	color: #ffffff;
+	font-size: 16px;
+
+	background: green;
+	border: none;
+	border-radius: 22px;
+	cursor: pointer;
+
+	transition: all 0.3s;
+	&:focus:not(:focus-visible) {
+		outline: 0;
+	}
+	@media (--hover) {
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}

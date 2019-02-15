@@ -1,0 +1,27 @@
+doctype
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Site
+		link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+		//- Mobile Specific Metas
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//- CSS
+		link(href="css/style.min.css" rel="stylesheet" type="text/css")
+
+	body
+		include _inspections
+		
+		include _svg
+
+		.page-wrapper
+			//- Header
+			include block/_header
+
+			block content
+
+			//- Footer
+			include block/_footer
+
+		//- JS
+		script(src="js/main.js" type="text/javascript")

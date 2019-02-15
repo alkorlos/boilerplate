@@ -1,0 +1,11 @@
+# Folders
+node_modules
+build
+
+# Extensions
+*.log
+
+# OS or editor folders and files
+.vscode
+.DS_Store
+Thumbs.db

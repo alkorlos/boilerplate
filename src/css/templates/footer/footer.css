@@ -1,0 +1,11 @@
+.footer {
+	flex: 0 0 auto;
+	height: 100px;
+
+	background: image-set(url("../img/order-line.png") 1x, url("../img/order-line@2x.png") 2x) no-repeat top center,
+				image-set(url("../img/order-bg.jpg") 1x, url("../order-bg@2x.jpg") 2x) repeat top left;
+	background-size: 1px 100%, 32px;
+	@media only screen and (width <= 992px) {
+		height: 50px;
+	}
+}

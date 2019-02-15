@@ -1,0 +1,29 @@
+@import "generic.reset.css";
+
+@import "settings.fonts.css";
+
+@import "custom-media.css";
+
+@import "inspections.css";
+
+.rouble {
+	font-family: "Rouble"; /* stylelint-disable-line */
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+}
+
+html, body {
+	font-size: 14px;
+	font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
+
+	background-color: #f5f5f5; /* фон для > 1920px */
+}
+
+.svg-icon {
+	display: block;
+	flex-shrink: 0;
+}

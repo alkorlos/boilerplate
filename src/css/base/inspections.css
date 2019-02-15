@@ -1,0 +1,21 @@
+.inspection {
+	position: absolute;
+	left: 50%;
+	z-index: 10000;
+
+	background-repeat: no-repeat;
+	background-position: top center;
+	opacity: 0.5;
+
+	pointer-events: none;
+}
+
+.inspection-main-1900 {
+	top: 0;
+
+	width: 1900px;
+	height: 4250px;
+	margin-left: -950px;
+
+	background-image: url("../img/inspections/inspection-main-1900.jpg");
+}

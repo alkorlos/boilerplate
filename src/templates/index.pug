@@ -1,0 +1,29 @@
+extends _layout
+
+block content
+
+	main.page-container
+		p.p-example Test1
+		
+		a.a-example(href="#") Link
+		
+		select.select-example(aria-label=":focus-visible")
+			option 1
+			option 2
+		
+		picture
+			img.img-example(
+				src="img/object-fit.jpg",
+				srcset="img/object-fit@2x.jpg 2x",
+				width="328",
+				height="328",
+				alt="тестирование object-fit cover"
+			)
+		
+		svg.svg-icon(width="90" height="81" role="img" aria-label="тестирование svg")
+			use(xlink:href="#test")
+
+		button.button-green
+			|  Тестовая кнопка
+			svg.svg-icon(width="90" height="81" aria-hidden="true")
+				use(xlink:href="#test")
