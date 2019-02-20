@@ -12,8 +12,6 @@ const revision = require('./gulp/tasks/revision');
 const htmlManifest = require('./gulp/tasks/html-manifest');
 // Заменяет ссылку на sprite.svg в svg-sprite-loader.js на спрайт с хэшом в имени, грузит svg-sprite-loader в build
 const svgSpriteLoader = require('./gulp/tasks/svg-sprite-loader');
-// Удаляет старые стили и svg спрайты с хэшом в имени
-const revisionClean = require('./gulp/tasks/revision-clean');
 const js = require('./gulp/tasks/js');
 const images = require('./gulp/tasks/images');
 const svg = require('./gulp/tasks/svg');
