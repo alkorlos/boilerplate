@@ -14,6 +14,11 @@ const svgSpriteLoader = function(done) {
 			}))
 			.pipe(gulp.dest(config.build.js))
 			.on('end', done);
+	} else if (fs.existsSync(config.src.jsSvgSpriteLoader)) {
+		console.log('Manifest, file not exist.');
+		return gulp.src(config.src.jsSvgSpriteLoader)
+			.pipe(gulp.dest(config.build.js))
+			.on('end', done);
 	} else {
 		console.log('SVG sprite loader error, file not exist.');
 		done();
