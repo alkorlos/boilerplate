@@ -20,7 +20,7 @@ const config = require('../config');
 const watch = function(done) {
 	gulp.watch(config.src.pug, gulp.series(pug, htmlManifest));
 	gulp.watch(config.src.css, gulp.series(wrapPipe(css), revision, htmlManifest, revisionClean));
-	gulp.watch(config.src.js, gulp.series(wrapPipe(js)));
+	gulp.watch(config.src.js, gulp.series(js));
 	gulp.watch(config.src.images, gulp.series(images));
 	gulp.watch(config.src.svg, gulp.series(svg, revision, svgSpriteLoader, revisionClean));
 	gulp.watch(config.src.fonts, gulp.series(fonts));
