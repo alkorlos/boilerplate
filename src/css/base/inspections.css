@@ -5,6 +5,7 @@
 
 	background-repeat: no-repeat;
 	background-position: top center;
+	transform: translate(-50%, 0);
 	opacity: 0.5;
 
 	pointer-events: none;
@@ -15,7 +16,6 @@
 
 	width: 1900px;
 	height: 4250px;
-	margin-left: -950px;
 
 	background-image: url("../img/inspections/inspection-main-1900.jpg");
 }
