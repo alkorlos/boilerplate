@@ -16,6 +16,7 @@ const svgManifest = require('./gulp/tasks/svg-manifest');
 const svgSpriteLoader = require('./gulp/tasks/svg-sprite-loader');
 const js = require('./gulp/tasks/js');
 const images = require('./gulp/tasks/images');
+const videos = require('./gulp/tasks/videos');
 const svg = require('./gulp/tasks/svg');
 const fonts = require('./gulp/tasks/fonts');
 const files = require('./gulp/tasks/files');
@@ -27,6 +28,7 @@ gulp.task('start',
 		css,
 		js,
 		images,
+		videos,
 		svg,
 		revision,
 		svgSpriteLoader,
@@ -45,6 +47,7 @@ gulp.task('build',
 		css,
 		js,
 		images,
+		videos,
 		svg,
 		revision,
 		htmlManifest,
