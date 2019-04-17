@@ -2,6 +2,10 @@ const gulp = require('gulp');
 
 const pug = require('./pug');
 const css = require('./css');
+// Добавляет хэш к именам css файлов и sprite.svg, генерит rev-manifest.json
+const revision = require('./revision');
+// Заменяет ссылку на sprite.svg в svg-sprite-loader.js на спрайт с хэшом в имени, грузит svg-sprite-loader в build
+const svgSpriteLoader = require('./svg-sprite-loader');
 const js = require('./js');
 const images = require('./images');
 const videos = require('./videos');
@@ -20,7 +24,7 @@ const watch = function(done) {
 	gulp.watch(config.src.js, gulp.series(js));
 	gulp.watch(config.src.images, gulp.series(images));
 	gulp.watch(config.src.videos, gulp.series(videos));
-	gulp.watch(config.src.svg, gulp.series(svg));
+	gulp.watch(config.src.svg, gulp.series(svg, revision, svgSpriteLoader));
 	gulp.watch(config.src.fonts, gulp.series(fonts));
 	gulp.watch(config.src.files, gulp.series(files));
 	done();
