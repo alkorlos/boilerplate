@@ -15,6 +15,7 @@ const config = {
 	},
 	build: {
 		root: 'build',
+		rootEntry: '!build',
 		html : 'build',
 		htmlEntry: 'build/index.html',
 		css: 'build/css',
