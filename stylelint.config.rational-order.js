@@ -1,5 +1,6 @@
 const special = {
 	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'composes'
 	]
@@ -7,6 +8,7 @@ const special = {
 
 const positioning = {
 	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'position',
 		'top',
@@ -19,6 +21,7 @@ const positioning = {
 
 const boxmodel = {
 	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'display',
 		'flex',
@@ -60,6 +63,7 @@ const boxmodel = {
 
 const typography = {
 	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'color',
 		'font',
@@ -123,6 +127,7 @@ const typography = {
 
 const visual = {
 	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'list-style',
 		'list-style-position',
@@ -199,6 +204,7 @@ const visual = {
 
 const animation = {
 	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'transition',
 		'transition-delay',
@@ -219,6 +225,7 @@ const animation = {
 
 const misc = {
 	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'appearance',
 		'clip',

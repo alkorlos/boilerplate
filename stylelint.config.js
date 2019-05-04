@@ -54,7 +54,6 @@ module.exports = {
 		'declaration-bang-space-before': 'always', // Декларации: пробел до "!": всегда (Stylistic issues)
 		'declaration-colon-space-after': 'always-single-line', // Декларации: пробел после ":": всегда при однострочной запси (Stylistic issues)
 		'declaration-colon-space-before': 'never', // Декларации: пробел до ":": никогда (Stylistic issues)
-		'declaration-empty-line-before': 'never', // Декларации: пустая строка до декларации: никогда (Stylistic issues)
 
 		'declaration-block-no-duplicate-properties': true, // Блок деклараций: запретить дублирование свойств (Possible errors)
 		'declaration-block-no-shorthand-property-overrides': true, // Блок деклараций: запретить короткие записи свойств если они переопределяют обычную запись (Possible errors)
