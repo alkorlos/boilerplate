@@ -15,14 +15,14 @@ const svg = require('./svg');
 const fonts = require('./fonts');
 const files = require('./files');
 
-const wrapPipe = require('../wrapPipe');
+// const wrapPipe = require('../wrapPipe');
 
 const config = require('../config');
 
 // Watch
 const watch = function(done) {
 	gulp.watch(config.src.pug, gulp.series(pug));
-	gulp.watch(config.src.css, gulp.series(wrapPipe(css)));
+	gulp.watch(config.src.css, gulp.series(css)); // wrapPipe(css)
 	gulp.watch(config.src.js, gulp.series(js));
 	gulp.watch(config.src.images, gulp.series(images));
 	gulp.watch(config.src.videos, gulp.series(videos));

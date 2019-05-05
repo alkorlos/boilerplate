@@ -11,7 +11,7 @@ const wrapPipe = function(taskFn) {
 		const onError = function(error) {
 			if (typeof doneWrap === 'function') {
 				beep(3, 1000);
-				player.play('WindowsCriticalStop.mp3', function(error) {
+				player.play('gulp/WindowsCriticalStop.mp3', function(error) {
 					if (error) throw error
 				});
 				doneWrap();
