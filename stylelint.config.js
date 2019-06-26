@@ -59,7 +59,7 @@ module.exports = {
 		'declaration-block-trailing-semicolon': 'always', // Блок деклараций: ";" в записи свойств: всегда (Stylistic issues)
 
 		'block-closing-brace-empty-line-before': 'never', // Блок: пустая строка до "}": никогда (Stylistic issues)
-		'block-closing-brace-newline-after': 'always',  // Блок: новая строка после "}": всегда (Stylistic issues)
+		'block-closing-brace-newline-after': 'always', // Блок: новая строка после "}": всегда (Stylistic issues)
 		'block-closing-brace-newline-before': 'always', // Блок: новая строка до "}": всегда (Stylistic issues)
 		'block-closing-brace-space-after': 'always-single-line', // Блок: пробел после "}": всегда при однострочной записи (Stylistic issues)
 		'block-closing-brace-space-before': 'always-single-line', // Блок: пробел до "}": всегда при однострочной записи (Stylistic issues)
@@ -79,7 +79,7 @@ module.exports = {
 		'selector-pseudo-class-case': 'lower', // Псевдоклассы: строчные или прописные буквы: строчные (Stylistic issues)
 		'selector-pseudo-class-parentheses-space-inside': 'never', // Псевдоклассы: пробелы внутри "()" по краям: никогда (Stylistic issues)
 		'selector-pseudo-element-case': 'lower', // Псевдоэлементы: строчные или прописные буквы: строчные (Stylistic issues)
-		'selector-pseudo-element-colon-notation': 'double',  // Псевдоэлементы: ":" или "::" для записи: "::" (Stylistic issues)
+		'selector-pseudo-element-colon-notation': 'double', // Псевдоэлементы: ":" или "::" для записи: "::" (Stylistic issues)
 		'selector-pseudo-element-no-unknown': true, // Псевдоэлементы: запретить неизвестные (Possible errors)
 		'selector-type-case': 'lower', // Селекторы: строчные или прописные буквы: строчные (Stylistic issues)
 		'selector-type-no-unknown': true, // Селекторы: запретить неизвестные (Possible errors)
