@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 
 const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 const sourcemaps = require('gulp-sourcemaps');
 const postcss = require('gulp-postcss');
 const csso = require('gulp-csso');
@@ -11,7 +12,7 @@ const config = require('../config');
 // CSS
 const css = function(done, errorMain) {
 	return gulp.src(config.src.cssEntry)
-		// .pipe(plumber())
+		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		// .pipe(plumber(function(error) {
 		// 	console.log('\x1b[31m%s\x1b[0m', 'Error:');
 		// 	console.log(error.file + ':' + error.line + ':' + error.column + ': ' + error.reason);

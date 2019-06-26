@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 
 const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
 const svgmin = require('gulp-svgmin');
 const svgstore = require('gulp-svgstore'); // Для добавления тэга symbol с id соответствующим имени иконки
 const rename = require('gulp-rename');
@@ -10,7 +11,7 @@ const config = require('../config');
 // SVG
 const svg = function(done) {
 	return gulp.src(config.src.svg)
-		.pipe(plumber())
+		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(svgmin({
 			plugins: [{
 				removeViewBox: false
