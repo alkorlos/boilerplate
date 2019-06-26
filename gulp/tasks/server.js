@@ -1,12 +1,21 @@
 const browserSync = require('browser-sync');
+const webpack = require('webpack');
+const middleware = require('webpack-dev-middleware');
 
 const config = require('../config');
+const webpackConfig = require('./../../webpack.config.js');
+const compiler = webpack(webpackConfig);
 
 // Server
 const server = function(done) {
 	browserSync.init({
 		server: {
-			baseDir: './build'
+			baseDir: './build',
+			middleware: [
+				middleware(
+					compiler
+				)
+			]
 		},
 		port: 8080,
 		open: true,
