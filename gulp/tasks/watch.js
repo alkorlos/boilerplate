@@ -8,7 +8,7 @@ const revision = require('./revision');
 const svgSpriteLoader = require('./svg-sprite-loader');
 // Удаляет старые стили и svg спрайты с хэшом в имени
 const revisionClean = require('./revision-clean');
-const js = require('./js');
+// const js = require('./js'); // Не нужно после добавления webpack-dev-middleware
 const images = require('./images');
 const videos = require('./videos');
 const svg = require('./svg');
@@ -21,7 +21,7 @@ const config = require('../config');
 const watch = function(done) {
 	gulp.watch(config.src.pug, gulp.series(pug));
 	gulp.watch(config.src.css, gulp.series(css));
-	gulp.watch(config.src.js, gulp.series(js));
+	// gulp.watch(config.src.js, gulp.series(js)); // Не нужно после добавления webpack-dev-middleware
 	gulp.watch(config.src.images, gulp.series(images));
 	gulp.watch(config.src.videos, gulp.series(videos));
 	gulp.watch(config.src.svg, gulp.series(svg, revision, svgSpriteLoader, revisionClean));

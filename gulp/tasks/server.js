@@ -13,7 +13,10 @@ const server = function(done) {
 			baseDir: './build',
 			middleware: [
 				middleware(
-					compiler
+					compiler,
+					{
+						publicPath: "/js"
+					}
 				)
 			]
 		},
