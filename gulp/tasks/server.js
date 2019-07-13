@@ -6,10 +6,6 @@ const config = require('../config');
 const webpackConfig = require('./../../webpack.config.js');
 const compiler = webpack(webpackConfig);
 
-compiler.plugin("done", function() {
-	browserSync.reload();
-})
-
 // Server
 const server = function(done) {
 	browserSync.init({
@@ -19,7 +15,8 @@ const server = function(done) {
 				middleware(
 					compiler,
 					{
-						publicPath: "/js"
+						publicPath: "/js",
+						writeToDisk: true
 					}
 				)
 			]
@@ -31,7 +28,7 @@ const server = function(done) {
 				match: [
 					config.build.html + '/**/*.html',
 					config.build.css + '/**/*.css',
-					// config.build.js + '/**/*.js',
+					config.build.js + '/**/*.js',
 					config.build.images + '/**/*.{webp,jpg,jpeg,png,svg}',
 					config.build.svg + '/**/*.svg',
 					config.build.fonts + '/**/*.{ttf,otf,woff,woff2}',
