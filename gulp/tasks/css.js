@@ -10,14 +10,9 @@ const rename = require('gulp-rename');
 const config = require('../config');
 
 // CSS
-const css = function(done, errorMain) {
+const css = function(done) {
 	return gulp.src(config.src.cssEntry)
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-		// .pipe(plumber(function(error) {
-		// 	console.log('\x1b[31m%s\x1b[0m', 'Error:');
-		// 	console.log(error.file + ':' + error.line + ':' + error.column + ': ' + error.reason);
-		// 	return errorMain.apply(this, arguments);
-		// }))
 		.pipe(sourcemaps.init())
 		.pipe(postcss())
 		.pipe(gulp.dest(config.build.css))
