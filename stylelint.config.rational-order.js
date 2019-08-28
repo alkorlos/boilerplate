@@ -1,11 +1,3 @@
-const special = {
-	emptyLineBefore: 'always',
-	noEmptyLineBetween: true,
-	properties: [
-		'composes'
-	]
-};
-
 const positioning = {
 	emptyLineBefore: 'always',
 	noEmptyLineBetween: true,
@@ -253,7 +245,6 @@ const misc = {
 };
 
 const rational = [
-	special,
 	positioning,
 	boxmodel,
 	typography,
