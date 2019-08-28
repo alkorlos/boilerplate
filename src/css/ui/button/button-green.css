@@ -14,12 +14,12 @@
 	cursor: pointer;
 
 	transition: all 0.3s;
-	&:focus:not(:focus-visible) {
-		outline: 0;
-	}
 	@media (--hover) {
 		&:hover {
 			opacity: 0.8;
 		}
+	}
+	&:focus:not(:focus-visible) {
+		outline: 0;
 	}
 }
