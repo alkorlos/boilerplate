@@ -244,7 +244,7 @@ const misc = {
 	]
 };
 
-const rational = [
+const propertiesOrder = [
 	positioning,
 	boxmodel,
 	typography,
@@ -253,8 +253,222 @@ const rational = [
 	misc
 ];
 
+const pseudoElements = [
+	{
+		'type': 'rule',
+		'selector': '&::before'
+	},
+	{
+		'type': 'rule',
+		'selector': '&::after'
+	},
+	{
+		'type': 'rule',
+		'selector': '&::placeholder'
+	},
+	{
+		'type': 'rule',
+		'selector': '&::first-letter'
+	},
+	{
+		'type': 'rule',
+		'selector': '&::first-line'
+	},
+	{
+		'type': 'rule',
+		'selector': '&::selection'
+	}
+];
+
+const pseudoClassesStates = [
+	{
+		'type': 'rule',
+		'selector': '&:link'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:visited'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:hover'
+	},
+	{
+		'type': 'at-rule',
+		'name': 'media',
+		'parameter': '--hover'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:active'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:focus'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:any-link'
+	}
+];
+
+const pseudoClassesStructural = [
+	{
+		'type': 'rule',
+		'selector': '&:first-child'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:last-child'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:nth-child'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:nth-last-child'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:only-child'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:first-of-type'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:last-of-type'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:nth-of-type'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:nth-last-of-type'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:only-of-type'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:not'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:target'
+	}
+];
+
+const pseudoClassesValidation = [
+	{
+		'type': 'rule',
+		'selector': '&:checked'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:default'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:disabled'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:empty'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:enabled'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:in-range'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:out-of-range'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:indeterminate'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:valid'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:invalid'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:optional'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:read-only'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:read-write'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:required'
+	}
+];
+
+const pseudoClassesLanguage = [
+	{
+		'type': 'rule',
+		'selector': '&:lang'
+	}
+];
+
+const pseudoClassesMiscellaneous = [
+	{
+		'type': 'rule',
+		'selector': '&:root'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:fullscreen'
+	},
+	{
+		'type': 'rule',
+		'selector': '&:defined'
+	}
+];
+
+const atRules = [
+	{
+		'type': 'at-rule',
+		'name': 'media'
+	},
+	{
+		'type': 'at-rule',
+		'name': 'supports'
+	}
+];
+
+const ruleOrder = [
+	'declarations',
+	...pseudoElements,
+	...pseudoClassesStates,
+	...pseudoClassesStructural,
+	...pseudoClassesValidation,
+	...pseudoClassesLanguage,
+	...pseudoClassesMiscellaneous,
+	...atRules
+];
+
 module.exports = {
 	rules: {
-		'order/properties-order': rational,
+		'order/properties-order': propertiesOrder,
+		'order/order': ruleOrder
 	}
 };
