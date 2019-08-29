@@ -1,3 +1,3 @@
-# Документация
+# Bundler
 
-[Документация](https://github.com/alkorlos/docs) для этого сборщика.
+[Документация](https://github.com/alkorlos/bundler/tree/master/docs) для этой конфигурации сборщика.
