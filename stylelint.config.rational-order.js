@@ -294,11 +294,6 @@ const pseudoClassesStates = [
 		'selector': '&:hover'
 	},
 	{
-		'type': 'at-rule',
-		'name': 'media',
-		'parameter': '--hover'
-	},
-	{
 		'type': 'rule',
 		'selector': '&:active'
 	},
