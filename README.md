@@ -42,14 +42,14 @@
 
 * `npm run stylelint` - проверка и исправление CSS файлов линтером stylelint.
 
-## Структура папок и файлов
+<!-- ## Структура папок и файлов
 
-* [Структура папок и файлов](https://github.com/alkorlos/bundler/tree/master/docs/structure.md)
+* [Структура папок и файлов](https://github.com/alkorlos/bundler/tree/master/docs/structure.md) -->
 
 ## Стандарты написания кода
 
 * [Настройки редактора](https://github.com/alkorlos/bundler/tree/master/docs/editorconfig.md)
 
-* [Стандарты написания Pug](https://github.com/alkorlos/bundler/tree/master/docs/codeguide-html.md)
+<!-- * [Стандарты написания Pug](https://github.com/alkorlos/bundler/tree/master/docs/codeguide-html.md) -->
 
 * [Стандарты написания CSS](https://github.com/alkorlos/bundler/tree/master/docs/codeguide-css.md)
