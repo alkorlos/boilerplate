@@ -30,11 +30,23 @@
 
 * `npm run start`- основной скрипт для начала работы
 
-## Остальная документация
+# Скрипты
 
-* [Скрипты](https://github.com/alkorlos/bundler/tree/master/docs/scripts.md)
+* `npm run start` - основной скрипт, сборка проекта, `watch` и `server`.
+
+* `npm run build` - сборка проекта для продакшена.
+
+* `npm run webpack` - сборка скриптов.
+
+* `npm run webpack-production` - сборка скриптов для продакшена.
+
+* `npm run stylelint` - проверка и исправление CSS файлов линтером stylelint.
+
+## Структура папок и файлов
 
 * [Структура папок и файлов](https://github.com/alkorlos/bundler/tree/master/docs/structure.md)
+
+## Стандарты написания кода
 
 * [Настройки редактора](https://github.com/alkorlos/bundler/tree/master/docs/editorconfig.md)
 
