@@ -1,6 +1,22 @@
-# Bundler
+# Boilerplate для frontend разработки
 
-> Система сборки на gulp и webpack для frontend разработки использующая pug, PostCSS, stylelint, svg sprites.
+## Используемые технологии
+
+* Система сборки gulp.
+
+* Bundler webpack.
+
+* HTML шаблонизатор pug.
+
+* CSS постпроцессор PostCSS.
+
+## Основные возможности
+
+* Проверка CSS линтером stylelint.
+
+* Автоматическое обновление страницы при разработке при помощи Browsersync.
+
+* Автоматическая сборка svg спарайта.
 
 ## Начало работы
 
