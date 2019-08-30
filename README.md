@@ -44,12 +44,12 @@
 
 <!-- ## Структура папок и файлов
 
-* [Структура папок и файлов](https://github.com/alkorlos/bundler/tree/master/docs/structure.md) -->
+* [Структура папок и файлов](/docs/structure.md) -->
 
 ## Стандарты написания кода
 
-* [Настройки редактора](https://github.com/alkorlos/bundler/tree/master/docs/editorconfig.md)
+* [Настройки редактора](/docs/editorconfig.md)
 
-<!-- * [Стандарты написания Pug](https://github.com/alkorlos/bundler/tree/master/docs/codeguide-html.md) -->
+<!-- * [Стандарты написания Pug](/docs/codeguide-html.md) -->
 
-* [Стандарты написания CSS](https://github.com/alkorlos/bundler/tree/master/docs/codeguide-css.md)
+* [Стандарты написания CSS](/docs/codeguide-css.md)
