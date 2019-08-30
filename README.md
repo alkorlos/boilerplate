@@ -28,16 +28,14 @@ npm install
 
 Для начала работы выполнить команду `npm run start`.
 
-## Скрипты
+## Остальная документация
 
-* `npm run start` - основной скрипт, сборка проекта, `watch` и `server`.
+* [Скрипты](https://github.com/alkorlos/bundler/tree/master/docs/scripts.md)
 
-* `npm run build` - сборка проекта для продакшена.
+* [Структура папок и файлов](https://github.com/alkorlos/bundler/tree/master/docs/structure.md)
 
-* `npm run webpack` - сборка скриптов.
+* [Настройки редактора](https://github.com/alkorlos/bundler/tree/master/docs/editorconfig.md)
 
-* `npm run webpack-production` - сборка скриптов для продакшена.
+* [Стандарты написания Pug](https://github.com/alkorlos/bundler/tree/master/docs/codeguide-html.md)
 
-* `npm run stylelint` - проверка и исправление CSS файлов линтером stylelint.
-
-[Документация](https://github.com/alkorlos/bundler/tree/master/docs) для этой конфигурации сборщика.
+* [Стандарты написания CSS](https://github.com/alkorlos/bundler/tree/master/docs/codeguide-css.md)
