@@ -451,6 +451,7 @@ const atRules = [
 ];
 
 const ruleOrder = [
+	'custom-properties',
 	'declarations',
 	...pseudoElements,
 	...pseudoClassesStates,
@@ -463,7 +464,7 @@ const ruleOrder = [
 
 module.exports = {
 	rules: {
-		'order/properties-order': propertiesOrder,
-		'order/order': ruleOrder
+		'order/order': ruleOrder,
+		'order/properties-order': propertiesOrder
 	}
 };
