@@ -1,3 +1,9 @@
+const special = {
+	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
+	properties: ['all']
+  };
+
 const positioning = {
 	emptyLineBefore: 'always',
 	noEmptyLineBetween: true,
@@ -245,6 +251,7 @@ const misc = {
 };
 
 const propertiesOrder = [
+	special,
 	positioning,
 	boxmodel,
 	typography,
