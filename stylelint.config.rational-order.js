@@ -2,7 +2,7 @@ const special = {
 	emptyLineBefore: 'always',
 	noEmptyLineBetween: true,
 	properties: ['all']
-  };
+};
 
 const positioning = {
 	emptyLineBefore: 'always',
