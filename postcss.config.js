@@ -4,7 +4,7 @@ module.exports = {
 		'postcss-import': {},
 		'postcss-flexbugs-fixes': {},
 		'postcss-preset-env': {
-			stage: 0,
+			stage: 1,
 			autoprefixer: true
 		}
 	}
