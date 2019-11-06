@@ -20,8 +20,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
@@ -46,10 +46,10 @@
     "postcss-import-ext-glob": "^1.1.0",
     "postcss-preset-env": "^6.7.0",
     "stylelint": "^10.1.0",
-    "stylelint-order": "^3.0.1",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-middleware": "^3.7.0"
+    "stylelint-order": "^3.1.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2"
   },
   "browserslist": [
     "last 2 Chrome versions",
