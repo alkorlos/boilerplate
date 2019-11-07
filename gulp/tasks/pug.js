@@ -9,7 +9,7 @@ const config = require('../config');
 // PUG
 const pug = function(done) {
 	return gulp.src([config.src.pug, config.src.pugException])
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(
 			pugCompile({
 				pretty: true

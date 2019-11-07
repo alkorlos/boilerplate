@@ -12,7 +12,7 @@ const config = require('../config');
 // CSS
 const css = function(done) {
 	return gulp.src(config.src.cssEntry)
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(sourcemaps.init())
 		.pipe(postcss())
 		.pipe(gulp.dest(config.build.css))

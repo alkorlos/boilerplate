@@ -11,7 +11,7 @@ const config = require('../config');
 // SVG
 const svg = function(done) {
 	return gulp.src(config.src.svg)
-		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
+		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(svgmin({
 			plugins: [{
 				removeViewBox: false
@@ -22,7 +22,7 @@ const svg = function(done) {
 				inlineSvg: true
 			})
 		)
-		.pipe(rename("sprite.svg"))
+		.pipe(rename('sprite.svg'))
 		.pipe(gulp.dest(config.build.svg))
 		.on('end', done);
 }
