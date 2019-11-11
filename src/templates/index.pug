@@ -4,23 +4,24 @@ block content
 
 	main.page-container
 		
-		picture
-			img.img-example(
-				src="img/object-fit.jpg",
-				srcset="img/object-fit@2x.jpg 2x",
-				width="328",
-				height="328",
-				alt="тестирование object-fit cover"
-			)
-		
-		svg.svg-icon(width="90" height="81" role="img" aria-label="тестирование svg")
-			use(xlink:href="#test" aria-hidden="true")
+		section.page-section.page-section-hero
+			picture
+				img.img-example(
+					src="img/object-fit.jpg",
+					srcset="img/object-fit@2x.jpg 2x",
+					width="328",
+					height="328",
+					alt="тестирование object-fit cover"
+				)
+			
+			svg.svg-icon(width="90" height="81" role="img" aria-label="тестирование svg")
+				use(xlink:href="#test" aria-hidden="true")
 
-		button.button-green
-			|  Тестовая кнопка
-			svg.svg-icon(width="90" height="81" aria-hidden="true")
-				use(xlink:href="#test")
+			button.button-green
+				|  Тестовая кнопка
+				svg.svg-icon(width="90" height="81" aria-hidden="true")
+					use(xlink:href="#test")
 
-		button.button-green(aria-label="Тестовая кнопка 2")
-			svg.svg-icon(width="90" height="81" aria-hidden="true")
-				use(xlink:href="#test")
+			button.button-green(aria-label="Тестовая кнопка 2")
+				svg.svg-icon(width="90" height="81" aria-hidden="true")
+					use(xlink:href="#test")

@@ -1,3 +1,13 @@
+.page-section-hero {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	@media only screen and (width <= 992px) {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
+
 .img-example {
 	display: block;
 	width: 50%;
