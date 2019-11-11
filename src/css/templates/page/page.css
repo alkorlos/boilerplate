@@ -1,4 +1,4 @@
-.page-wrapper {
+.wrapper {
 	position: relative;
 
 	display: flex;
@@ -13,10 +13,36 @@
 	transition: all 0.3s;
 }
 
-.page-container {
+.container {
 	flex: 1 0 auto;
 }
 
-.page-section {
+.section {
 	padding: 0 3.1vw;
+}
+
+.columns {
+	display: flex;
+	@media only screen and (width <= 992px) {
+		flex-direction: column;
+	}
+}
+
+.column {
+	width: 50%;
+	&:first-child {
+		margin-right: 32px;
+	}
+	&:last-child {
+		margin-left: 32px;
+	}
+	@media only screen and (width <= 992px) {
+		width: 100%;
+		&:first-child {
+			margin-right: 0;
+		}
+		&:last-child {
+			margin-left: 0;
+		}
+	}
 }
