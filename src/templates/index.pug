@@ -15,6 +15,7 @@ block content
 				)
 			
 			svg.svg-icon(width="90" height="81" role="img" aria-label="тестирование svg")
+				//- aria-hidden="true" в use исправляет работу некоторых screen readers (из статьи https://www.scottohara.me/blog/2019/05/22/contextual-images-svgs-and-a11y.html)
 				use(xlink:href="#test" aria-hidden="true")
 
 			button.button-green
