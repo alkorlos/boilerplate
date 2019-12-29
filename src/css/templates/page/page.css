@@ -4,9 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	min-width: 320px;
-	max-width: 1920px;
 	min-height: 100vh;
-	margin: 0 auto;
 
 	background-color: #ffffff;
 
@@ -19,6 +17,11 @@
 
 .section {
 	padding: 0 3.1vw;
+}
+
+.central {
+	max-width: 1920px;
+	margin: 0 auto;
 }
 
 .columns {
