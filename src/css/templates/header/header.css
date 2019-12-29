@@ -6,4 +6,7 @@
 	width: 100%;
 
 	background-color: #ffffff;
+	@media only screen and (width <= 320px) {
+		padding: 0 10px;
+	}
 }

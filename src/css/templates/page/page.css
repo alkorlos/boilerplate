@@ -17,7 +17,7 @@
 
 .central {
 	width: 1920px;
-	min-width: 320px;
+	min-width: 300px;
 	max-width: 93vw;
 	margin: 0 auto;
 }
