@@ -19,8 +19,6 @@ html, body {
 
 	font-size: 14px;
 	font-family: "open-sans", "Arial", "Helvetica", sans-serif;
-
-	background-color: #f5f5f5; /* фон для > 1920px */
 }
 
 .svg-icon {

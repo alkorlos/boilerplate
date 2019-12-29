@@ -19,6 +19,7 @@
 	width: 1920px;
 	max-width: 93vw;
 	margin: 0 auto;
+	min-width: 320px;
 }
 
 .columns {
