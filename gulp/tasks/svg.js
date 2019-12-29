@@ -13,9 +13,16 @@ const svg = function(done) {
 	return gulp.src(config.src.svg)
 		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(svgmin({
-			plugins: [{
-				removeViewBox: false
-			}]
+			plugins: [
+				{
+					cleanupIDs: {
+						minify: false // Лишние id очищаются и минифицируются с помощью SVGOMG, но если id были изменены вручную их трогать не нужно
+					}
+				},
+				{
+					removeViewBox: false
+				}
+			]
 		}))
 		.pipe(
 			svgstore({
