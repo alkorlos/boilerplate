@@ -18,9 +18,7 @@
 .central {
 	width: 1920px;
 	max-width: 93vw;
-	/* max-width: 93.8vw; */
 	margin: 0 auto;
-	/* padding: 0 3.1vw; */
 }
 
 .columns {
