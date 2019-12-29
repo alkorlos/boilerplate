@@ -16,9 +16,12 @@
 }
 
 .section__inner {
+	padding: 0 3.1vw;
+}
+
+.central {
 	max-width: 1920px;
 	margin: 0 auto;
-	padding: 0 3.1vw;
 }
 
 .columns {
