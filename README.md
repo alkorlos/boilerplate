@@ -6,7 +6,7 @@
 
 * Bundler webpack;
 
-* HTML шаблонизатор pug;
+* HTML шаблонизатор для вставки кода и наследования pug;
 
 * CSS постпроцессор PostCSS.
 
@@ -50,6 +50,6 @@
 
 <!-- * [Настройки редактора](/docs/editorconfig.md) -->
 
-<!-- * [Стандарты написания Pug](/docs/codeguide-html.md) -->
+<!-- * [Стандарты написания html](/docs/codeguide-html.md) -->
 
 * [Стандарты написания CSS](/docs/codeguide-css.md)

@@ -6,9 +6,9 @@ const pugCompile = require('gulp-pug');
 
 const config = require('../config');
 
-// PUG
-const pug = function(done) {
-	return gulp.src([config.src.pug, config.src.pugException])
+// HTML
+const html = function(done) {
+	return gulp.src([config.src.html, config.src.htmlException])
 		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(
 			pugCompile({
@@ -19,4 +19,4 @@ const pug = function(done) {
 		.on('end', done);
 }
 
-module.exports = pug;
+module.exports = html;

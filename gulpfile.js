@@ -4,7 +4,7 @@ const watch = require('./gulp/tasks/watch');
 const server = require('./gulp/tasks/server');
 
 const clean = require('./gulp/tasks/clean');
-const pug = require('./gulp/tasks/pug');
+const html = require('./gulp/tasks/html');
 const css = require('./gulp/tasks/css');
 // Добавляет хэш к именам css файлов и sprite.svg, генерит rev-manifest.json
 const revision = require('./gulp/tasks/revision');
@@ -24,7 +24,7 @@ const files = require('./gulp/tasks/files');
 gulp.task('start',
 	gulp.series(
 		clean,
-		pug,
+		html,
 		css,
 		images,
 		videos,
@@ -42,7 +42,7 @@ gulp.task('start',
 gulp.task('build',
 	gulp.series(
 		clean,
-		pug,
+		html,
 		css,
 		js,
 		images,
