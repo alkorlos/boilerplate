@@ -1,7 +1,7 @@
 const config = {
 	src: {
-		pug: 'src/templates/**/*.pug',
-		pugException: '!src/templates/**/_*.pug',
+		pug: 'src/templates/**/*.html',
+		pugException: '!src/templates/**/_*.html',
 		css: 'src/css/**/*.css',
 		cssEntry: 'src/css/style.css',
 		js: 'src/js/**/*.js',
