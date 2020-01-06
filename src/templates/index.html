@@ -1,13 +1,18 @@
-extends _layout.html
+{% extends "_layout.html" %}
 
-block content
+{% block content %}
 
 	<main class="container">
 		
 		<section class="section-hero">
 			<div class="central">
 				<picture>
-					<img class="img-example" src="img/object-fit.jpg" srcset="img/object-fit@2x.jpg 2x" width="328" height="328" alt="тестирование object-fit cover">
+					<img class="img-example"
+						src="img/object-fit.jpg"
+						srcset="img/object-fit@2x.jpg 2x"
+						width="328"
+						height="328"
+						alt="тестирование object-fit cover">
 				</picture>
 				
 				<svg class="svg-icon" width="90" height="81" role="img" aria-label="тестирование svg">
@@ -15,10 +20,11 @@ block content
 					<use xlink:href="#test" aria-hidden="true"></use>
 				</svg>
 
-				<button class="button-green"> 
-					|  Тестовая кнопка
-					<svg class="svg-icon" width="90" height="81" aria-hidden="true"></svg>
+				<button class="button-green">
+					Тестовая кнопка
+					<svg class="svg-icon" width="90" height="81" aria-hidden="true">
 						<use xlink:href="#test"></use>
+					</svg>
 				</button>
 
 				<button class="button-green" aria-label="Тестовая кнопка 2">
@@ -29,3 +35,5 @@ block content
 			</div>
 		</section>
 	</main>
+
+{% endblock %}

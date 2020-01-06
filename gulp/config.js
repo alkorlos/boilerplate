@@ -2,6 +2,7 @@ const config = {
 	src: {
 		html: 'src/templates/**/*.html',
 		htmlException: '!src/templates/**/_*.html',
+		htmlPath: 'src/templates/',
 		css: 'src/css/**/*.css',
 		cssEntry: 'src/css/style.css',
 		js: 'src/js/**/*.js',
