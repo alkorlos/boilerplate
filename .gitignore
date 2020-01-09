@@ -6,6 +6,6 @@ build
 *.log
 
 # OS or editor folders and files
-# .vscode
+.vscode
 .DS_Store
 Thumbs.db
