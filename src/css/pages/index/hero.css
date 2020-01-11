@@ -9,6 +9,5 @@
 	max-width: 328px;
 	height: 328px;
 
-	font-family: "object-fit: cover;"; /* stylelint-disable-line */
 	object-fit: cover;
 }
