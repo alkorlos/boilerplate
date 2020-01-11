@@ -1,5 +1,7 @@
 @import "settings.fonts.css";
 
+@import "custom-properties.css";
+
 @import "custom-media.css";
 
 @import "inspections.css";
@@ -14,6 +16,8 @@
 }
 
 html, body {
+	all: unset;
+
 	margin: 0;
 	padding: 0;
 
