@@ -8,7 +8,7 @@ const html = require('./gulp/tasks/html');
 const css = require('./gulp/tasks/css');
 // Добавляет хэш к именам css файлов и sprite.svg, генерит rev-manifest.json
 const revision = require('./gulp/tasks/revision');
-// Заменяет ссылки на стили в html шаблоне на файлы стилей с хэшом в имени
+// Заменяет ссылки на стили и svg спрайт в html шаблоне на файлы с хэшом в имени
 const htmlManifest = require('./gulp/tasks/html-manifest');
 const js = require('./gulp/tasks/js');
 const images = require('./gulp/tasks/images');
