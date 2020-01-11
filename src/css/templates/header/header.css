@@ -5,7 +5,7 @@
 
 	width: 100%;
 
-	background-color: #ffffff;
+	background-color: var(--color-default);
 	@media only screen and (width <= 320px) {
 		padding: 0 10px;
 	}

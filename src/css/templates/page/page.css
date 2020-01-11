@@ -6,7 +6,7 @@
 	min-width: 320px;
 	min-height: 100vh;
 
-	background-color: #ffffff;
+	background-color: var(--color-default);
 
 	transition: all 0.3s;
 }
