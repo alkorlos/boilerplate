@@ -17,19 +17,19 @@
 				
 				{# aria-hidden="true" в use исправляет работу некоторых screen readers (из статьи https://www.scottohara.me/blog/2019/05/22/contextual-images-svgs-and-a11y.html) #}
 				<svg class="svg-icon" width="90" height="81" role="img" aria-label="тестирование svg">
-					<use xlink:href="#test" aria-hidden="true"></use>
+					<use xlink:href="svg/sprite.svg#test" aria-hidden="true"></use>
 				</svg>
 
 				<button class="button-green">
 					Тестовая кнопка
 					<svg class="svg-icon" width="90" height="81" aria-hidden="true">
-						<use xlink:href="#test"></use>
+						<use xlink:href="svg/sprite.svg#test"></use>
 					</svg>
 				</button>
 
 				<button class="button-green" aria-label="Тестовая кнопка 2">
 					<svg class="svg-icon" width="90" height="81" aria-hidden="true">
-						<use xlink:href="#test"></use>
+						<use xlink:href="svg/sprite.svg#test"></use>
 					</svg>
 				</button>
 			</div>
