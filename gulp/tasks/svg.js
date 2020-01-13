@@ -3,7 +3,7 @@ const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const svgmin = require('gulp-svgmin');
-const svgstore = require('gulp-svgstore'); // Для добавления тэга symbol с id соответствующим имени иконки
+const svgstore = require('gulp-svgstore');
 const rename = require('gulp-rename');
 
 const config = require('../config');
@@ -16,7 +16,7 @@ const svg = function(done) {
 			plugins: [
 				{
 					cleanupIDs: {
-						minify: false // Лишние id очищаются и минифицируются с помощью SVGOMG, но если id были изменены вручную их трогать не нужно
+						minify: false
 					}
 				},
 				{

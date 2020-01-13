@@ -27,7 +27,7 @@ const server = function(done) {
 		},
 		port: 8080,
 		open: true,
-		files: [ // files to watch, livereload
+		files: [
 			{
 				match: [
 					config.build.html + '/**/*.html',

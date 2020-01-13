@@ -17,7 +17,7 @@ const css = function(done) {
 		.pipe(postcss())
 		.pipe(gulp.dest(config.build.css))
 		.pipe(csso({
-			restructure: false, // отключил, при объединении селекторов стили могли ломаться
+			restructure: false,
 			sourceMap: true,
 			debug: false
 		}))
