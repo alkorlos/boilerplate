@@ -2,12 +2,3 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-
-.img-example {
-	display: block;
-	width: 50%;
-	max-width: 328px;
-	height: 328px;
-
-	object-fit: cover;
-}
