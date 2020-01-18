@@ -6,10 +6,6 @@
 
 @import "inspections.css";
 
-.rouble {
-	font-family: "Rouble"; /* stylelint-disable-line */
-}
-
 *, *::before, *::after {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
