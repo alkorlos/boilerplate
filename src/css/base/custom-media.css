@@ -1,2 +1,0 @@
-/* Работающий @media (hover) для firefox и IE11 */
-@custom-media --hover (hover), (-ms-high-contrast: none), (min--moz-device-pixel-ratio: 0);

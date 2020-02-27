@@ -2,8 +2,6 @@
 
 @import "custom-properties.css";
 
-@import "custom-media.css";
-
 @import "inspections.css";
 
 *, *::before, *::after {
