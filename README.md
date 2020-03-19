@@ -50,6 +50,6 @@
 
 <!-- * [Настройки редактора](/docs/editorconfig.md) -->
 
-<!-- * [Стандарты написания html](/docs/codeguide-html.md) -->
+<!-- * [Стандарты написания html](/docs/codestyle-html.md) -->
 
-* [Стандарты написания CSS](/docs/codeguide-css.md)
+* [Стандарты написания CSS](/docs/codestyle-css.md)
