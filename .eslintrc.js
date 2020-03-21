@@ -3,11 +3,9 @@ module.exports = {
 		browser: true,
 		es6: true
 	},
-	// plugins: [
-	// 	'import',
-	// 	'promise',
-	// 	'standard'
-	// ],
+	plugins: [
+		'import'
+	],
 	globals: {
 		Atomics: 'readonly',
 		SharedArrayBuffer: 'readonly'
@@ -189,18 +187,12 @@ module.exports = {
 		'yield-star-spacing': ['error', 'both'],
 		'yoda': ['error', 'never'],
 
+		// Плагин eslint-plugin-import
 		'import/export': 'error',
 		'import/first': 'error',
 		'import/no-absolute-path': ['error', { 'esmodule': true, 'commonjs': true, 'amd': false }],
 		'import/no-duplicates': 'error',
 		'import/no-named-default': 'error',
 		'import/no-webpack-loader-syntax': 'error',
-
-		'node/no-deprecated-api': 'error',
-		'node/process-exit-as-throw': 'error',
-
-		'promise/param-names': 'error',
-
-		'standard/no-callback-literal': 'error'
 	}
 }
