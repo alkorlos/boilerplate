@@ -130,73 +130,73 @@ module.exports = {
 		'no-implied-eval': 'error', // Запретить подразумеваемый eval() (Best Practices) #todo
 		'no-inner-declarations': ['error', 'functions'], // Запретить объявление пременных и function во вложенных блоках (Possible Errors)
 		'no-invalid-regexp': 'error', // Запретить недопустимые регулярные выражения в конструкторе RegExp (Possible Errors)
-		'no-irregular-whitespace': 'error', // Запретить нестандартные пробелы (Possible Errors)
-		'no-iterator': 'error', // Запретить свойство __iterator__ (Best Practices)
-		'no-labels': ['error', { // Запретить labeled statement (инструкцию метки) (Best Practices)
+		'no-irregular-whitespace': 'error', // Запретить нестандартные пробельные символы (Possible Errors)
+		'no-iterator': 'error', // Запретить использование свойства __iterator__ (Best Practices)
+		'no-labels': ['error', { // Запретить инструкцию метки (Best Practices) #todo
 			'allowLoop': false, // Игнорировать метки в цикле: нет
 			'allowSwitch': false // Игнорировать метки в switch: нет
 		}],
 		'no-lone-blocks': 'error', // Запретить ненужные вложеные блоки (Best Practices)
-		'no-misleading-character-class': 'error', // Запретить составные символы в регулярных выражениях (Possible Errors)
-		'no-prototype-builtins': 'error', // Запретить использование некоторых методов Object.prototypes напрямую (Possible Errors)
-		'no-useless-catch': 'error', // Запретить catch содержащие только throw (Best Practices)
+		'no-misleading-character-class': 'error', // Запретить составные символы в character class syntax (Possible Errors) #todo
+		'no-prototype-builtins': 'error', // Запретить использование встроенных методов Object.prototypes напрямую (Possible Errors)
+		'no-useless-catch': 'error', // Запретить ненужные условия catch: catch содержащие только throw (Best Practices)
 		'no-mixed-operators': ['error', { // Запретить смешивание разных операторов (Stylistic Issues)
-			'groups': [ // Группы операторов
+			'groups': [ // Группы однотипных операторов
 				['==', '!=', '===', '!==', '>', '>=', '<', '<='],
 				['&&', '||'],
 				['in', 'instanceof']
 			],
-			'allowSamePrecedence': true // Разрешить ли смешивание операторов с одинаковым приоритетом: да
+			'allowSamePrecedence': true // Разрешить смешивание операторов с одинаковым приоритетом: да
 		}],
 		'no-mixed-spaces-and-tabs': 'error', // Запретить смешивание пробелов и табуляции для отступов (Stylistic Issues)
 		'no-multi-spaces': 'error', // Запретить множественные пробелы (Best Practices)
-		'no-multi-str': 'error', // Запретить перенос строки с помощью \ (Best Practices)
-		'no-multiple-empty-lines': ['error', { // Запретить пустые смежные строки (Stylistic Issues)
-			'max': 1, // Максимальное число: 1
-			'maxEOF': 0 // Максимальное число в конце файла: 0
+		'no-multi-str': 'error', // Запретить множественные строки: перенос строки с помощью "\" (Best Practices)
+		'no-multiple-empty-lines': ['error', { // Запретить множественные пустые смежные строки (Stylistic Issues)
+			'max': 1, // Обеспечить максимальное число: 1
+			'maxEOF': 0 // Обеспечить максимальное число в конце файла: 0
 		}],
 		'no-negated-in-lhs': 'error', // Запретить отрицательный левый объект в выражениях с in (Deprecated)
-		'no-new': 'error', // Запретить new для объектов не записываемых в переменную (Best Practices)
-		'no-new-func': 'error', // Запретить function constructor (конструктор функций) (Best Practices)
-		'no-new-object': 'error', // Запретить object constructors (конструктор объектов) (Stylistic Issues)
-		'no-new-require': 'error', // Запретить выражение new require (Node.js and CommonJS)
-		'no-new-symbol': 'error', // Запретить вызов Symbol с оператором new (ECMAScript 6)
-		'no-new-wrappers': 'error', // Запретить использование String, Number, и Boolean с опрератором new (Best Practices)
-		'no-obj-calls': 'error', // Запретить вызов объектов Math, JSON, Reflect и Atomics как функций (Possible Errors)
+		'no-new': 'error', // Запретить new For Side Effects: для объектов не записываемых в переменную (Best Practices) #todo
+		'no-new-func': 'error', // Запретить конструктор функций (Best Practices)
+		'no-new-object': 'error', // Запретить конструктор Object (Stylistic Issues)
+		'no-new-require': 'error', // Запретить new require: оператору new вызовы require (Node.js and CommonJS)
+		'no-new-symbol': 'error', // Запретить конструктор Symbol: вызов Symbol с оператором new (ECMAScript 6)
+		'no-new-wrappers': 'error', // Запретить Primitive Wrapper Instances: использование String, Number, и Boolean с опрератором new (Best Practices)
+		'no-obj-calls': 'error', // Запретить вызывать глобальные объекты как функции: объекты Math, JSON, Reflect и Atomics (Possible Errors)
 		'no-octal': 'error', // Запретить восьмиричные литералы (Best Practices)
 		'no-octal-escape': 'error', // Запретить экранирование восьмиричных последовательностей в строковых литералах (Best Practices)
 		'no-path-concat': 'error', // Запретить конкатинацию строк при использовании __dirname и __filename (Node.js and CommonJS)
 		'no-proto': 'error', // Запретить использование __proto__ (Best Practices)
-		'no-redeclare': ['error', { // Запретить повторное объяление переменной в той же зоне видимости (Best Practices)
-			'builtinGlobals': false // Проверять переопределение встроенных глобальных значений:нет
+		'no-redeclare': ['error', { // Запретить переопределение переменных: в той же зоне видимости (Best Practices)
+			'builtinGlobals': false // Проверять переопределение встроенных глобальных значений: нет
 		}],
-		'no-regex-spaces': 'error', // Запретить несколько множественные пробелы в регулярных выражениях (Possible Errors)
-		'no-return-assign': ['error', 'except-parens'], // Запретить присваивание в return, если выражение не заключено в скобки (Best Practices)
-		'no-self-assign': ['error', { // Запретить присваивание самих себя (Best Practices) #todo
-			'props': true // Проверять присваивание самих себя у свойств: да
+		'no-regex-spaces': 'error', // Запретить множественные пробелы в регулярных выражениях (Possible Errors)
+		'no-return-assign': ['error', 'except-parens'], // Запретить присваивание в инструкции return: если выражение не заключено в круглые скобки (Best Practices)
+		'no-self-assign': ['error', { // Запретить self assignment: присваивание самих себя (Best Practices) #todo
+			'props': true // Проверять self assignment у свойств: да #todo
 		}],
-		'no-self-compare': 'error', // Запретить сравнение самих себя (Best Practices) #todo
-		'no-sequences': 'error', // Запретить использование оператора запятой, кроме в for и если последовательность в скобках (Best Practices)
+		'no-self-compare': 'error', // Запретить self compare: сравнение самих себя (Best Practices) #todo
+		'no-sequences': 'error', // Запретить использование оператора запятой: кроме в операторе for и если последовательность в круглых скобках (Best Practices)
 		'no-shadow-restricted-names': 'error', // Запретить затенение ограниченных имен (Variables)
 		'no-sparse-arrays': 'error', // Запретить разряженные массивы (Possible Errors)
 		'no-template-curly-in-string': 'error', // Запретить подстановки из шаблонных строк в обычных строках (Possible Errors)
 		'no-this-before-super': 'error', // Запретить использование this/super перед вызовом super() в конструкторах (ECMAScript 6)
-		'no-throw-literal': 'error', // Ограничить что может быть throw (Best Practices)
-		'no-trailing-spaces': 'error', // Запретить пробельные символы в конце строк (Stylistic Issues)
+		'no-throw-literal': 'error', // Ограничить то что может быть брошено как исключение: выражение throw (Best Practices)
+		'no-trailing-spaces': 'error', // Запретить концевые пробельные символы в конце строк (Stylistic Issues)
 		'no-undef': 'error', // Запретить необъявленные переменные (Variables)
 		'no-undef-init': 'error', // Запретить инициалиацию переменных как undefined (Variables)
 		'no-unexpected-multiline': 'error', // Запретить неоднозначные многострочные выражения (Possible Errors)
 		'no-unmodified-loop-condition': 'error', // Запретить неизменяемые условия циклов (Best Practices)
 		'no-unneeded-ternary': ['error', { // Запретить тернарные операторы когда можно упростить выражение (Stylistic Issues)
-			'defaultAssignment': false // Условное выражение в качестве шаблона по умочнанию: нет
+			'defaultAssignment': false // Условное выражение в качестве шаблона по умочнанию: запретить
 		}],
-		'no-unreachable': 'error', // Запретить недоступный код после операторов return, throw, continue и break (Possible Errors)
-		'no-unsafe-finally': 'error', // Запретить внутри блока finally инструкции return, throw, break, и continue (Possible Errors)
-		'no-unsafe-negation': 'error', // Запретить отрицание левого операнда в операторах in и instanceof (Possible Errors)
+		'no-unreachable': 'error', // Запретить недоступный код после инструкций return, throw, continue и break (Possible Errors)
+		'no-unsafe-finally': 'error', // Запретить инструкции потока внутри блока finally: return, throw, break и continue (Possible Errors)
+		'no-unsafe-negation': 'error', // Запретить отрицание левого операнда в операторах отношения: in и instanceof (Possible Errors)
 		'no-unused-expressions': ['error', { // Запретить неиспользуемые выражения (Best Practices)
-			'allowShortCircuit': true, // Использовать сокращенные оценки в выражениях: да
-			'allowTernary': true, // Тернарные операторы в выражениях аналогично сокращенным оценкам: да
-			'allowTaggedTemplates': true // Теговые шаблонные литералы в выражениях: да
+			'allowShortCircuit': true, // Разрешить сокращенные оценки в выражениях: разрешить
+			'allowTernary': true, // Позволить использовать тернарные операторы в выражениях аналогично сокращенным оценкам: позволить
+			'allowTaggedTemplates': true // Позволить использовать теговые шаблонные литералы в выражениях: позволить
 		}],
 		'no-unused-vars': ['error', { // Запретить неиспользуемые переменные, функции и параметры функций (Variables)
 			'vars': 'all', // Переменные: все, в том числе в глобальной области видимости
@@ -215,7 +215,7 @@ module.exports = {
 		'no-useless-rename': 'error', // Запретить бесполезное переименование import, export и деструктуризации (ECMAScript 6)
 		'no-useless-return': 'error', // Запретить бесполезный return (Best Practices)
 		'no-void': 'error', // Запретить оператор void (Best Practices)
-		'no-whitespace-before-property': 'error', // Запретить пробел перед свойством, когда объект и свойство на одной строке (Stylistic Issues)
+		'no-whitespace-before-property': 'error', // Запретить пробельные символы перед свойством: когда объект и свойство на одной строке (Stylistic Issues)
 		'no-with': 'error', // Запретить инструкцию with (Best Practices)
 		'object-curly-newline': ['error', { // Обеспечить разрыв строк внутри фигурных скобок (Stylistic Issues)
 			'multiline': true, // Требовать разрыв строк если есть разрывы строк внутри свойств или между свойствами, иначе запретить разрывы строк
