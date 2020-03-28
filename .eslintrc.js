@@ -58,25 +58,25 @@ module.exports = {
 		}],
 		'handle-callback-err': ['error', '^(err|error)$'], // Обеспечить обработку ошибок при использовании callback: имя ошибки err или error (Node.js and CommonJS)
 		'indent': ['error', 'tab', { // Обеспечить согласованные отступы: табуляция (Stylistic Issues)
-			'SwitchCase': 1, // Для условий case в инструкциях switch: 1
-			'VariableDeclarator': 1, // Для переменных: 1
-			'outerIIFEBody': 1, // Для immediately invoked function expression: 1
-			'MemberExpression': 1, // Для многострочных цепочек свойств: 1
-			'FunctionDeclaration': { // Для объявлений функций
+			'SwitchCase': 1, // Условия case в инструкциях switch: 1
+			'VariableDeclarator': 1, // Переменные: 1
+			'outerIIFEBody': 1, // immediately invoked function expression: 1
+			'MemberExpression': 1, // Многострочные цепочки свойств: 1
+			'FunctionDeclaration': { // Объявления функций
 				'parameters': 1, // Параметры: 1
 				'body': 1 // Тело: 1
 			},
-			'FunctionExpression': { // Для объявлений функциональных выражений
+			'FunctionExpression': { // Объявления функциональных выражений
 				'parameters': 1, // Параметры: 1
 				'body': 1 // Тело: 1
 			},
-			'CallExpression': { // Для вызовов функций
+			'CallExpression': { // Вызововы функций
 				'arguments': 1 // Аргументы: 1
 			},
-			'ArrayExpression': 1, // Для элементов массивов: 1
-			'ObjectExpression': 1, // Для свойств объектов: 1
-			'ImportDeclaration': 1, // Для инструкций импортов: 1
-			'flatTernaryExpressions': false, // Для тернарных операторов вложенных в тернарные операторы: не требовать отступ
+			'ArrayExpression': 1, // Элементы массивов: 1
+			'ObjectExpression': 1, // Свойства объектов: 1
+			'ImportDeclaration': 1, // Инструкции импортов: 1
+			'flatTernaryExpressions': false, // Тернарные операторы вложенные в тернарные операторы: не требовать отступ
 			'ignoredNodes': ['TemplateLiteral *'], // Игнорировать: шаблонные строки
 			'ignoreComments': false, // Игнорировать комментарии: нет
 		}],
