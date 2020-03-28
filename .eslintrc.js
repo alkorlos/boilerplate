@@ -118,14 +118,14 @@ module.exports = {
 		'no-empty-character-class': 'error', // Запретить пустые символьные классы в регулярных выражениях (Possible Errors)
 		'no-empty-pattern': 'error', // Запретить пустые деструктурирующие шаблоны (Best Practices)
 		'no-eval': 'error', // Запретить eval() (Best Practices)
-		'no-ex-assign': 'error', // Запретить переприсваивание исключений в catch (Possible Errors)
+		'no-ex-assign': 'error', // Запретить переопределение исключений в условиях catch (Possible Errors)
 		'no-extend-native': 'error', // Запретить расширение нативных объектов (Best Practices)
 		'no-extra-bind': 'error', // Запретить ненужные вызовы bind() у функции (Best Practices)
 		'no-extra-boolean-cast': 'error', // Запретить ненужные логические преобразования (Possible Errors)
 		'no-extra-parens': ['error', 'functions'], // Запретить ненужные круглые скобки: до/после функциональных выражний (Possible Errors)
 		'no-fallthrough': 'error', // Запретить проваливание case (Best Practices)
 		'no-floating-decimal': 'error', // Запретить плавающие десятичные дроби (Best Practices)
-		'no-func-assign': 'error', // Запретить переприсваивание объявлений function (Possible Errors)
+		'no-func-assign': 'error', // Запретить переопределение объявлений function (Possible Errors)
 		'no-global-assign': 'error', // Запретить присваивание нативным объектам и глобальным переменным только для чтения (Best Practices)
 		'no-implied-eval': 'error', // Запретить подразумеваемый eval() (Best Practices) #todo
 		'no-inner-declarations': ['error', 'functions'], // Запретить объявление пременных и function во вложенных блоках (Possible Errors)
@@ -208,25 +208,25 @@ module.exports = {
 			'classes': false, // Классы в верхней области видимости: нет
 			'variables': false // Переменные в верхней области видимости: нет
 		}],
-		'no-useless-call': 'error', // Запретить бесполезные .call() и .apply() (Best Practices)
-		'no-useless-computed-key': 'error', // Запретить бесполезные ключи вычисляемых свойств в объектах и классах (ECMAScript 6)
-		'no-useless-constructor': 'error', // Запретить бесполезные конструкторы классов (ECMAScript 6)
-		'no-useless-escape': 'error', // Запретить бесполезное экранирование (Best Practices)
-		'no-useless-rename': 'error', // Запретить бесполезное переименование import, export и деструктуризации (ECMAScript 6)
-		'no-useless-return': 'error', // Запретить бесполезный return (Best Practices)
-		'no-void': 'error', // Запретить оператор void (Best Practices)
-		'no-whitespace-before-property': 'error', // Запретить пробельные символы перед свойством: когда объект и свойство на одной строке (Stylistic Issues)
+		'no-useless-call': 'error', // Запретить ненужные .call() и .apply() (Best Practices)
+		'no-useless-computed-key': 'error', // Запретить ненужные ключи вычисляемых свойств в объектах и классах (ECMAScript 6)
+		'no-useless-constructor': 'error', // Запретить ненужные конструкторы классов (ECMAScript 6)
+		'no-useless-escape': 'error', // Запретить ненужное использование экранирования (Best Practices)
+		'no-useless-rename': 'error', // Запретить переименование import, export и деструктуризации в одно и тоже имя (ECMAScript 6)
+		'no-useless-return': 'error', // Запретить избыточные инструкции return (Best Practices)
+		'no-void': 'error', // Запретить использование оператора void (Best Practices)
+		'no-whitespace-before-property': 'error', // Запретить пробельные символы перед свойствами: если объект и свойство на одной строке (Stylistic Issues)
 		'no-with': 'error', // Запретить инструкцию with (Best Practices)
-		'object-curly-newline': ['error', { // Обеспечить разрыв строк внутри фигурных скобок (Stylistic Issues)
-			'multiline': true, // Требовать разрыв строк если есть разрывы строк внутри свойств или между свойствами, иначе запретить разрывы строк
-			'consistent': true // Требовать чтобы обе фигурные скобки или ни одна не были на одной строке с содержимым
+		'object-curly-newline': ['error', { // Обеспечить согласованный разрыв строк внутри фигурных скобок (Stylistic Issues)
+			'multiline': true, // Требовать разрыв строк если есть разрывы строк внутри свойств или между свойствами, иначе запретить разрывы строк: да
+			'consistent': true // Требовать чтобы обе фигурные скобки или ни одна не были на одной строке с содержимым: да
 		}],
-		'object-curly-spacing': ['error', 'never'], // Обеспечить пробелы внутри фигурных скобок: объектных литералов, деструктуризации и import/export (Stylistic Issues)
-		'object-property-newline': ['error', { // Обеспечить свойства объекта на отдельных строках (Stylistic Issues)
-			'allowMultiplePropertiesPerLine': true // Разрешить свойства объекта в одну строку: да
+		'object-curly-spacing': ['error', 'never'], // Обеспечить согласованные пробелы внутри фигурных скобок: объектных литералов, деструктуризации и import/export (Stylistic Issues)
+		'object-property-newline': ['error', { // Обеспечить размещение свойств объекта на отдельных строках (Stylistic Issues)
+			'allowMultiplePropertiesPerLine': true // Разрешить все свойства объекта в одну строку: да
 		}],
 		'one-var': ['error', { // Обеспечить объявление переменных вместе или раздельно в функциях (Stylistic Issues)
-			'initialized': 'never' // Требовать несколько объявлений для инициализированных переменных в одной области видимости
+			'initialized': 'never' // Требовать несколько объявлений переменных для инициализированных переменных в одной области видимости
 		}],
 		'operator-linebreak': ['error', 'after', { // Обеспечить согласованный стиль перевода строки для операторов: требовать перевода строки после оператора (Stylistic Issues)
 			'overrides': { // Переопределить глобальные настройки
@@ -240,51 +240,51 @@ module.exports = {
 			'classes': 'never', // Требовать или запретить пустые строки внутри классов: запретить пустые строки в начале и в конце
 			'switches': 'never' // Требовать или запретить пустые строки внутри инструкций switch: запретить пустые строки в начале и в конце
 		}],
-		'prefer-const': ['error', { // Предлагает использовать const, если переменная не переопределяется (ECMAScript 6)
+		'prefer-const': ['error', { // Предлагать использовать const: если переменная не переопределяется после объявления (ECMAScript 6)
 			'destructuring': 'all' // Деструктуризация: если для всех переменных предпочительнее использовать const предупредит, в противном случае проигнорирует
 		}],
 		'prefer-promise-reject-errors': 'error', // Требовать использовать объекты Error как причину отклонения Promise (Best Practices)
-		'quote-props': ['error', 'as-needed'], // Требовать кавычки вокруг литеральной нотации имен свойств: запретить кавычки не являются обязательными (Stylistic Issues)
-		'quotes': ['error', 'single', { // Обеспечить согласованное использование кавычек: одинарные кавычеки (Stylistic Issues)
+		'quote-props': ['error', 'as-needed'], // Требовать кавычки вокруг имен свойств объекта: запретить кавычки не являющиеся обязательными (Stylistic Issues)
+		'quotes': ['error', 'single', { // Обеспечить согласованное использование обратных кавычек, двойных кавычек или одинарных кавычек: одинарные кавычки (Stylistic Issues)
 			'avoidEscape': true, // Разрешить строкам использовать одинарные или двойные кавычки, если строка содержит кавычку которую иначе пришлось бы экранировать
 			'allowTemplateLiterals': false // Разрешить строкам использовать обратные кавычки
 		}],
 		'rest-spread-spacing': ['error', 'never'], // Обеспечить пробел между операторами rest и spread и их выражениями: никогда (ECMAScript 6)
-		'semi': ['error', 'always'], // Требовать или запретить точку с запятой вместо ASI: требовать (Stylistic Issues)
+		'semi': ['error', 'always'], // Требовать или запретить точку с запятой вместо ASI (automatic semicolon insertion): требовать (Stylistic Issues)
 		'semi-spacing': ['error', { // Обеспечить пробел до и после точки с запятой (Stylistic Issues)
 			'before': false, // До: нет
 			'after': true // После: да: если не в конце строки
 		}],
-		'space-before-blocks': ['error', 'always'], // Требовать или запретить пробел перед блоками: перед блоками всегда должен быть пробел (Stylistic Issues)
-		'space-before-function-paren': ['error', 'never'], // Требовать или запретить пробел перед круглой скобкой функции: запретить (Stylistic Issues)
+		'space-before-blocks': ['error', 'always'], // Требовать или запретить пробел до блоков: требовать (Stylistic Issues)
+		'space-before-function-paren': ['error', 'never'], // Требовать или запретить пробел до круглой скобкой функции: запретить (Stylistic Issues)
 		'space-in-parens': ['error', 'never'], // Запретить или обеспечить пробелы непосредственно внутри круглых скобок: запретить (Stylistic Issues)
 		'space-infix-ops': 'error', // Требовать пробел вокруг инфиксных операторов (Stylistic Issues)
 		'space-unary-ops': ['error', { // Требовать или запретить пробелы до/после унарных операторов (Stylistic Issues)
-			'words': true, // Применяется к унарным операторам слов таким как new, delete, typeof, void, yield: да
+			'words': true, // Применяется к унарным операторам слов таким как: new, delete, typeof, void, yield: да
 			'nonwords': false // Применяется к унарным операторам таким как -, +, --, ++, !, !!: нет
 		}],
-		'spaced-comment': ['error', 'always', { // Требовать или запретить отступ (пробел или табуляция) в начале комментария: за "//" или "/*": требовать (Stylistic Issues)
+		'spaced-comment': ['error', 'always', { // Требовать или запретить пробельный символ (пробел или табуляция) в начале комментария: после "//" или "/*": требовать (Stylistic Issues)
 			'line': { // Строчные комментарии
 				'markers': ['*package', '!', '/', ',', '='] // Массив шаблонов комментариев
 			},
 			'block': { // Блочные комментарии
-				'balanced': true, // За "/*" должен следовать хотя бы один отступ и перед "*/" должен быть хотя бы один отступ
+				'balanced': true, // За "/*" должен следовать пробельный символ и перед "*/" должен быть пробельный символ
 				'markers': ['*package', '!', ',', ':', '::', 'flow-include'], // Массив шаблонов комментариев
 				'exceptions': ['*'] // Массив шаблонов исключений
 			}
 		}],
 		'symbol-description': 'error', // Требовать описание symbol (ECMAScript 6)
-		'template-curly-spacing': ['error', 'never'], // Обеспечить пробелы в шаблонных строках: запретить пробелы в шаблонных строках (ECMAScript 6)
-		'template-tag-spacing': ['error', 'never'], // Требовать или запретить пробелы между теговыми шаблонами и их литералами: запретить (Stylistic Issues)
+		'template-curly-spacing': ['error', 'never'], // Обеспечить использование пробелов в шаблонных строках: запретить пробелы в шаблонных строках (ECMAScript 6)
+		'template-tag-spacing': ['error', 'never'], // Требовать или запретить пробел между теговыми шаблонами и их литералами: запретить (Stylistic Issues)
 		'unicode-bom': ['error', 'never'], // Требовать или запретить Unicode Byte Order Mark (BOM): запретить (Stylistic Issues)
 		'use-isnan': 'error', // Требовать вызов isNaN() при проверке на NaN (Possible Errors)
 		'valid-typeof': ['error', { // Обеспечить сравнение выражений typeof с валидными строками (Possible Errors)
-			'requireStringLiterals': true // Требовать сравнение выражений typeof только со строками или другими выражениями typeof, запретить сравнение с другим значением: да
+			'requireStringLiterals': true // Требовать сравнение выражений typeof только со строками или другими выражениями typeof, запретить сравнение с другими значениями: да
 		}],
 		'wrap-iife': ['error', 'any', { // Требовать обернуть immediately invoked function expressions в круглые скобки: обеспечить оборачивание, но разрешить любой стиль (Best Practices)
-			'functionPrototypeMethods': true // Дополнительно обеспечить оборачивание функциональных выражений вызываемых при помощи .call и .apply
+			'functionPrototypeMethods': true // Дополнительно обеспечить оборачивание function expressions invoked использующих .call и .apply: да
 		}],
-		'yield-star-spacing': ['error', 'both'], // Обеспечить пробелы вокруг выражений * в yield *: до и после (ECMAScript 6)
+		'yield-star-spacing': ['error', 'both'], // Обеспечить пробелы вокруг * в выражених yield *: до и после (ECMAScript 6)
 		'yoda': ['error', 'never'], // Требовать или запретить условия Йоды: запретить (Best Practices)
 
 		// Плагин eslint-plugin-import
