@@ -15,7 +15,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 	rules: {
-		'accessor-pairs': 'error', // Обеспечить пару getter/setter в объектах и классах: getter должен быть для каждого свойства, для которого определен setter (Best Practices)
+		'accessor-pairs': 'error', // Обеспечить пару getter/setter в объектах и классах: требовать getter для каждого свойства для которого определен setter (Best Practices)
 		'array-bracket-spacing': ['error', 'never'], // Запретить или обеспечить пробелы непосредственно внутри скобок массива: запретить (Stylistic Issues)
 		'arrow-spacing': ['error', { // Требовать пробел до/после стрелочной функции (ECMAScript 6)
 			'before': true, // До: требовать
@@ -23,7 +23,7 @@ module.exports = {
 		}],
 		'block-spacing': ['error', 'always'], // Запретить или обеспечить пробелы внутри блоков после открывающей скобки и до закрывающей скобки: обеспечить (Stylistic Issues)
 		'brace-style': ['error', '1tbs', { // Требовать согласованный стиль фигурных скобок: one true brace style (Stylistic Issues)
-			'allowSingleLine': true // Разрешить распологать открывающую и закрывающую скобку блока на одной линии: да
+			'allowSingleLine': true // Разрешить открывающую и закрывающую скобку блока на одной линии: да
 		}],
 		'camelcase': ['error', { // Требовать использование стиля CamelCase (Stylistic Issues)
 			'properties': 'never' // Обеспечить для имен свойств: никогда
@@ -35,52 +35,52 @@ module.exports = {
 			'exports': 'never', // Экспорты: запретить
 			'functions': 'never' // Функции: запретить
 		}],
-		'comma-spacing': ['error', { // Обеспечить пробел до/после запятой (Stylistic Issues)
+		'comma-spacing': ['error', { // Обеспечить пробел вокруг запятых (Stylistic Issues)
 			'before': false, // До: запретить
 			'after': true // После: требовать
 		}],
-		'comma-style': ['error', 'last'], // Стиль запятых: для массивов, объектов и объявлений переменных: требовать запятую после элемента и в той же строке (Stylistic Issues)
-		'computed-property-spacing': ['error', 'never'], // Запретить или обеспечить пробелы внутри вычисляемых свойств: запретить (Stylistic Issues)
-		'constructor-super': 'error', // Проверить вызов super() в конструкторе (ECMAScript 6)
+		'comma-style': ['error', 'last'], // Стиль запятых: в литералах массива, литералах объекта и объявлениях переменных: требовать запятую после и на той же строке (Stylistic Issues)
+		'computed-property-spacing': ['error', 'never'], // Запретить или обеспечить пробелы непосредственно внутри вычисляемых свойств: запретить (Stylistic Issues)
+		'constructor-super': 'error', // Проверить вызов super() в конструкторах (ECMAScript 6)
 		'curly': ['error', 'multi-line'], // Требовать соблюдения условий фигурных скобок: разрешить однострочную запись без фигурных скобок (Best Practices)
-		'dot-location': ['error', 'property'], // Обеспечить новую строку до или после точки: требовать что бы точка находилась на той же строке что и свойство (Best Practices)
+		'dot-location': ['error', 'property'], // Обеспечить новую строку до и после точки: точка должна находиться на той же строке что и часть свойства (Best Practices)
 		'dot-notation': ['error', { // Требовать соблюдение точечной записи: стиль доступа к свойству (Best Practices)
-			'allowKeywords': true // Требовать соблюдение точечной записи: да
+			'allowKeywords': true // Избегать точечной записи для зарезерированных свойств слов: нет #todo
 		}],
 		'eol-last': ['error', 'always'], // Требовать или запретить новую строку в конце файла: требовать (Stylistic Issues)
-		'eqeqeq': ['error', 'always', { // Требовать "===" и "!==" : использование строгих типов равенств и неравенств: обеспечить (Best Practices)
-			'null': 'ignore' // null значения: не применять
+		'eqeqeq': ['error', 'always', { // Требовать "===" и "!==": использование строгих типов равенств и неравенств: обеспечить (Best Practices)
+			'null': 'ignore' // null литералы: игнорировать
 		}],
-		'func-call-spacing': ['error', 'never'], // Требовать или запретить пробел между именем функции и открывающей скобкой: запретить (Stylistic Issues)
-		'generator-star-spacing': ['error', { // Обеспечить пробел до/после "*" в функции генератора (ECMAScript 6)
+		'func-call-spacing': ['error', 'never'], // Требовать или запретить пробел между идентификатором функции и её вызовом: между именем функции и открывающей круглой скобкой: запретить (Stylistic Issues)
+		'generator-star-spacing': ['error', { // Обеспечить пробел вокруг * в функции генераторе (ECMAScript 6)
 			'before': true, // До: обеспечить
 			'after': true // После: обеспечить
 		}],
 		'handle-callback-err': ['error', '^(err|error)$'], // Обеспечить обработку ошибок при использовании callback: имя ошибки err или error (Node.js and CommonJS)
 		'indent': ['error', 'tab', { // Обеспечить согласованные отступы: табуляция (Stylistic Issues)
-			'SwitchCase': 1, // case внутри switch: 1
-			'VariableDeclarator': 1, // Переменные: 1
-			'outerIIFEBody': 1, // Внутри immediately invoked function expression: 1
-			'MemberExpression': 1, // Многострочные цепочки свойств: 1
-			'FunctionDeclaration': { // Объявление функции
+			'SwitchCase': 1, // Для условий case в инструкциях switch: 1
+			'VariableDeclarator': 1, // Для переменных: 1
+			'outerIIFEBody': 1, // Для immediately invoked function expression: 1
+			'MemberExpression': 1, // Для многострочных цепочек свойств: 1
+			'FunctionDeclaration': { // Для объявлений функций
 				'parameters': 1, // Параметры: 1
 				'body': 1 // Тело: 1
 			},
-			'FunctionExpression': { // Объявление функционального выражения
+			'FunctionExpression': { // Для объявлений функциональных выражений
 				'parameters': 1, // Параметры: 1
 				'body': 1 // Тело: 1
 			},
-			'CallExpression': { // Вызов функции
+			'CallExpression': { // Для вызовов функций
 				'arguments': 1 // Аргументы: 1
 			},
-			'ArrayExpression': 1, // Элементы массива: 1
-			'ObjectExpression': 1, // Свойства объекта: 1
-			'ImportDeclaration': 1, // Операторы импорта: 1
-			'flatTernaryExpressions': false, // Тернарные операторы вложенные в тернарные операторы: не требовать отступ
+			'ArrayExpression': 1, // Для элементов массивов: 1
+			'ObjectExpression': 1, // Для свойств объектов: 1
+			'ImportDeclaration': 1, // Для инструкций импортов: 1
+			'flatTernaryExpressions': false, // Для тернарных операторов вложенных в тернарные операторы: не требовать отступ
 			'ignoredNodes': ['TemplateLiteral *'], // Игнорировать: шаблонные строки
 			'ignoreComments': false, // Игнорировать комментарии: нет
 		}],
-		'key-spacing': ['error', { // Обеспечить согласованный отступ в свойстве объекта до/после двоеточия между ключом и значением (Stylistic Issues)
+		'key-spacing': ['error', { // Обеспечить согласованный отступ между ключом и значением в свойствах литерала объекта (Stylistic Issues)
 			'beforeColon': false, // До двоеточия: запретить
 			'afterColon': true // После двоеточия: требовать
 		}],
@@ -92,9 +92,9 @@ module.exports = {
 			'exceptAfterSingleLine': true // Пропустить проверку после однострочных элементов класса
 		}],
 		'new-cap': ['error', { // Требовать чтобы имена конструкторов начинались с заглавной буквы (Stylistic Issues)
-			'newIsCap': true, // Функции new с заглавной буквы: требовать
-			'capIsNew': false, // При объявлении операторов с заглавной буквы можно пропустить new: разрешить
-			'properties': true // Свойства объекта с заглавной буквы: позволить
+			'newIsCap': true, // Операторы new с функциями с заглавной буквы: требовать
+			'capIsNew': false, // Вызывать функции с заглавной буквы без оператора new: разрешить
+			'properties': true // Проверять свойства объекта: позволить
 		}],
 		'new-parens': ['error', 'always'], // Требовать круглые скобки при вызове конструктора без аргументов (Stylistic Issues)
 		'no-array-constructor': 'error', // Запретить конструкторы Array (Stylistic Issues)
@@ -230,9 +230,9 @@ module.exports = {
 		}],
 		'operator-linebreak': ['error', 'after', { // Обеспечить согласованный стиль перевода строки для операторов: требовать перевода строки после оператора (Stylistic Issues)
 			'overrides': { // Переопределить глобальные настройки
-				'?': 'before', // "?" : требовать перевода строки до оператора
-				':': 'before', // ":" : требовать перевода строки до оператора
-				'|>': 'before' // "|>" : требовать перевода строки до оператора
+				'?': 'before', // "?": требовать перевода строки до оператора
+				':': 'before', // ":": требовать перевода строки до оператора
+				'|>': 'before' // "|>": требовать перевода строки до оператора
 			}
 		}],
 		'padded-blocks': ['error', { // Требовать или запретить пустые строки внутри блоков (Stylistic Issues)
