@@ -92,18 +92,18 @@ module.exports = {
 			'exceptAfterSingleLine': true // Пропустить проверку после однострочных элементов класса
 		}],
 		'new-cap': ['error', { // Требовать чтобы имена конструкторов начинались с заглавной буквы (Stylistic Issues)
-			'newIsCap': true, // Операторы new с функциями с заглавной буквы: требовать
-			'capIsNew': false, // Вызывать функции с заглавной буквы без оператора new: разрешить
-			'properties': true // Проверять свойства объекта: позволить
+			'newIsCap': true, // Требовать чтобы все операторы new вызывались с функциями начинающимися с заглавной буквы: требовать
+			'capIsNew': false, // Разрешить вызывать функции с заглавной буквы без оператора new: разрешить
+			'properties': true // Позволить проверять свойства объекта: позволить
 		}],
 		'new-parens': ['error', 'always'], // Требовать круглые скобки при вызове конструктора без аргументов (Stylistic Issues)
 		'no-array-constructor': 'error', // Запретить конструкторы Array (Stylistic Issues)
 		'no-async-promise-executor': 'error', // Запретить использование асинхронной функции в качестве исполнителя Promise (Possible Errors)
 		'no-caller': 'error', // Запретить использование caller/callee (Best Practices)
-		'no-case-declarations': 'error', // Запретить лексические объявления (let, const, function и class) в case/default без фигурных скобок (Best Practices)
+		'no-case-declarations': 'error', // Запретить лексические объявления (let, const, function и class) в условиях case/default (без фигурных скобок) (Best Practices)
 		'no-class-assign': 'error', // Запретить изменение переменных объявлений класса (ECMAScript) #todo
 		'no-compare-neg-zero': 'error', // Запретить сравнение с -0 (Possible Errors)
-		'no-cond-assign': ['error', 'except-parens'], // Запретить операторы присваивания в условных выражениях: разрешить присваивания в тесте если они в скобках (Possible Errors) #todo
+		'no-cond-assign': ['error', 'except-parens'], // Запретить операторы присваивания в условных инструкциях: разрешить присваивания в условиях теста если они в круглых скобках (Possible Errors) #todo
 		'no-const-assign': 'error', // Запретить изменение переменных объявленных с помощью const (ECMAScript 6)
 		'no-constant-condition': ['error', { // Запретить постоянные выражения в условиях (Possible Errors)
 			'checkLoops': false // Разрешить в циклах
@@ -111,28 +111,28 @@ module.exports = {
 		'no-control-regex': 'error', // Запретить управляющие символы (ASCII диапозон 0-31) в регулярных выражениях (Possible Errors)
 		'no-debugger': 'error', // Запретить использование debugger (Possible Errors)
 		'no-delete-var': 'error', // Запретить удаление переменных: запретить использование оператора delete для переменных (Variables)
-		'no-dupe-args': 'error', // Запретить повторяющиеся аргументы в объявлениях function (Possible Errors)
-		'no-dupe-class-members': 'error', // Запретить повторяющиеся имена в членах класса (ECMAScript 6)
-		'no-dupe-keys': 'error', // Запретить дублирование ключей в объектах (Possible Errors)
-		'no-duplicate-case': 'error', // Запретить дублирование аргументов case (Possible Errors)
+		'no-dupe-args': 'error', // Запретить дублирование аргументов в объявлениях function (Possible Errors)
+		'no-dupe-class-members': 'error', // Запретить дублирование имен в членах класса (ECMAScript 6)
+		'no-dupe-keys': 'error', // Запретить дублирование ключей в объектных литералах (Possible Errors)
+		'no-duplicate-case': 'error', // Запретить дублирование аргументов case (Possible Errors) #todo
 		'no-empty-character-class': 'error', // Запретить пустые символьные классы в регулярных выражениях (Possible Errors)
 		'no-empty-pattern': 'error', // Запретить пустые деструктурирующие шаблоны (Best Practices)
 		'no-eval': 'error', // Запретить eval() (Best Practices)
 		'no-ex-assign': 'error', // Запретить переопределение исключений в условиях catch (Possible Errors)
 		'no-extend-native': 'error', // Запретить расширение нативных объектов (Best Practices)
-		'no-extra-bind': 'error', // Запретить ненужные вызовы bind() у функции (Best Practices)
-		'no-extra-boolean-cast': 'error', // Запретить ненужные логические преобразования (Possible Errors)
-		'no-extra-parens': ['error', 'functions'], // Запретить ненужные круглые скобки: до/после функциональных выражний (Possible Errors)
-		'no-fallthrough': 'error', // Запретить проваливание case (Best Practices)
+		'no-extra-bind': 'error', // Запретить ненужную привязку функции: ненужные вызовы bind() у функции (Best Practices)
+		'no-extra-boolean-cast': 'error', // Запретить ненужные логические преобразования (Possible Errors) #todo
+		'no-extra-parens': ['error', 'functions'], // Запретить ненужные круглые скобки: только вокруг функциональных выражений (Possible Errors)
+		'no-fallthrough': 'error', // Запретить проваливание инструкций case (Best Practices) #todo
 		'no-floating-decimal': 'error', // Запретить плавающие десятичные дроби (Best Practices)
 		'no-func-assign': 'error', // Запретить переопределение объявлений function (Possible Errors)
-		'no-global-assign': 'error', // Запретить присваивание нативным объектам и глобальным переменным только для чтения (Best Practices)
+		'no-global-assign': 'error', // Запретить присваивание нативным объектам или глобальным переменным только для чтения (Best Practices)
 		'no-implied-eval': 'error', // Запретить подразумеваемый eval() (Best Practices) #todo
-		'no-inner-declarations': ['error', 'functions'], // Запретить объявление пременных и function во вложенных блоках (Possible Errors)
-		'no-invalid-regexp': 'error', // Запретить недопустимые регулярные выражения в конструкторе RegExp (Possible Errors)
+		'no-inner-declarations': ['error', 'functions'], // Запретить объявление пременных или объявление function во вложенных блоках: запретить объявление function во вложенных блоках (Possible Errors)
+		'no-invalid-regexp': 'error', // Запретить недопустимые строки регулярного выражения в конструкторах RegExp (Possible Errors)
 		'no-irregular-whitespace': 'error', // Запретить нестандартные пробельные символы (Possible Errors)
-		'no-iterator': 'error', // Запретить использование свойства __iterator__ (Best Practices)
-		'no-labels': ['error', { // Запретить инструкцию метки (Best Practices) #todo
+		'no-iterator': 'error', // Запретить итератор: использование свойства __iterator__ (Best Practices)
+		'no-labels': ['error', { // Запретить инструкции метки (Best Practices)
 			'allowLoop': false, // Игнорировать метки в цикле: нет
 			'allowSwitch': false // Игнорировать метки в switch: нет
 		}],
