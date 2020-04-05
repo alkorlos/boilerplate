@@ -191,31 +191,31 @@ module.exports = {
 			'defaultAssignment': false // Условное выражение в качестве шаблона по умолчанию: запретить #todo (default assignment)
 		}],
 		'no-unreachable': 'error', // Запретить недоступный код после инструкций return, throw, continue и break (Possible Errors)
-		'no-unsafe-finally': 'error', // Запретить инструкции потока внутри блока finally: return, throw, break и continue (Possible Errors)
+		'no-unsafe-finally': 'error', // Запретить инструкции порядка выполнения в блоках finally: return, throw, break и continue (Possible Errors)
 		'no-unsafe-negation': 'error', // Запретить отрицание левого операнда в операторах отношения: in и instanceof (Possible Errors)
 		'no-unused-expressions': ['error', { // Запретить неиспользуемые выражения (Best Practices)
-			'allowShortCircuit': true, // Разрешить сокращенные оценки в выражениях: разрешить
-			'allowTernary': true, // Позволить использовать тернарные операторы в выражениях аналогично сокращенным оценкам: позволить
-			'allowTaggedTemplates': true // Позволить использовать теговые шаблонные литералы в выражениях: позволить
+			'allowShortCircuit': true, // Сокращенные оценки в выражениях: разрешить
+			'allowTernary': true, // Тернарные операторы в выражениях аналогично сокращенным оценкам: позволить
+			'allowTaggedTemplates': true // Теговые шаблонные литералы в выражениях: позволить
 		}],
 		'no-unused-vars': ['error', { // Запретить неиспользуемые переменные, функции и параметры функций (Variables)
 			'vars': 'all', // Переменные: все, в том числе в глобальной области видимости
-			'args': 'none', // Аргументы: не проверять аргументы
+			'args': 'none', // Аргументы: не проверять
 			'ignoreRestSiblings': true // Игнорировать Rest синтаксис: да
 		}],
-		'no-use-before-define': ['error', { // Запретить использование индификаторов до объявления (Variables)
-			'functions': false, // Функции до объявления функции: нет
-			'classes': false, // Классы в верхней области видимости: нет
-			'variables': false // Переменные в верхней области видимости: нет
+		'no-use-before-define': ['error', { // Запретить early use: использование индификаторов до объявления (Variables)
+			'functions': false, // Функция до объявления функции: нет
+			'classes': false, // Класс до объявления класса, игнорировать в верхней области видимости: нет
+			'variables': false // Переменная до объявления переменной, игнорировать в верхней области видимости: нет
 		}],
 		'no-useless-call': 'error', // Запретить ненужные .call() и .apply() (Best Practices)
 		'no-useless-computed-key': 'error', // Запретить ненужные ключи вычисляемых свойств в объектах и классах (ECMAScript 6)
-		'no-useless-constructor': 'error', // Запретить ненужные конструкторы классов (ECMAScript 6)
+		'no-useless-constructor': 'error', // Запретить ненужные конструкторы (ECMAScript 6)
 		'no-useless-escape': 'error', // Запретить ненужное использование экранирования (Best Practices)
-		'no-useless-rename': 'error', // Запретить переименование import, export и деструктуризации в одно и тоже имя (ECMAScript 6)
+		'no-useless-rename': 'error', // Запретить переименование import, export и деструктуризации к тому же имени (ECMAScript 6)
 		'no-useless-return': 'error', // Запретить избыточные инструкции return (Best Practices)
 		'no-void': 'error', // Запретить использование оператора void (Best Practices)
-		'no-whitespace-before-property': 'error', // Запретить пробельные символы перед свойствами: если объект и свойство на одной строке (Stylistic Issues)
+		'no-whitespace-before-property': 'error', // Запретить пробельные символы перед свойствами: если объект и свойство (или свойства) на одной строке (Stylistic Issues)
 		'no-with': 'error', // Запретить инструкцию with (Best Practices)
 		'object-curly-newline': ['error', { // Обеспечить согласованный разрыв строк внутри фигурных скобок (Stylistic Issues)
 			'multiline': true, // Требовать разрыв строк если есть разрывы строк внутри свойств или между свойствами, иначе запретить разрывы строк: да
