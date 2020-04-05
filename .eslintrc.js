@@ -289,7 +289,7 @@ module.exports = {
 
 		// Плагин eslint-plugin-import
 		'import/export': 'error', // Сообщить о недопустимом экспорте, т.е. реэкспорте с тем же имененем (Helpful warnings)
-		'import/first': 'error', // Обеспечить появление импортов перед другими инструкциями (Style guide)
+		'import/first': 'error', // Обеспечить импорты перед другими инструкциями (Style guide)
 		'import/no-absolute-path': ['error', { // Запретить импорт модулей с использованием абсолютных путей (Static analysis)
 			'esmodule': true, // esmodule: запретить
 			'commonjs': true, // commonjs: запретить
@@ -297,6 +297,6 @@ module.exports = {
 		}],
 		'import/no-duplicates': 'error', // Сообщить о повторном импорте одного и того же модуля в нескольких местах (Style guide)
 		'import/no-named-default': 'error', // Запретить именованные экспорты по умолчанию (Style guide) #todo
-		'import/no-webpack-loader-syntax': 'error', // Запретить синтаксис webpack loader в импорте (Static analysis)
+		'import/no-webpack-loader-syntax': 'error', // Запретить синтаксис webpack loader в импортах (Static analysis)
 	}
 }
