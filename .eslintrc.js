@@ -92,9 +92,9 @@ module.exports = {
 			'exceptAfterSingleLine': true // Пропустить проверку после однострочных элементов класса
 		}],
 		'new-cap': ['error', { // Требовать чтобы имена конструкторов начинались с заглавной буквы (Stylistic Issues)
-			'newIsCap': true, // Вызов операторов new с функциями начинающимися с заглавной буквы: требовать
-			'capIsNew': false, // Вызывать функции с заглавной буквы без оператора new: разрешить
-			'properties': true // Проверять свойства объекта: позволить
+			'newIsCap': true, // Требовать вызов всех операторов new с функциями начинающимися с заглавной буквы: да
+			'capIsNew': false, // Разрешить вызывать функции с заглавной буквы без оператора new: разрешить
+			'properties': true // Позволить проверять свойства объекта: да
 		}],
 		'new-parens': ['error', 'always'], // Требовать круглые скобки при вызове конструктора без аргументов (Stylistic Issues)
 		'no-array-constructor': 'error', // Запретить конструкторы Array (Stylistic Issues)
@@ -188,15 +188,15 @@ module.exports = {
 		'no-unexpected-multiline': 'error', // Запретить неоднозначные многострочные выражения (Possible Errors)
 		'no-unmodified-loop-condition': 'error', // Запретить неизменяемые условия циклов (Best Practices)
 		'no-unneeded-ternary': ['error', { // Запретить тернарные операторы когда существуют более простые альтернативы (Stylistic Issues)
-			'defaultAssignment': false // Условное выражение в качестве шаблона по умолчанию: запретить #todo (default assignment)
+			'defaultAssignment': false // Запретить условное выражение в качестве шаблона по умолчанию: запретить #todo (default assignment)
 		}],
 		'no-unreachable': 'error', // Запретить недоступный код после инструкций return, throw, continue и break (Possible Errors)
 		'no-unsafe-finally': 'error', // Запретить инструкции порядка выполнения в блоках finally: return, throw, break и continue (Possible Errors)
 		'no-unsafe-negation': 'error', // Запретить отрицание левого операнда в операторах отношения: in и instanceof (Possible Errors)
 		'no-unused-expressions': ['error', { // Запретить неиспользуемые выражения (Best Practices)
-			'allowShortCircuit': true, // Сокращенные оценки в выражениях: разрешить
-			'allowTernary': true, // Тернарные операторы в выражениях аналогично сокращенным оценкам: позволить
-			'allowTaggedTemplates': true // Теговые шаблонные литералы в выражениях: позволить
+			'allowShortCircuit': true, // Разрешить сокращенные оценки в выражениях: да
+			'allowTernary': true, // Позволить использовать тернарные операторы в выражениях аналогично сокращенным оценкам: да
+			'allowTaggedTemplates': true // Позволить использовать теговые шаблонные литералы в выражениях: да
 		}],
 		'no-unused-vars': ['error', { // Запретить неиспользуемые переменные, функции и параметры функций (Variables)
 			'vars': 'all', // Переменные: все, в том числе в глобальной области видимости
