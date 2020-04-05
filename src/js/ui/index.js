@@ -1,7 +1,7 @@
-import {button} from './button';
+import { button } from './button';
 
 const ui = function() {
 	button();
 };
 
-export {ui};
+export { ui };

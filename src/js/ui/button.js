@@ -2,4 +2,4 @@ const button = function() {
 
 };
 
-export {button};
+export { button };

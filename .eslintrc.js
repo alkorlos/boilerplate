@@ -221,7 +221,7 @@ module.exports = {
 			'multiline': true, // Требовать разрыв строк если есть разрывы строк внутри свойств или между свойствами, иначе запретить разрывы строк: да
 			'consistent': true // Требовать чтобы обе фигурные скобки или ни одна не были на одной строке с содержимым: да
 		}],
-		'object-curly-spacing': ['error', 'never'], // Обеспечить согласованные пробелы непосредственно внутри фигурных скобок: объектных литералов, деструктуризации и import/export (Stylistic Issues)
+		'object-curly-spacing': ['error', 'always'], // Обеспечить согласованные пробелы непосредственно внутри фигурных скобок: объектных литералов, деструктуризации и import/export: требовать (Stylistic Issues)
 		'object-property-newline': ['error', { // Обеспечить размещение свойств объекта на отдельных строках (Stylistic Issues)
 			'allowMultiplePropertiesPerLine': true // Разрешить все свойства в одну строку: да #todo property specifications
 		}],
