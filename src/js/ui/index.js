@@ -1,6 +1,6 @@
 import { button } from './button';
 
-const ui = function() {
+const ui = function () {
 	button();
 };
 

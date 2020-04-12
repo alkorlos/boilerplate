@@ -1,4 +1,4 @@
-const button = function() {
+const button = function () {
 
 };
 

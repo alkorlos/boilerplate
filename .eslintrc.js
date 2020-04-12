@@ -256,7 +256,7 @@ module.exports = {
 			'after': true // После: да: если не в конце строки
 		}],
 		'space-before-blocks': ['error', 'always'], // Требовать или запретить пробел до блоков: требовать (Stylistic Issues)
-		'space-before-function-paren': ['error', 'never'], // Требовать или запретить пробел до круглой скобки функции: запретить (Stylistic Issues)
+		'space-before-function-paren': ['error', 'always'], // Требовать или запретить пробел до круглой скобки функции: требовать (Stylistic Issues)
 		'space-in-parens': ['error', 'never'], // Запретить или обеспечить пробелы непосредственно внутри круглых скобок: запретить (Stylistic Issues)
 		'space-infix-ops': 'error', // Требовать пробел вокруг инфиксных операторов (Stylistic Issues)
 		'space-unary-ops': ['error', { // Требовать или запретить пробелы до/после унарных операторов (Stylistic Issues)
