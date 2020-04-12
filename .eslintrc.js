@@ -188,7 +188,7 @@ module.exports = {
 		'no-unexpected-multiline': 'error', // Запретить неоднозначные многострочные выражения (Possible Errors)
 		'no-unmodified-loop-condition': 'error', // Запретить неизменяемые условия циклов (Best Practices)
 		'no-unneeded-ternary': ['error', { // Запретить тернарные операторы когда существуют более простые альтернативы (Stylistic Issues)
-			'defaultAssignment': false // Запретить условное выражение в качестве шаблона по умолчанию: запретить #todo (default assignment)
+			'defaultAssignment': false // Запретить условное выражение в качестве шаблона по умолчанию: запретить #todo
 		}],
 		'no-unreachable': 'error', // Запретить недоступный код после инструкций return, throw, continue и break (Possible Errors)
 		'no-unsafe-finally': 'error', // Запретить инструкции порядка выполнения в блоках finally: return, throw, break и continue (Possible Errors)
@@ -223,7 +223,7 @@ module.exports = {
 		}],
 		'object-curly-spacing': ['error', 'always'], // Обеспечить согласованные пробелы непосредственно внутри фигурных скобок: объектных литералов, деструктуризации и import/export: требовать (Stylistic Issues)
 		'object-property-newline': ['error', { // Обеспечить размещение свойств объекта на отдельных строках (Stylistic Issues)
-			'allowMultiplePropertiesPerLine': true // Разрешить все свойства в одну строку: да #todo property specifications
+			'allowMultiplePropertiesPerLine': true // Разрешить все свойства в одну строку: да #todo
 		}],
 		'one-var': ['error', { // Обеспечить объявление переменных вместе или раздельно в функциях (Stylistic Issues)
 			'initialized': 'never' // Требовать несколько объявлений переменных для инициализированных переменных в одной области видимости
@@ -235,7 +235,7 @@ module.exports = {
 				'|>': 'before' // "|>": требовать перевода строки до оператора
 			}
 		}],
-		'padded-blocks': ['error', { // Требовать или запретить пустые строки внутри блоков (Stylistic Issues) #todo padding
+		'padded-blocks': ['error', { // Требовать или запретить пустые строки внутри блоков (Stylistic Issues) #todo
 			'blocks': 'never', // Требовать или запретить пустые строки внутри инструкций блока: запретить пустые строки в начале и в конце
 			'classes': 'never', // Требовать или запретить пустые строки внутри классов: запретить пустые строки в начале и в конце
 			'switches': 'never' // Требовать или запретить пустые строки внутри инструкций switch: запретить пустые строки в начале и в конце
