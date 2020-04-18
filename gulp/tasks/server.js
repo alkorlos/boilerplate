@@ -26,7 +26,7 @@ const server = function(done) {
 			]
 		},
 		port: 8080,
-		open: true,
+		open: false,
 		files: [
 			{
 				match: [
