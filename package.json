@@ -64,8 +64,8 @@
     }
   },
   "lint-staged": {
-    "*.css": "stylelint",
-    "*.js": "eslint"
+    "*.css": "stylelint:fix",
+    "*.js": "eslint:fix"
   },
   "browserslist": [
     "last 2 Chrome versions",
