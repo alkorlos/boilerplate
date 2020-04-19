@@ -10,6 +10,7 @@ module.exports = {
 		Atomics: 'readonly',
 		SharedArrayBuffer: 'readonly'
 	},
+	parser: 'babel-eslint',
 	parserOptions: { // Конфигурация парсера
 		ecmaVersion: 2020,
 		sourceType: 'module'
