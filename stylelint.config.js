@@ -1,7 +1,6 @@
 module.exports = {
 	extends: './stylelint.config.rational-order.js',
 	plugins: 'stylelint-order',
-	ignoreFiles: './src/css/base/generic.reset.css', // Если нужно будет добавить еще файлы использовать .stylelintignore
 	rules: {
 		'color-hex-case': 'lower', // hex цвета: строчные или прописные буквы: строчные (Stylistic issues)
 		'color-hex-length': 'long', // hex цвета: короткая или длинная запись: длинная (Stylistic issues)
