@@ -22,6 +22,7 @@ const config = {
 		cssEntry: 'build/css/style.css',
 		cssEntryMin: 'build/css/style.min.css',
 		js: 'build/js',
+		jsEntry: 'build/js/main.js',
 		svgSpriteLoader: 'build/js/svg-sprite-loader.js',
 		images: 'build/img',
 		videos: 'build/video',
