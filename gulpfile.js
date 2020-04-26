@@ -9,6 +9,7 @@ const css = require('./gulp/tasks/css');
 const revision = require('./gulp/tasks/revision');
 const htmlManifest = require('./gulp/tasks/html-manifest');
 const js = require('./gulp/tasks/js');
+const php = require('./gulp/tasks/php');
 const images = require('./gulp/tasks/images');
 const videos = require('./gulp/tasks/videos');
 const svg = require('./gulp/tasks/svg');
@@ -20,6 +21,7 @@ gulp.task('start',
 		clean,
 		html,
 		css,
+		php,
 		images,
 		videos,
 		svg,
@@ -37,6 +39,7 @@ gulp.task('build',
 		html,
 		css,
 		js,
+		php,
 		images,
 		videos,
 		svg,
