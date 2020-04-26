@@ -14,7 +14,7 @@ const js = function(done, errorMain) {
 		}
 	}
 	function onError(error) {
-		// console.log(error);
+		console.log(error);
 		errorMain.apply(this, arguments)
 		done();
 	}
