@@ -37,3 +37,16 @@ html, body {
 
 	clip: rect(1px, 1px, 1px, 1px) !important;
 }
+
+.tablet-hidden {
+	@media (--tablet) {
+		display: none;
+	}
+}
+
+.tablet-visible {
+	display: none;
+	@media (--tablet) {
+		display: block;
+	}
+}
