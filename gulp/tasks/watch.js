@@ -4,6 +4,7 @@ const html = require('./html');
 const css = require('./css');
 const php = require('./php');
 const images = require('./images');
+const favicon = require('./favicon');
 const videos = require('./videos');
 const svg = require('./svg');
 const fonts = require('./fonts');
@@ -17,6 +18,7 @@ const watch = function(done) {
 	gulp.watch(config.src.css, gulp.series(css));
 	gulp.watch(config.src.php, gulp.series(php));
 	gulp.watch(config.src.images, gulp.series(images));
+	gulp.watch(config.src.favicon, gulp.series(favicon));
 	gulp.watch(config.src.videos, gulp.series(videos));
 	gulp.watch(config.src.svg, gulp.series(svg));
 	gulp.watch(config.src.fonts, gulp.series(fonts));

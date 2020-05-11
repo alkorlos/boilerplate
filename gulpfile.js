@@ -11,6 +11,7 @@ const htmlManifest = require('./gulp/tasks/html-manifest');
 const js = require('./gulp/tasks/js');
 const php = require('./gulp/tasks/php');
 const images = require('./gulp/tasks/images');
+const favicon = require('./gulp/tasks/favicon');
 const videos = require('./gulp/tasks/videos');
 const svg = require('./gulp/tasks/svg');
 const fonts = require('./gulp/tasks/fonts');
@@ -23,6 +24,7 @@ gulp.task('start',
 		css,
 		php,
 		images,
+		favicon,
 		videos,
 		svg,
 		revision,
@@ -41,6 +43,7 @@ gulp.task('build',
 		js,
 		php,
 		images,
+		favicon,
 		videos,
 		svg,
 		revision,
