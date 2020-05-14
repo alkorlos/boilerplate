@@ -4,7 +4,9 @@ const middleware = require('webpack-dev-middleware');
 
 const config = require('../config');
 const webpackConfig = require('./../../webpack.config.js');
+const webpackConfigMin = require('./../../webpack.config.min.js');
 const compiler = webpack(webpackConfig);
+const compilerMin = webpack(webpackConfigMin);
 
 compiler.plugin('done', function() {
 	browserSync.reload();
@@ -22,7 +24,14 @@ const server = function(done) {
 						publicPath: '/js',
 						writeToDisk: true
 					}
-				)
+				),
+				middleware(
+					compilerMin,
+					{
+						publicPath: '/js',
+						writeToDisk: true
+					}
+				),
 			]
 		},
 		port: 8080,

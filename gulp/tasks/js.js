@@ -1,9 +1,10 @@
 const webpack = require('webpack');
-const webpackConfig = require('./../../webpack.config.js');
+const webpackConfigMin = require('./../../webpack.config.min.js');
 
 // JS
 const js = function(done, errorMain) {
-	webpack(webpackConfig, onComplete);
+	webpack(webpackConfigMin, onComplete);
+
 	function onComplete(error, stats) {
 		if (error) {
 			onError(error);
@@ -13,6 +14,7 @@ const js = function(done, errorMain) {
 			onSuccess(stats.toString());
 		}
 	}
+
 	function onError(error) {
 		console.log(error);
 		errorMain.apply(this, arguments)
