@@ -9,3 +9,4 @@ node_modules
 /stylelint.config.js
 /stylelint.config.rational-order.js
 /webpack.config.js
+/webpack.config.min.js
