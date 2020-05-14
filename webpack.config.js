@@ -5,7 +5,7 @@ const webpackConfig = {
 	entry: config.src.jsEntry,
 	output: {
 		path: __dirname + '/' + config.build.js,
-		filename: '[name].js'
+		filename: '[name].min.js'
 	},
 	devtool: 'source-map',
 	module: {
