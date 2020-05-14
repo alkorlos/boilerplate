@@ -7,7 +7,6 @@ const webpackConfig = {
 		path: __dirname + '/' + config.build.js,
 		filename: '[name].js'
 	},
-	devtool: 'source-map',
 	module: {
 		rules: [
 			{
