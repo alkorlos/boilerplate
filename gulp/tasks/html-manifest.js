@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const collect = require('gulp-rev-collector');
+const revCollector = require('gulp-rev-collector');
 
 const fs = require('fs');
 
@@ -9,7 +9,7 @@ const config = require('../config');
 const htmlManifest = function(done) {
 	if ((fs.existsSync(config.build.manifest)) && (fs.existsSync(config.build.htmlEntry))) {
 		return gulp.src([config.build.manifest, config.build.htmlEntry])
-			.pipe(collect({
+			.pipe(revCollector({
 				replaceReved: true
 			}))
 			.pipe(gulp.dest(config.build.html))
