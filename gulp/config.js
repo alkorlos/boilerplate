@@ -25,6 +25,7 @@ const config = {
 		cssEntryMin: 'build/css/style.min.css',
 		js: 'build/js',
 		jsEntry: 'build/js/main.js',
+		jsEntryMin: 'build/js/main.min.js',
 		php : 'build',
 		svgSpriteLoader: 'build/js/svg-sprite-loader.js',
 		images: 'build/img',
