@@ -7,22 +7,29 @@ const config = require('../config');
 
 // Revision
 const revision = function(done) {
-	if ((fs.existsSync(config.build.cssEntryMin)) &&
-		(fs.existsSync(config.build.jsEntryMin)) &&
-		(fs.existsSync(config.build.svgSprite))) {
-		return gulp.src([config.build.cssEntryMin,
-						config.build.jsEntryMin,
-						config.build.svgSprite], {base: 'build'})
-			.pipe(rev())
-			.pipe(gulp.dest(config.build.html))
-			.pipe(rev.manifest())
-			.pipe(gulp.dest(config.build.rev))
-			.on('end', done);
+	let filenames = [];
+	if (fs.existsSync(config.build.cssEntryMin)) {
+		filenames.push(config.build.cssEntryMin);
 	} else {
-		console.log('Revision error, file not exist.');
-		done();
-		return false;
+		console.log('Revision warning, file style.min.css not exist.');
 	}
+	if (fs.existsSync(config.build.jsEntryMin)) {
+		filenames.push(config.build.jsEntryMin);
+	} else {
+		console.log('Revision warning, file main.min.js not exist.');
+	}
+	if (fs.existsSync(config.build.svgSprite)) {
+		filenames.push(config.build.svgSprite);
+	} else {
+		console.log('Revision warning, file sprite.svg not exist.');
+	}
+
+	return gulp.src(filenames, {base: 'build'})
+		.pipe(rev())
+		.pipe(gulp.dest(config.build.html))
+		.pipe(rev.manifest())
+		.pipe(gulp.dest(config.build.rev))
+		.on('end', done);
 }
 
 module.exports = revision;
