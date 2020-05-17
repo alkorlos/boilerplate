@@ -15,7 +15,7 @@ bundler/
 |  |── styles
 |  |── svg
 |  |── templates
-|  |  |── block
+|  |  |── elements
 |── .babelrc
 |── .editorconfig
 |── .gitignore
@@ -43,7 +43,7 @@ bundler/
 * `/src/styles` - стили;
 * `/src/svg` - векторная графика;
 * `/src/templates` - шаблоны;
-* `/src/templates/block` - блоки шаблонов;
+* `/src/templates/elements` - элементы раскладки;
 * `.babelrc` - конфигурация JavaScript-компилятора Babel;
 * `.editorconfig` - конфигурация редактора;
 * `.gitignore` - конфигурация исключений git;
