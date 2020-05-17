@@ -5,7 +5,7 @@ const server = require('./gulp/tasks/server');
 
 const clean = require('./gulp/tasks/clean');
 const html = require('./gulp/tasks/html');
-const css = require('./gulp/tasks/css');
+const styles = require('./gulp/tasks/styles');
 const revision = require('./gulp/tasks/revision');
 const htmlManifest = require('./gulp/tasks/html-manifest');
 const js = require('./gulp/tasks/js');
@@ -21,7 +21,7 @@ gulp.task('start',
 	gulp.series(
 		clean,
 		html,
-		css,
+		styles,
 		php,
 		images,
 		favicon,
@@ -38,7 +38,7 @@ gulp.task('build',
 	gulp.series(
 		clean,
 		html,
-		css,
+		styles,
 		js,
 		php,
 		images,

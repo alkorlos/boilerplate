@@ -9,13 +9,13 @@ const rename = require('gulp-rename');
 
 const config = require('../config');
 
-// CSS
-const css = function(done) {
-	return gulp.src(config.src.cssEntry)
+// Styles
+const styles = function(done) {
+	return gulp.src(config.src.stylesEntry)
 		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(sourcemaps.init())
 		.pipe(postcss())
-		.pipe(gulp.dest(config.build.css))
+		.pipe(gulp.dest(config.build.styles))
 		.pipe(csso({
 			restructure: false,
 			sourceMap: true,
@@ -23,8 +23,8 @@ const css = function(done) {
 		}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest(config.build.css))
+		.pipe(gulp.dest(config.build.styles))
 		.on('end', done);
 }
 
-module.exports = css;
+module.exports = styles;

@@ -40,7 +40,7 @@ const server = function(done) {
 			{
 				match: [
 					config.build.html + '/**/*.html',
-					config.build.css + '/**/*.css',
+					config.build.styles + '/**/*.css',
 					config.build.images + '/**/*.{webp,jpg,jpeg,png,svg}',
 					config.build.svg + '/**/*.svg',
 					config.build.fonts + '/**/*.{ttf,otf,woff,woff2}',

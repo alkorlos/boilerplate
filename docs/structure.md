@@ -7,12 +7,12 @@ bundler/
 |  |── tasks
 |  |── config.js
 |── src
-|  |── css
 |  |── files
 |  |── fonts
 |  |── images
 |  |  |── inspections
 |  |── js
+|  |── styles
 |  |── svg
 |  |── templates
 |  |  |── block
@@ -35,12 +35,12 @@ bundler/
 * `/gulp/tasks` - таски gulp;
 * `/gulp/config.js` - пути;
 * `/src` - исходные файлы проекта;
-* `/src/css` - стили;
 * `/src/files` - файлы;
 * `/src/fonts` - шрифты;
 * `/src/images` - изображения;
 * `/src/images/inspections` - дизайны проекта в растровом формате;
 * `/src/js` - скрипты;
+* `/src/styles` - стили;
 * `/src/svg` - векторная графика;
 * `/src/templates` - шаблоны;
 * `/src/templates/block` - блоки шаблонов;

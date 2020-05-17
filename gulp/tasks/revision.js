@@ -8,8 +8,8 @@ const config = require('../config');
 // Revision
 const revision = function(done) {
 	let filenames = [];
-	if (fs.existsSync(config.build.cssEntryMin)) {
-		filenames.push(config.build.cssEntryMin);
+	if (fs.existsSync(config.build.stylesEntryMin)) {
+		filenames.push(config.build.stylesEntryMin);
 	} else {
 		console.log('Revision warning, file style.min.css not exist.');
 	}
