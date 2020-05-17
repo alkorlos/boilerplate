@@ -10,8 +10,8 @@
     "webpack-production": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production",
     "stylelint": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.css",
     "stylelint:fix": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.css --fix",
-    "eslint": "node ./node_modules/eslint/bin/eslint.js ./src/js/**/*.js",
-    "eslint:fix": "node ./node_modules/eslint/bin/eslint.js ./src/js/**/*.js --fix"
+    "eslint": "node ./node_modules/eslint/bin/eslint.js ./src/scripts/**/*.js",
+    "eslint:fix": "node ./node_modules/eslint/bin/eslint.js ./src/scripts/**/*.js --fix"
   },
   "author": {
     "name": "Dmitry Statsenko",

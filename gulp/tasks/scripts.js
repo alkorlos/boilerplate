@@ -1,8 +1,8 @@
 const webpack = require('webpack');
 const webpackConfigMin = require('./../../webpack.config.min.js');
 
-// JS
-const js = function(done, errorMain) {
+// Scripts
+const scripts = function(done, errorMain) {
 	webpack(webpackConfigMin, onComplete);
 
 	function onComplete(error, stats) {
@@ -25,4 +25,4 @@ const js = function(done, errorMain) {
 	}
 }
 
-module.exports = js;
+module.exports = scripts;

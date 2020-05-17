@@ -21,14 +21,14 @@ const server = function(done) {
 				middleware(
 					compiler,
 					{
-						publicPath: '/js',
+						publicPath: '/scripts',
 						writeToDisk: true
 					}
 				),
 				middleware(
 					compilerMin,
 					{
-						publicPath: '/js',
+						publicPath: '/scripts',
 						writeToDisk: true
 					}
 				),

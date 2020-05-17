@@ -8,7 +8,7 @@ const html = require('./gulp/tasks/html');
 const styles = require('./gulp/tasks/styles');
 const revision = require('./gulp/tasks/revision');
 const htmlManifest = require('./gulp/tasks/html-manifest');
-const js = require('./gulp/tasks/js');
+const scripts = require('./gulp/tasks/scripts');
 const php = require('./gulp/tasks/php');
 const images = require('./gulp/tasks/images');
 const favicon = require('./gulp/tasks/favicon');
@@ -39,7 +39,7 @@ gulp.task('build',
 		clean,
 		html,
 		styles,
-		js,
+		scripts,
 		php,
 		images,
 		favicon,

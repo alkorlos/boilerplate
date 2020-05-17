@@ -11,7 +11,7 @@ bundler/
 |  |── fonts
 |  |── images
 |  |  |── inspections
-|  |── js
+|  |── scripts
 |  |── styles
 |  |── svg
 |  |── templates
@@ -39,7 +39,7 @@ bundler/
 * `/src/fonts` - шрифты;
 * `/src/images` - изображения;
 * `/src/images/inspections` - дизайны проекта в растровом формате;
-* `/src/js` - скрипты;
+* `/src/scripts` - скрипты;
 * `/src/styles` - стили;
 * `/src/svg` - векторная графика;
 * `/src/templates` - шаблоны;

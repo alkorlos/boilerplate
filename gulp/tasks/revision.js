@@ -13,8 +13,8 @@ const revision = function(done) {
 	} else {
 		console.log('Revision warning, file style.min.css not exist.');
 	}
-	if (fs.existsSync(config.build.jsEntryMin)) {
-		filenames.push(config.build.jsEntryMin);
+	if (fs.existsSync(config.build.scriptsEntryMin)) {
+		filenames.push(config.build.scriptsEntryMin);
 	} else {
 		console.log('Revision warning, file main.min.js not exist.');
 	}

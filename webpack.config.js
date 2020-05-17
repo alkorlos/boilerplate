@@ -2,9 +2,9 @@ const config = require('./gulp/config');
 
 const webpackConfig = {
 	mode: 'development',
-	entry: config.src.jsEntry,
+	entry: config.src.scriptsEntry,
 	output: {
-		path: __dirname + '/' + config.build.js,
+		path: __dirname + '/' + config.build.scripts,
 		filename: '[name].js'
 	},
 	module: {
