@@ -17,14 +17,14 @@
 	width: 1900px;
 	height: 4250px;
 
-	background-image: url("../img/inspections/inspection-main-1900.jpg");
+	background-image: url("../images/inspections/inspection-main-1900.jpg");
 	@media only screen and (width <= 1900px) {
 		top: 0;
 
 		width: 1120px;
 		height: 4600px;
 
-		background-image: url("../img/inspections/inspection-main-1120.jpg");
+		background-image: url("../images/inspections/inspection-main-1120.jpg");
 	}
 	@media only screen and (width <= 1120px) {
 		top: 0;
@@ -32,7 +32,7 @@
 		width: 640px;
 		height: 7000px;
 
-		background-image: url("../img/inspections/inspection-main-640.jpg");
+		background-image: url("../images/inspections/inspection-main-640.jpg");
 	}
 }
 
@@ -42,5 +42,5 @@
 	width: 375px;
 	height: 812px;
 
-	background-image: url("../img/inspections/inspection-menu-375.jpg");
+	background-image: url("../images/inspections/inspection-menu-375.jpg");
 }
