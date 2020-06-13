@@ -20,6 +20,7 @@ const scripts = function(done, errorMain) {
 		errorMain.apply(this, arguments)
 		done();
 	}
+
 	function onSuccess() {
 		done();
 	}
