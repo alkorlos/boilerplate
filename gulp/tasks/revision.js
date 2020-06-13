@@ -8,16 +8,19 @@ const config = require('../config');
 // Revision
 const revision = function(done) {
 	let filenames = [];
+
 	if (fs.existsSync(config.build.stylesEntryMin)) {
 		filenames.push(config.build.stylesEntryMin);
 	} else {
 		console.log('Revision warning, file style.min.css not exist.');
 	}
+
 	if (fs.existsSync(config.build.scriptsEntryMin)) {
 		filenames.push(config.build.scriptsEntryMin);
 	} else {
 		console.log('Revision warning, file main.min.js not exist.');
 	}
+
 	if (fs.existsSync(config.build.svgSprite)) {
 		filenames.push(config.build.svgSprite);
 	} else {
