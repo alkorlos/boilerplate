@@ -13,7 +13,7 @@ compiler.plugin('done', function() {
 })
 
 // Server
-const server = function(done) {
+const server = function() {
 	browserSync.init({
 		server: {
 			baseDir: './build',
