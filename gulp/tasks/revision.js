@@ -6,7 +6,7 @@ const fs = require('fs');
 const config = require('../config');
 
 // Revision
-const revision = function(done) {
+const revision = function() {
 	let filenames = [];
 
 	if (fs.existsSync(config.build.stylesEntryMin)) {
@@ -31,8 +31,7 @@ const revision = function(done) {
 		.pipe(rev())
 		.pipe(gulp.dest(config.build.html))
 		.pipe(rev.manifest())
-		.pipe(gulp.dest(config.build.rev))
-		.on('end', done);
+		.pipe(gulp.dest(config.build.rev));
 }
 
 module.exports = revision;

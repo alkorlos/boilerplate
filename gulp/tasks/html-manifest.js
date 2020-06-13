@@ -6,17 +6,15 @@ const fs = require('fs');
 const config = require('../config');
 
 // HTML manifest
-const htmlManifest = function(done) {
+const htmlManifest = function() {
 	if ((fs.existsSync(config.build.manifest)) && (fs.existsSync(config.build.htmlEntry))) {
 		return gulp.src([config.build.manifest, config.build.htmlEntry])
 			.pipe(revCollector({
 				replaceReved: true
 			}))
-			.pipe(gulp.dest(config.build.html))
-			.on('end', done);
+			.pipe(gulp.dest(config.build.html));
 	} else {
 		console.log('HTML manifest error, file not exist.');
-		done();
 		return false;
 	}
 }
