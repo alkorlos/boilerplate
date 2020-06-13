@@ -22,7 +22,8 @@ const server = function(done) {
 					compiler,
 					{
 						publicPath: '/scripts',
-						writeToDisk: true
+						writeToDisk: true,
+						logLevel: 'silent'
 					}
 				),
 				middleware(
