@@ -2,7 +2,7 @@
   "name": "bundler",
   "version": "1.0.0",
   "description": "Alkor markup starter kit",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "node ./node_modules/gulp/bin/gulp.js start",
     "build": "node ./node_modules/gulp/bin/gulp.js build",
