@@ -8,7 +8,7 @@ const prettyHtml = require('gulp-pretty-html');
 const config = require('../config');
 
 // HTML
-const html = function(done) {
+const html = function() {
 	return gulp.src([config.src.html, config.src.htmlException])
 		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(
@@ -21,8 +21,7 @@ const html = function(done) {
 				max_preserve_newlines: 1
 			}
 		))
-		.pipe(gulp.dest(config.build.html))
-		.on('end', done);
+		.pipe(gulp.dest(config.build.html));
 }
 
 module.exports = html;

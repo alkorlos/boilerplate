@@ -3,10 +3,9 @@ const gulp = require('gulp');
 const config = require('../config');
 
 // Images
-const images = function(done) {
+const images = function() {
 	return gulp.src(config.src.images)
-		.pipe(gulp.dest(config.build.images))
-		.on('end', done);
+		.pipe(gulp.dest(config.build.images));
 }
 
 module.exports = images;

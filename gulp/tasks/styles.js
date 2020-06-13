@@ -10,7 +10,7 @@ const rename = require('gulp-rename');
 const config = require('../config');
 
 // Styles
-const styles = function(done) {
+const styles = function() {
 	return gulp.src(config.src.stylesEntry)
 		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(sourcemaps.init())
@@ -23,8 +23,7 @@ const styles = function(done) {
 		}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest(config.build.styles))
-		.on('end', done);
+		.pipe(gulp.dest(config.build.styles));
 }
 
 module.exports = styles;
