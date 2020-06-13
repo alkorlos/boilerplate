@@ -17,43 +17,43 @@ const files = require('./gulp/tasks/files');
 const revision = require('./gulp/tasks/revision');
 const htmlManifest = require('./gulp/tasks/html-manifest');
 
-gulp.task('start',
-	gulp.series(
-		clean,
-		gulp.parallel(
-			html,
-			styles,
-			php,
-			images,
-			favicon,
-			videos,
-			svg,
-			fonts,
-			files
-		),
-		gulp.parallel(
-			watch,
-			server
-		)
+const start = gulp.series(
+	clean,
+	gulp.parallel(
+		html,
+		styles,
+		php,
+		images,
+		favicon,
+		videos,
+		svg,
+		fonts,
+		files
+	),
+	gulp.parallel(
+		watch,
+		server
 	)
 );
 
-gulp.task('build',
-	gulp.series(
-		clean,
-		gulp.parallel(
-			html,
-			styles,
-			scripts,
-			php,
-			images,
-			favicon,
-			videos,
-			svg,
-			fonts,
-			files
-		),
-		revision,
-		htmlManifest
-	)
+exports.start = start;
+
+const build = gulp.series(
+	clean,
+	gulp.parallel(
+		html,
+		styles,
+		scripts,
+		php,
+		images,
+		favicon,
+		videos,
+		svg,
+		fonts,
+		files
+	),
+	revision,
+	htmlManifest
 );
+
+exports.build = build;
