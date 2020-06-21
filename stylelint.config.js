@@ -84,7 +84,7 @@ module.exports = {
 		'selector-type-no-unknown': true, // Селекторы: запретить неизвестные (Possible errors)
 		'selector-max-empty-lines': 0, // Селекторы: максимальное число пустых строк (Limit language features)
 
-		'selector-list-comma-newline-after': 'always-multi-line', // Список селекторов: новая строка после ",": всегда при многострочной записи (Stylistic issues)
+		'selector-list-comma-newline-after': 'always', // Список селекторов: новая строка после ",": всегда (Stylistic issues)
 		'selector-list-comma-newline-before': 'never-multi-line', // Список селекторов: новая строка до ",": никогда при многострочной записи (Stylistic issues)
 		'selector-list-comma-space-after': 'always-single-line', // Список селекторов: пробел после ",": всегда при однострочной записи (Stylistic issues)
 		'selector-list-comma-space-before': 'never', // Список селекторов: пробел до ",": никогда (Stylistic issues)

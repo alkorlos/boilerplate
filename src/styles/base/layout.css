@@ -6,12 +6,15 @@
 
 @import "inspections.css";
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 }
 
-html, body {
+html,
+body {
 	all: unset;
 
 	margin: 0;
