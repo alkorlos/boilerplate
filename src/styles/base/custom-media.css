@@ -1,7 +1,7 @@
-@custom-media --desktop-big only screen and (width > 1920px);
-@custom-media --desktop only screen and (width <= 1920px);
-@custom-media --desktop-medium only screen and (width <= 1600px);
-@custom-media --desktop-small only screen and (width <= 1200px);
-@custom-media --tablet only screen and (width <= 992px);
-@custom-media --phone-big only screen and (width <= 768px);
-@custom-media --phone only screen and (width <= 576px);
+@custom-media --desktop-big (width > 1920px);
+@custom-media --desktop (width <= 1920px);
+@custom-media --desktop-medium (width <= 1600px);
+@custom-media --desktop-small (width <= 1200px);
+@custom-media --tablet (width <= 992px);
+@custom-media --phone-big (width <= 768px);
+@custom-media --phone (width <= 576px);
