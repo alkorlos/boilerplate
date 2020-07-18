@@ -1,2 +1,2 @@
 node_modules
-/src/styles/libraries/global
+/src/styles/libraries/**/global

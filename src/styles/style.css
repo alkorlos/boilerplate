@@ -1,8 +1,8 @@
 @import-glob "base/layout.css";
 
-@import-glob "libraries/global/**/*.css";
+@import-glob "libraries/**/global/**/*.css";
 
-@import-glob "libraries/redefinition/**/*.css";
+@import-glob "libraries/**/redefinition/**/*.css";
 
 @import-glob "ui/**/*.css";
 
