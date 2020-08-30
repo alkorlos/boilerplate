@@ -4,7 +4,8 @@ module.exports = {
 		es6: true
 	},
 	plugins: [
-		'import'
+		'import',
+		'no-autofix'
 	],
 	globals: {
 		Atomics: 'readonly',
@@ -241,9 +242,6 @@ module.exports = {
 			'classes': 'never', // Требовать или запретить пустые строки внутри классов: запретить пустые строки в начале и в конце
 			'switches': 'never' // Требовать или запретить пустые строки внутри инструкций switch: запретить пустые строки в начале и в конце
 		}],
-		'prefer-const': ['error', { // Предлагать использовать const: если переменная не переопределяется после инициализации (ECMAScript 6)
-			'destructuring': 'all' // Деструктуризация: если для всех переменных предпочительнее использовать const предупредит, в противном случае проигнорирует
-		}],
 		'prefer-promise-reject-errors': 'error', // Требовать использовать объекты Error как причины отклонения Promise (Best Practices)
 		'quote-props': ['error', 'as-needed'], // Требовать кавычки вокруг имен свойств объектных литералов: запретить кавычки не являющиеся строго обязательными (Stylistic Issues)
 		'quotes': ['error', 'single', { // Обеспечить согласованное использование обратных кавычек, двойных кавычек или одинарных кавычек: одинарные кавычки (Stylistic Issues)
@@ -299,5 +297,10 @@ module.exports = {
 		'import/no-duplicates': 'error', // Сообщить о повторном импорте одного и того же модуля в нескольких местах (Style guide)
 		'import/no-named-default': 'error', // Запретить именованные экспорты по умолчанию (Style guide) #todo
 		'import/no-webpack-loader-syntax': 'error', // Запретить синтаксис webpack loader в импортах (Static analysis)
+
+		// Плагин eslint-plugin-no-autofix
+		'no-autofix/prefer-const': ['error', { // Предлагать использовать const: если переменная не переопределяется после инициализации (ECMAScript 6)
+			'destructuring': 'all' // Деструктуризация: если для всех переменных предпочительнее использовать const предупредит, в противном случае проигнорирует
+		}],
 	}
 }
