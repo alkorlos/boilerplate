@@ -1,3 +1,3 @@
 node_modules
-/src/styles/base/generic.reset.css
-/src/styles/libraries/**/global
+src/styles/base/generic.reset.css
+src/styles/libraries/**/global
