@@ -1,7 +1,9 @@
+# Folders
+node_modules
 build
 .git
-.vscode
-node_modules
+
+# Bundler config
 gulp
 .eslintrc.js
 gulpfile.js
