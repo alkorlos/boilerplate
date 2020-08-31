@@ -40,7 +40,7 @@ const server = function() {
 		files: [
 			{
 				match: [
-					config.build.njk + '/**/*.njk',
+					config.build.html + '/**/*.html',
 					config.build.styles + '/**/*.min.css',
 					config.build.images + '/**/*.{webp,jpg,jpeg,png,svg}',
 					config.build.svg + '/**/*.svg',

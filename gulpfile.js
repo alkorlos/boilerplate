@@ -4,7 +4,7 @@ const watch = require('./gulp/tasks/watch');
 const server = require('./gulp/tasks/server');
 
 const clean = require('./gulp/tasks/clean');
-const html = require('./gulp/tasks/html');
+const templates = require('./gulp/tasks/templates');
 const styles = require('./gulp/tasks/styles');
 const scripts = require('./gulp/tasks/scripts');
 const php = require('./gulp/tasks/php');
@@ -20,7 +20,7 @@ const htmlManifest = require('./gulp/tasks/html-manifest');
 const start = gulp.series(
 	clean,
 	gulp.parallel(
-		html,
+		templates,
 		styles,
 		php,
 		images,
@@ -41,7 +41,7 @@ exports.start = start;
 const build = gulp.series(
 	clean,
 	gulp.parallel(
-		html,
+		templates,
 		styles,
 		scripts,
 		php,

@@ -8,9 +8,9 @@ const prettyHtml = require('gulp-pretty-html');
 
 const config = require('../config');
 
-// HTML
-const html = function() {
-	return gulp.src([config.src.njk, config.src.njkException])
+// Templates
+const templates = function() {
+	return gulp.src([config.src.templates, config.src.templatesException])
 		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(
 			nunjucks.compile()
@@ -28,4 +28,4 @@ const html = function() {
 		.pipe(gulp.dest(config.build.html));
 }
 
-module.exports = html;
+module.exports = templates;
