@@ -1,7 +1,7 @@
 const config = {
 	src: {
-		html: 'src/templates/**/*.html',
-		htmlException: '!src/templates/**/_*.html',
+		njk: 'src/templates/**/*.njk',
+		njkException: '!src/templates/**/_*.njk',
 		styles: 'src/styles/**/*.css',
 		stylesEntry: 'src/styles/style.css',
 		scripts: 'src/scripts/**/*.js',

@@ -23,18 +23,18 @@
 	</head>
 
 	<body>
-		{% include "_inspections.html" %}
+		{% include "_inspections.njk" %}
 
 		<div class="wrapper">
 			{# Header #}
-			{% include "elements/_header.html" %}
+			{% include "elements/_header.njk" %}
 
 			{% block inspection %} {% endblock %}
 
 			{% block content %} {% endblock %}
 
 			{# Footer #}
-			{% include "elements/_footer.html" %}
+			{% include "elements/_footer.njk" %}
 		</div>
 
 		{# Scripts #}

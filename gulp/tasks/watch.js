@@ -14,7 +14,7 @@ const config = require('../config');
 
 // Watch
 const watch = function() {
-	gulp.watch(config.src.html, gulp.series(html));
+	gulp.watch(config.src.njk, gulp.series(html));
 	gulp.watch(config.src.styles, gulp.series(styles));
 	gulp.watch(config.src.php, gulp.series(php));
 	gulp.watch(config.src.images, gulp.series(images));
