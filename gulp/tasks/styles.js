@@ -15,13 +15,18 @@ const styles = function() {
 		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
 		.pipe(sourcemaps.init())
 		.pipe(postcss())
+		.pipe(rename({
+			extname: '.css'
+		}))
 		.pipe(gulp.dest(config.build.styles))
 		.pipe(csso({
 			restructure: false,
 			sourceMap: true,
 			debug: false
 		}))
-		.pipe(rename({suffix: '.min'}))
+		.pipe(rename({
+			suffix: '.min'
+		}))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(config.build.styles));
 }
