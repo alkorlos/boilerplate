@@ -19,11 +19,13 @@ const styles = function() {
 			extname: '.css'
 		}))
 		.pipe(gulp.dest(config.build.styles))
-		.pipe(csso({
-			restructure: false,
-			sourceMap: true,
-			debug: false
-		}))
+		.pipe(csso(
+			{
+				restructure: false,
+				sourceMap: true,
+				debug: false
+			}
+		))
 		.pipe(rename({
 			suffix: '.min'
 		}))
