@@ -3,5 +3,5 @@ node_modules
 build
 
 # Src
-src/styles/base/generic.reset.css
+src/styles/base/generic.reset.postcss
 src/styles/libraries/**/global
