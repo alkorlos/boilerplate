@@ -9,14 +9,14 @@ const config = require('../config');
 const revision = function() {
 	let filenames = [];
 
-	if (fs.existsSync(config.build.stylesEntryMin)) {
-		filenames.push(config.build.stylesEntryMin);
+	if (fs.existsSync(config.build.cssEntryMin)) {
+		filenames.push(config.build.cssEntryMin);
 	} else {
 		console.log('Revision warning, file style.min.css not exist.');
 	}
 
-	if (fs.existsSync(config.build.scriptsEntryMin)) {
-		filenames.push(config.build.scriptsEntryMin);
+	if (fs.existsSync(config.build.jsEntryMin)) {
+		filenames.push(config.build.jsEntryMin);
 	} else {
 		console.log('Revision warning, file main.min.js not exist.');
 	}
