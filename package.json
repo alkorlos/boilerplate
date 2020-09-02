@@ -9,8 +9,8 @@
     "build": "node ./node_modules/gulp/bin/gulp.js build",
     "webpack": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode development",
     "webpack-production": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production",
-    "stylelint": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.css",
-    "stylelint:fix": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.css --fix",
+    "stylelint": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.postcss",
+    "stylelint:fix": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.postcss --fix",
     "eslint": "node ./node_modules/eslint/bin/eslint.js ./src/scripts/**/*.js",
     "eslint:fix": "node ./node_modules/eslint/bin/eslint.js ./src/scripts/**/*.js --fix"
   },
