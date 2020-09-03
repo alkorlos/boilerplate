@@ -2,10 +2,10 @@ const webpack = require('webpack');
 const webpackConfigMin = require('./../../webpack.config.min.js');
 
 // Scripts
-const scripts = function(done, errorMain) {
+const scripts = function (done, errorMain) {
 	webpack(webpackConfigMin, onComplete);
 
-	function onComplete(error, stats) {
+	function onComplete (error, stats) {
 		if (error) {
 			onError(error);
 		} else if (stats.hasErrors()) {
@@ -15,15 +15,15 @@ const scripts = function(done, errorMain) {
 		}
 	}
 
-	function onError(error) {
+	function onError (error) {
 		console.log(error);
-		errorMain.apply(this, arguments)
+		errorMain.apply(this, arguments);
 		done();
 	}
 
-	function onSuccess() {
+	function onSuccess () {
 		done();
 	}
-}
+};
 
 module.exports = scripts;

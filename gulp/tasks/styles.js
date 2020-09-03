@@ -10,9 +10,9 @@ const rename = require('gulp-rename');
 const config = require('../config');
 
 // Styles
-const styles = function() {
+const styles = function () {
 	return gulp.src(config.src.stylesEntry)
-		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(sourcemaps.init())
 		.pipe(postcss())
 		.pipe(rename({
@@ -31,6 +31,6 @@ const styles = function() {
 		}))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(config.build.css));
-}
+};
 
 module.exports = styles;

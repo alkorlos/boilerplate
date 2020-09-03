@@ -6,7 +6,7 @@ const fs = require('fs');
 const config = require('../config');
 
 // Revision
-const revision = function() {
+const revision = function () {
 	let filenames = [];
 
 	if (fs.existsSync(config.build.cssEntryMin)) {
@@ -27,11 +27,11 @@ const revision = function() {
 		console.log('Revision warning, file sprite.svg not exist.');
 	}
 
-	return gulp.src(filenames, {base: 'build'})
+	return gulp.src(filenames, { base: 'build' })
 		.pipe(rev())
 		.pipe(gulp.dest(config.build.html))
 		.pipe(rev.manifest())
 		.pipe(gulp.dest(config.build.rev));
-}
+};
 
 module.exports = revision;

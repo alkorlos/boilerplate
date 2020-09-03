@@ -13,7 +13,7 @@ const files = require('./files');
 const config = require('../config');
 
 // Watch
-const watch = function() {
+const watch = function () {
 	gulp.watch(config.src.templates, gulp.series(templates));
 	gulp.watch(config.src.styles, gulp.series(styles));
 	gulp.watch(config.src.php, gulp.series(php));
@@ -23,6 +23,6 @@ const watch = function() {
 	gulp.watch(config.src.svg, gulp.series(svg));
 	gulp.watch(config.src.fonts, gulp.series(fonts));
 	gulp.watch(config.src.files, gulp.series(files));
-}
+};
 
 module.exports = watch;

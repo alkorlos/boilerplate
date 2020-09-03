@@ -8,12 +8,12 @@ const webpackConfigMin = require('./../../webpack.config.min.js');
 const compiler = webpack(webpackConfig);
 const compilerMin = webpack(webpackConfigMin);
 
-compiler.plugin('done', function() {
+compiler.plugin('done', function () {
 	browserSync.reload();
-})
+});
 
 // Server
-const server = function() {
+const server = function () {
 	browserSync.init({
 		server: {
 			baseDir: './build',
@@ -32,7 +32,7 @@ const server = function() {
 						publicPath: '/scripts',
 						writeToDisk: true
 					}
-				),
+				)
 			]
 		},
 		port: 8080,
@@ -56,6 +56,6 @@ const server = function() {
 			}
 		]
 	});
-}
+};
 
 module.exports = server;

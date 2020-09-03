@@ -6,7 +6,7 @@ const fs = require('fs');
 const config = require('../config');
 
 // HTML manifest
-const htmlManifest = function(done) {
+const htmlManifest = function (done) {
 	if ((fs.existsSync(config.build.manifest)) && (fs.existsSync(config.build.htmlEntry))) {
 		return gulp.src([config.build.manifest, config.build.htmlEntry])
 			.pipe(revCollector({
@@ -17,6 +17,6 @@ const htmlManifest = function(done) {
 		console.log('HTML manifest error, file not exist.');
 		done();
 	}
-}
+};
 
 module.exports = htmlManifest;

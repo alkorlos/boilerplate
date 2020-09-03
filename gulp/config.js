@@ -12,12 +12,12 @@ const config = {
 		videos: 'src/video/**/*.{webm,mp4}',
 		svg: 'src/svg/**/*.svg',
 		fonts: 'src/fonts/**/*.{ttf,otf,woff,woff2}',
-		files: 'src/files/**/*',
+		files: 'src/files/**/*'
 	},
 	build: {
 		root: 'build',
 		rootEntry: '!build',
-		html : 'build',
+		html: 'build',
 		htmlEntry: 'build/index.html',
 		css: 'build/css',
 		cssEntry: 'build/css/style.css',
@@ -25,7 +25,7 @@ const config = {
 		js: 'build/js',
 		jsEntry: 'build/js/main.js',
 		jsEntryMin: 'build/js/main.min.js',
-		php : 'build',
+		php: 'build',
 		images: 'build/images',
 		favicon: 'build',
 		videos: 'build/video',
@@ -36,6 +36,6 @@ const config = {
 		rev: 'build/rev',
 		manifest: 'build/rev/rev-manifest.json'
 	}
-}
+};
 
 module.exports = config;

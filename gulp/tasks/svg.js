@@ -9,9 +9,9 @@ const rename = require('gulp-rename');
 const config = require('../config');
 
 // SVG
-const svg = function() {
+const svg = function () {
 	return gulp.src(config.src.svg)
-		.pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
+		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(svgmin({
 			plugins: [
 				{
@@ -31,6 +31,6 @@ const svg = function() {
 		)
 		.pipe(rename('sprite.svg'))
 		.pipe(gulp.dest(config.build.svg));
-}
+};
 
 module.exports = svg;
