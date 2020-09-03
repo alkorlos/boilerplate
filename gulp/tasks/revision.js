@@ -7,7 +7,7 @@ const config = require('../config');
 
 // Revision
 const revision = function () {
-	let filenames = [];
+	const filenames = [];
 
 	if (fs.existsSync(config.build.cssEntryMin)) {
 		filenames.push(config.build.cssEntryMin);

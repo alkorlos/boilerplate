@@ -48,7 +48,7 @@ const server = function () {
 					config.build.files + '/**/*'
 				],
 				fn: function (event, file) {
-					if ((event == 'change') || (event == 'add')) {
+					if ((event === 'change') || (event === 'add')) {
 						console.log('[Browsersync] File event [' + event + ']: ' + file);
 					}
 					this.reload();
