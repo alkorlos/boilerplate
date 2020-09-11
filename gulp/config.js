@@ -2,8 +2,8 @@ const config = {
 	src: {
 		templates: 'src/templates/**/*.njk',
 		templatesException: '!src/templates/**/_*.njk',
-		styles: 'src/styles/**/*.postcss',
-		stylesEntry: 'src/styles/style.postcss',
+		styles: 'src/styles/**/*.pcss',
+		stylesEntry: 'src/styles/style.pcss',
 		scripts: 'src/scripts/**/*.js',
 		scriptsEntry: './src/scripts/main.js',
 		php: 'src/*.php',
