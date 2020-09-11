@@ -3,7 +3,6 @@ const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const nunjucks = require('gulp-nunjucks');
-const rename = require('gulp-rename');
 const prettyHtml = require('gulp-pretty-html');
 
 const config = require('../config');
@@ -15,9 +14,6 @@ const templates = function () {
 		.pipe(
 			nunjucks.compile()
 		)
-		.pipe(rename({
-			extname: '.html'
-		}))
 		.pipe(prettyHtml(
 			{
 				indent_size: 4,
