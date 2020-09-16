@@ -18,7 +18,6 @@ const revision = require('./gulp/tasks/revision');
 const htmlManifest = require('./gulp/tasks/html-manifest');
 
 const start = gulp.series(
-	clean,
 	gulp.parallel(
 		templates,
 		styles,
