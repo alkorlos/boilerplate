@@ -45,6 +45,7 @@ const server = function () {
 					config.build.images + '/**/*.{webp,jpg,jpeg,png,svg}',
 					config.build.svg + '/**/*.svg',
 					config.build.fonts + '/**/*.{ttf,otf,woff,woff2}',
+					config.build.root + '/*.php',
 					config.build.files + '/**/*'
 				],
 				fn: function (event, file) {
