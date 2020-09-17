@@ -31,6 +31,7 @@
     "del": "^5.1.0",
     "focus-visible": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-notify": "^3.2.0",
     "gulp-nunjucks": "^5.0.2",
