@@ -9,7 +9,7 @@ const config = {
 		php: 'src/*.php',
 		images: 'src/images/**/*.{webp,jpg,jpeg,png,svg,ico}',
 		favicon: 'src/favicon.ico',
-		videos: 'src/video/**/*.{webm,mp4}',
+		videos: 'src/videos/**/*.{webm,mp4}',
 		svg: 'src/svg/**/*.svg',
 		fonts: 'src/fonts/**/*.{ttf,otf,woff,woff2}',
 		files: 'src/files/**/*'
@@ -28,7 +28,7 @@ const config = {
 		php: 'build',
 		images: 'build/images',
 		favicon: 'build',
-		videos: 'build/video',
+		videos: 'build/videos',
 		svg: 'build/svg',
 		svgSprite: 'build/svg/sprite.svg',
 		fonts: 'build/fonts',
