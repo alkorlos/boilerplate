@@ -7,7 +7,9 @@ const config = require('../config');
 // Files
 const files = function () {
 	return gulp.src(config.src.files)
-		.pipe(changed(config.build.files))
+		.pipe(changed(config.build.files, {
+			hasChanged: changed.compareContents
+		}))
 		.pipe(gulp.dest(config.build.files));
 };
 

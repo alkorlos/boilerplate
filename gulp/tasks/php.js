@@ -7,7 +7,9 @@ const config = require('../config');
 // PHP
 const php = function () {
 	return gulp.src(config.src.php)
-		.pipe(changed(config.build.php))
+		.pipe(changed(config.build.php, {
+			hasChanged: changed.compareContents
+		}))
 		.pipe(gulp.dest(config.build.php));
 };
 
