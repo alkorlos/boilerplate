@@ -17,6 +17,7 @@ jobs:
 
       - name: Update BE
         run: |
+          git remote -v
           git remote add upstream https://github.com/alkorlos/bundler.git
 
       - name: Create Pull Request
