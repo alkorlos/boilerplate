@@ -19,7 +19,4 @@ jobs:
         run: git version
 
       - name: Update BE
-        run: |
-          git remote add upstream https://github.com/alkorlos/bundler.git
-          git fetch upstream master:upstream-master
-          git reset --hard upstream-master
+        run: git remote add upstream https://github.com/alkorlos/bundler.git
