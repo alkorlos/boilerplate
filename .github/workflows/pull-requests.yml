@@ -16,8 +16,7 @@ jobs:
           path: boilerplate-elements
 
       - name: Update BE
-        run: |
-          git remote -v
+        run: git remote
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
