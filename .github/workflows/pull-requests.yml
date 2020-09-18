@@ -13,4 +13,3 @@ jobs:
         with:
           repository: alkorlos/boilerplate-elements
           token: ${{ secrets.UpdateBoilerplates }}
-          path: boilerplate-elements
