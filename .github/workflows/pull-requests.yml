@@ -24,4 +24,4 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.UpdateBoilerplatesKey }}
-          branch: master
+          branch: upstream-changes
