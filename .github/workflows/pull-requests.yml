@@ -16,7 +16,7 @@ jobs:
           path: boilerplate-elements
 
       - name: Update BE
-        run: git remote
+        run: echo "q"
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
