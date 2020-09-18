@@ -13,10 +13,12 @@ jobs:
         with:
           repository: alkorlos/boilerplate-elements
           token: ${{ secrets.UpdateBoilerplatesKey }}
-          path: boilerplate-elements
 
-      - name: Git-version
+      - name: Git version
         run: git version
+
+      - name: Git remote
+        run: git remote
 
       - name: Update BE
         run: git remote add upstream https://github.com/alkorlos/bundler.git
