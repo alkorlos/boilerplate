@@ -15,5 +15,5 @@ jobs:
           token: ${{ secrets.UpdateBoilerplates }}
 
       - run: echo "secret"
-        run: echo "${{ secrets.UpdateBoilerplates }}"
+      - run: echo "${{ secrets.UpdateBoilerplates }}"
 
