@@ -16,8 +16,8 @@ jobs:
 
       - name: Git
         run: |
-          git remote add https://github.com/alkorlos/bundler.git
-          git fetch master:upstream-master
+          git remote add upstream https://github.com/alkorlos/bundler.git
+          git fetch upstream master:upstream-master
           git reset --hard upstream-master
 
       - name: Create Pull Request
