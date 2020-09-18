@@ -9,7 +9,11 @@ jobs:
   updateBoilerplateElements:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Update BE
+        uses: actions/checkout@v2
         with:
           repository: alkorlos/boilerplate-elements
           token: ${{ secrets.UpdateBoilerplates }}
+        run: echo "secret"
+        run: echo "${{ secrets.UpdateBoilerplates }}"
+
