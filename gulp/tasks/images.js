@@ -2,14 +2,19 @@ const gulp = require('gulp');
 
 const changed = require('gulp-changed');
 const imagemin = require('gulp-imagemin');
+// const imageminwebp = require('imagemin-webp');
 
 const config = require('../config');
+
 
 // Images
 const images = function () {
 	return gulp.src(config.src.images)
 		.pipe(changed(config.build.images))
 		.pipe(imagemin([
+			// imageminwebp({
+			// 	quality: 80
+			// }),
 			imagemin.mozjpeg({
 				quality: 80
 			}),
