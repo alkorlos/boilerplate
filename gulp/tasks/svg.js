@@ -2,7 +2,7 @@ const gulp = require('gulp');
 
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
-const svgmin = require('gulp-svgmin');
+const imagemin = require('gulp-imagemin');
 const svgstore = require('gulp-svgstore');
 const rename = require('gulp-rename');
 
@@ -12,18 +12,20 @@ const config = require('../config');
 const svg = function () {
 	return gulp.src(config.src.svg)
 		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-		.pipe(svgmin({
-			plugins: [
-				{
-					cleanupIDs: {
-						minify: false
+		.pipe(imagemin([
+			imagemin.svgo({
+				plugins: [
+					{
+						cleanupIDs: {
+							minify: false
+						}
+					},
+					{
+						removeViewBox: false
 					}
-				},
-				{
-					removeViewBox: false
-				}
-			]
-		}))
+				]
+			})
+		]))
 		.pipe(
 			svgstore({
 				inlineSvg: true
