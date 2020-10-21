@@ -18,7 +18,7 @@ const styles = function () {
 		.pipe(rename({
 			extname: '.css'
 		}))
-		.pipe(gulp.dest(config.build.css))
+		.pipe(gulp.dest(config.dist.css))
 		.pipe(csso(
 			{
 				restructure: false,
@@ -30,7 +30,7 @@ const styles = function () {
 			suffix: '.min'
 		}))
 		.pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest(config.build.css));
+		.pipe(gulp.dest(config.dist.css));
 };
 
 module.exports = styles;

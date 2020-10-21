@@ -21,7 +21,7 @@ const templates = function () {
 				max_preserve_newlines: 1
 			}
 		))
-		.pipe(gulp.dest(config.build.html));
+		.pipe(gulp.dest(config.dist.html));
 };
 
 module.exports = templates;

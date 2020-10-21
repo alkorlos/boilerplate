@@ -16,7 +16,7 @@ compiler.plugin('done', function () {
 const server = function () {
 	browserSync.init({
 		server: {
-			baseDir: './build',
+			baseDir: './dist',
 			middleware: [
 				middleware(
 					compiler,
@@ -40,14 +40,14 @@ const server = function () {
 		files: [
 			{
 				match: [
-					config.build.html + '/**/*.html',
-					config.build.css + '/**/*.min.css',
-					config.build.php + '/**/*.php',
-					config.build.images + '/**/*.{webp,jpg,jpeg,png,svg}',
-					config.build.svg + '/**/*.svg',
-					config.build.videos + '/**/*.{webm,mp4}',
-					config.build.fonts + '/**/*.{ttf,otf,woff,woff2}',
-					config.build.files + '/**/*'
+					config.dist.html + '/**/*.html',
+					config.dist.css + '/**/*.min.css',
+					config.dist.php + '/**/*.php',
+					config.dist.images + '/**/*.{webp,jpg,jpeg,png,svg}',
+					config.dist.svg + '/**/*.svg',
+					config.dist.videos + '/**/*.{webm,mp4}',
+					config.dist.fonts + '/**/*.{ttf,otf,woff,woff2}',
+					config.dist.files + '/**/*'
 				],
 				fn: function (event, file) {
 					if ((event === 'change') || (event === 'add')) {

@@ -4,7 +4,7 @@ const webpackConfig = {
 	mode: 'development',
 	entry: config.src.scriptsEntry,
 	output: {
-		path: __dirname + '/' + config.build.js,
+		path: __dirname + '/' + config.dist.js,
 		filename: '[name].js'
 	},
 	module: {

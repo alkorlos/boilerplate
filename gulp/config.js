@@ -14,27 +14,27 @@ const config = {
 		fonts: 'src/fonts/**/*.{ttf,otf,woff,woff2}',
 		files: 'src/files/**/*'
 	},
-	build: {
-		root: 'build',
-		rootEntry: '!build',
-		html: 'build',
-		htmlEntry: 'build/index.html',
-		css: 'build/css',
-		cssEntry: 'build/css/style.css',
-		cssEntryMin: 'build/css/style.min.css',
-		js: 'build/js',
-		jsEntry: 'build/js/main.js',
-		jsEntryMin: 'build/js/main.min.js',
-		php: 'build/php',
-		images: 'build/images',
-		favicon: 'build',
-		svg: 'build/svg',
-		svgSprite: 'build/svg/sprite.svg',
-		videos: 'build/videos',
-		fonts: 'build/fonts',
-		files: 'build/files',
-		rev: 'build/rev',
-		manifest: 'build/rev/rev-manifest.json'
+	dist: {
+		root: 'dist',
+		rootEntry: '!dist',
+		html: 'dist',
+		htmlEntry: 'dist/index.html',
+		css: 'dist/css',
+		cssEntry: 'dist/css/style.css',
+		cssEntryMin: 'dist/css/style.min.css',
+		js: 'dist/js',
+		jsEntry: 'dist/js/main.js',
+		jsEntryMin: 'dist/js/main.min.js',
+		php: 'dist/php',
+		images: 'dist/images',
+		favicon: 'dist',
+		svg: 'dist/svg',
+		svgSprite: 'dist/svg/sprite.svg',
+		videos: 'dist/videos',
+		fonts: 'dist/fonts',
+		files: 'dist/files',
+		rev: 'dist/rev',
+		manifest: 'dist/rev/rev-manifest.json'
 	}
 };
 

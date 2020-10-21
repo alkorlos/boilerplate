@@ -32,7 +32,7 @@ const svg = function () {
 			})
 		)
 		.pipe(rename('sprite.svg'))
-		.pipe(gulp.dest(config.build.svg));
+		.pipe(gulp.dest(config.dist.svg));
 };
 
 module.exports = svg;
