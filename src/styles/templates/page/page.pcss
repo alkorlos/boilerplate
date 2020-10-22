@@ -20,27 +20,11 @@
 }
 
 .columns {
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 64px;
 	@media (--tablet) {
-		flex-direction: column;
-	}
-}
-
-.column {
-	width: 50%;
-	&:first-child {
-		margin-right: 32px;
-	}
-	&:last-child {
-		margin-left: 32px;
-	}
-	@media (--tablet) {
-		width: 100%;
-		&:first-child {
-			margin-right: 0;
-		}
-		&:last-child {
-			margin-left: 0;
-		}
+		grid-template-columns: none;
+		gap: 0;
 	}
 }
