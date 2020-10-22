@@ -1,17 +1,13 @@
 .wrapper {
 	position: relative;
 
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-rows: 1fr min-content;
 	min-height: 100vh;
 
 	background-color: var(--color-default);
 
 	transition: 0.3s;
-}
-
-.container {
-	flex: 1 0 auto;
 }
 
 .central {
