@@ -5,14 +5,14 @@
   "description": "Alkor markup starter kit",
   "main": "main.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development node ./node_modules/gulp/bin/gulp.js start",
-    "build": "cross-env NODE_ENV=production node ./node_modules/gulp/bin/gulp.js build",
-    "webpack": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode development",
-    "webpack-production": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js --mode production",
-    "stylelint": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.pcss",
-    "stylelint:fix": "node ./node_modules/stylelint/bin/stylelint.js ./src/styles/**/*.pcss --fix",
-    "eslint": "node ./node_modules/eslint/bin/eslint.js ./src/scripts/**/*.js",
-    "eslint:fix": "node ./node_modules/eslint/bin/eslint.js ./src/scripts/**/*.js --fix"
+    "start": "cross-env NODE_ENV=development npx gulp start",
+    "build": "cross-env NODE_ENV=production npx gulp build",
+    "webpack": "npx webpack --config webpack.config.js --mode development",
+    "webpack-production": "npx webpack --config webpack.config.js --mode production",
+    "stylelint": "npx stylelint ./src/styles/**/*.pcss",
+    "stylelint:fix": "npx stylelint ./src/styles/**/*.pcss --fix",
+    "eslint": "npx eslint ./src/scripts/**/*.js",
+    "eslint:fix": "npx eslint ./src/scripts/**/*.js --fix"
   },
   "author": {
     "name": "Dmitry Statsenko",
