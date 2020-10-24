@@ -8,7 +8,7 @@ const webpackConfigMin = require('./../../webpack.config.min.js');
 const compiler = webpack(webpackConfig);
 const compilerMin = webpack(webpackConfigMin);
 
-compiler.plugin('done', function () {
+compiler.hooks.afterDone.tap('done', function () {
 	browserSync.reload();
 });
 
