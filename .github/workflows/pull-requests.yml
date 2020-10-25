@@ -1,4 +1,4 @@
-name: Update boilerplate elements
+name: Update boilerplate components
 
 on:
   push:
@@ -6,12 +6,12 @@ on:
       - master
 
 jobs:
-  updateBoilerplateElements:
+  updateBoilerplateComponents:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: alkorlos/boilerplate-elements
+          repository: alkorlos/boilerplate-components
           token: ${{ secrets.UpdateBoilerplatesKey }}
 
       - name: Git
