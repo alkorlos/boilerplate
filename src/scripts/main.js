@@ -1,7 +1,7 @@
 import 'focus-visible'; // Полифил для :focus-visible
 
-import { ui } from './ui';
+import { components } from './components';
 
 document.addEventListener('DOMContentLoaded', function () {
-	ui();
+	components();
 });
