@@ -10,13 +10,13 @@ const config = require('../config');
 
 // Templates
 const templates = function () {
-	return gulp.src([config.src.templates, config.src.templatesException])
+	return gulp.src([config.src.templatesPages, config.src.templatesException])
 		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(
 			nunjucks.compile(
 				{},
 				{
-					env: new nunjucksBase.Environment(new nunjucksBase.FileSystemLoader(config.src.templatesBase))
+					env: new nunjucksBase.Environment(new nunjucksBase.FileSystemLoader(config.src.templates))
 				}
 			)
 		)
