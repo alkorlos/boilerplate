@@ -1,27 +1,13 @@
-@import "generic.reset.pcss";
-
-@import "trumps.utilities.pcss";
-
 @import "settings.custom-properties.pcss";
 
 @import "settings.custom-media.pcss";
 
 @import "settings.fonts.pcss";
 
-@import "inspections.pcss";
+@import "generic.reset.pcss";
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
+@import "generic.global.pcss";
 
-.js-focus-visible :focus:not(.focus-visible) {
-	outline: none;
-}
+@import "components.inspections.pcss";
 
-html,
-body {
-	font-size: 16px;
-	font-family: "open-sans", sans-serif;
-}
+@import "trumps.utilities.pcss";
