@@ -1,6 +1,7 @@
 const config = {
 	src: {
-		templates: 'src/templates/**/*.njk',
+		templates: 'src/templates/pages/*.njk',
+		templatesBase: 'src/templates/',
 		templatesException: '!src/templates/**/_*.njk',
 		styles: 'src/styles/**/*.pcss',
 		stylesEntry: 'src/styles/style.pcss',
