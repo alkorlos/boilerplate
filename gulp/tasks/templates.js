@@ -3,7 +3,7 @@ const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
 const nunjucks = require('gulp-nunjucks');
-const nunjucks_lib = require('nunjucks');
+const nunjucksBase = require('nunjucks');
 const prettyHtml = require('gulp-pretty-html');
 
 const config = require('../config');
@@ -16,7 +16,7 @@ const templates = function () {
 			nunjucks.compile(
 				{},
 				{
-					env: new nunjucks_lib.Environment(new nunjucks_lib.FileSystemLoader(config.src.templatesBase))
+					env: new nunjucksBase.Environment(new nunjucksBase.FileSystemLoader(config.src.templatesBase))
 				}
 			)
 		)
