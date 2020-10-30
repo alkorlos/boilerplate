@@ -1,7 +1,7 @@
-import { button } from './button';
+import { header } from './header';
 
 const components = function () {
-	button();
+	header();
 };
 
 export { components };
