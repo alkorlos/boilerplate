@@ -1,4 +1,4 @@
-import 'focus-visible'; // Полифил для :focus-visible
+import 'focus-visible';
 
 import { components } from './components';
 
