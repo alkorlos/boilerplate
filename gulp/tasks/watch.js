@@ -1,16 +1,16 @@
 import gulp from 'gulp';
 
-import { templates } from './templates.js';
-import { styles } from './styles.js';
-import { php } from './php.js';
-import { images } from './images.js';
-import { favicon } from './favicon.js';
-import { svg } from './svg.js';
-import { videos } from './videos.js';
-import { fonts } from './fonts.js';
-import { files } from './files.js';
+import templates from './templates.js';
+import styles from './styles.js';
+import php from './php.js';
+import images from './images.js';
+import favicon from './favicon.js';
+import svg from './svg.js';
+import videos from './videos.js';
+import fonts from './fonts.js';
+import files from './files.js';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // Watch
 export const watch = function () {
@@ -24,3 +24,5 @@ export const watch = function () {
 	gulp.watch(config.src.fonts, gulp.series(fonts));
 	gulp.watch(config.src.files, gulp.series(files));
 };
+
+export default watch;

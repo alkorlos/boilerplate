@@ -2,7 +2,7 @@ import gulp from 'gulp';
 
 import changed from 'gulp-changed';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // PHP
 export const php = function () {
@@ -12,3 +12,5 @@ export const php = function () {
 		}))
 		.pipe(gulp.dest(config.dist.php));
 };
+
+export default php;

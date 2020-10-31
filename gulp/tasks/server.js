@@ -2,9 +2,10 @@ import browserSync from 'browser-sync';
 import webpack from 'webpack';
 import middleware from 'webpack-dev-middleware';
 
-import { config } from '../config.js';
-import { webpackConfig } from './../../webpack.config.js';
-import { webpackConfigMin } from './../../webpack.config.min.js';
+import config from '../config.js';
+import webpackConfig from './../../webpack.config.js';
+import webpackConfigMin from './../../webpack.config.min.js';
+
 const compiler = webpack(webpackConfig);
 const compilerMin = webpack(webpackConfigMin);
 
@@ -59,3 +60,5 @@ export const server = function () {
 		]
 	});
 };
+
+export default server;

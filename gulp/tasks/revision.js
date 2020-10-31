@@ -3,7 +3,7 @@ import rev from 'gulp-rev';
 
 import fs from 'fs';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // Revision
 export const revision = function () {
@@ -33,3 +33,5 @@ export const revision = function () {
 		.pipe(rev.manifest())
 		.pipe(gulp.dest(config.dist.rev));
 };
+
+export default revision;

@@ -4,7 +4,7 @@ import path, { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-import { config } from './gulp/config.js';
+import config from './gulp/config.js';
 
 export const webpackConfig = {
 	mode: 'development',
@@ -26,3 +26,5 @@ export const webpackConfig = {
 		]
 	}
 };
+
+export default webpackConfig;

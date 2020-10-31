@@ -1,5 +1,5 @@
 import webpack from 'webpack';
-import { webpackConfigMin } from './../../webpack.config.min.js';
+import webpackConfigMin from './../../webpack.config.min.js';
 
 // Scripts
 export const scripts = function (done, errorMain) {
@@ -25,3 +25,5 @@ export const scripts = function (done, errorMain) {
 		done();
 	}
 };
+
+export default scripts;

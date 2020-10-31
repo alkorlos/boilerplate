@@ -38,3 +38,5 @@ export const config = {
 		manifest: 'dist/rev/rev-manifest.json'
 	}
 };
+
+export default config;

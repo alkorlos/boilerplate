@@ -6,7 +6,7 @@ import nunjucks from 'gulp-nunjucks';
 import nunjucksBase from 'nunjucks';
 import prettyHtml from 'gulp-pretty-html';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // Templates
 export const templates = function () {
@@ -29,3 +29,5 @@ export const templates = function () {
 		))
 		.pipe(gulp.dest(config.dist.html));
 };
+
+export default templates;

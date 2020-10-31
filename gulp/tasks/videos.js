@@ -2,7 +2,7 @@ import gulp from 'gulp';
 
 import changed from 'gulp-changed';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // Videos
 export const videos = function () {
@@ -12,3 +12,5 @@ export const videos = function () {
 		}))
 		.pipe(gulp.dest(config.dist.videos));
 };
+
+export default videos;

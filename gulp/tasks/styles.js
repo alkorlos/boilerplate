@@ -11,7 +11,7 @@ import postcssImportExtGlob from 'postcss-import-ext-glob';
 import postcssImport from 'postcss-import';
 import postcssPresetEnv from 'postcss-preset-env';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // Styles
 export const styles = function () {
@@ -43,3 +43,5 @@ export const styles = function () {
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(config.dist.css));
 };
+
+export default styles;

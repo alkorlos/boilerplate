@@ -2,7 +2,7 @@ import gulp from 'gulp';
 
 import changed from 'gulp-changed';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // Fonts
 export const fonts = function () {
@@ -12,3 +12,5 @@ export const fonts = function () {
 		}))
 		.pipe(gulp.dest(config.dist.fonts));
 };
+
+export default fonts;

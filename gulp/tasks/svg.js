@@ -6,7 +6,7 @@ import imagemin from 'gulp-imagemin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // SVG
 export const svg = function () {
@@ -34,3 +34,5 @@ export const svg = function () {
 		.pipe(rename('sprite.svg'))
 		.pipe(gulp.dest(config.dist.svg));
 };
+
+export default svg;

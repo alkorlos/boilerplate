@@ -2,7 +2,7 @@ import gulp from 'gulp';
 
 import changed from 'gulp-changed';
 
-import { config } from '../config.js';
+import config from '../config.js';
 
 // Images
 export const images = function () {
@@ -12,3 +12,5 @@ export const images = function () {
 		}))
 		.pipe(gulp.dest(config.dist.images));
 };
+
+export default images;
