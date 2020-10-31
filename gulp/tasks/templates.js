@@ -1,15 +1,15 @@
-const gulp = require('gulp');
+import gulp from 'gulp';
 
-const plumber = require('gulp-plumber');
-const notify = require('gulp-notify');
-const nunjucks = require('gulp-nunjucks');
-const nunjucksBase = require('nunjucks');
-const prettyHtml = require('gulp-pretty-html');
+import plumber from 'gulp-plumber';
+import notify from 'gulp-notify';
+import nunjucks from 'gulp-nunjucks';
+import nunjucksBase from 'nunjucks';
+import prettyHtml from 'gulp-pretty-html';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // Templates
-const templates = function () {
+export const templates = function () {
 	return gulp.src([config.src.templatesPages, config.src.templatesException])
 		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(
@@ -29,5 +29,3 @@ const templates = function () {
 		))
 		.pipe(gulp.dest(config.dist.html));
 };
-
-module.exports = templates;

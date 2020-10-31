@@ -1,19 +1,19 @@
-const gulp = require('gulp');
+import gulp from 'gulp';
 
-const templates = require('./templates');
-const styles = require('./styles');
-const php = require('./php');
-const images = require('./images');
-const favicon = require('./favicon');
-const svg = require('./svg');
-const videos = require('./videos');
-const fonts = require('./fonts');
-const files = require('./files');
+import { templates } from './templates.js';
+import { styles } from './styles.js';
+import { php } from './php.js';
+import { images } from './images.js';
+import { favicon } from './favicon.js';
+import { svg } from './svg.js';
+import { videos } from './videos.js';
+import { fonts } from './fonts.js';
+import { files } from './files.js';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // Watch
-const watch = function () {
+export const watch = function () {
 	gulp.watch(config.src.templates, gulp.series(templates));
 	gulp.watch(config.src.styles, gulp.series(styles));
 	gulp.watch(config.src.php, gulp.series(php));
@@ -24,5 +24,3 @@ const watch = function () {
 	gulp.watch(config.src.fonts, gulp.series(fonts));
 	gulp.watch(config.src.files, gulp.series(files));
 };
-
-module.exports = watch;

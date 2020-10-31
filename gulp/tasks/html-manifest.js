@@ -1,12 +1,12 @@
-const gulp = require('gulp');
-const revCollector = require('gulp-rev-collector');
+import gulp from 'gulp';
+import revCollector from 'gulp-rev-collector';
 
-const fs = require('fs');
+import fs from 'fs';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // HTML manifest
-const htmlManifest = function (done) {
+export const htmlManifest = function (done) {
 	if ((fs.existsSync(config.dist.manifest)) && (fs.existsSync(config.dist.htmlEntry))) {
 		return gulp.src([config.dist.manifest, config.dist.htmlEntry])
 			.pipe(revCollector({
@@ -18,5 +18,3 @@ const htmlManifest = function (done) {
 		done();
 	}
 };
-
-module.exports = htmlManifest;

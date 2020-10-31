@@ -1,11 +1,9 @@
-const gulp = require('gulp');
+import gulp from 'gulp';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // Favicon
-const favicon = function () {
+export const favicon = function () {
 	return gulp.src(config.src.favicon)
 		.pipe(gulp.dest(config.dist.favicon));
 };
-
-module.exports = favicon;

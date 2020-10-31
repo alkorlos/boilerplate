@@ -1,12 +1,12 @@
-const gulp = require('gulp');
-const rev = require('gulp-rev');
+import gulp from 'gulp';
+import rev from 'gulp-rev';
 
-const fs = require('fs');
+import fs from 'fs';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // Revision
-const revision = function () {
+export const revision = function () {
 	const filenames = [];
 
 	if (fs.existsSync(config.dist.cssEntryMin)) {
@@ -33,5 +33,3 @@ const revision = function () {
 		.pipe(rev.manifest())
 		.pipe(gulp.dest(config.dist.rev));
 };
-
-module.exports = revision;

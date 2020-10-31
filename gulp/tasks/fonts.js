@@ -1,16 +1,14 @@
-const gulp = require('gulp');
+import gulp from 'gulp';
 
-const changed = require('gulp-changed');
+import changed from 'gulp-changed';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // Fonts
-const fonts = function () {
+export const fonts = function () {
 	return gulp.src(config.src.fonts)
 		.pipe(changed(config.dist.fonts, {
 			hasChanged: changed.compareContents
 		}))
 		.pipe(gulp.dest(config.dist.fonts));
 };
-
-module.exports = fonts;

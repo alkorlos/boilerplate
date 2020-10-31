@@ -1,10 +1,18 @@
-const config = require('./gulp/config');
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path';
 
-const webpackConfig = {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+import { config } from './gulp/config.js';
+
+export const webpackConfig = {
 	mode: 'development',
-	entry: config.src.scriptsEntry,
+	entry: {
+		main: path.resolve(__dirname, config.src.scriptsEntry),
+	},
 	output: {
-		path: __dirname + '/' + config.dist.js,
+		path: path.resolve(__dirname, config.dist.js),
 		filename: '[name].js'
 	},
 	module: {
@@ -18,5 +26,3 @@ const webpackConfig = {
 		]
 	}
 };
-
-module.exports = webpackConfig;

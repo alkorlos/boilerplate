@@ -1,10 +1,8 @@
-const del = require('del');
+import del from 'del';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // Clean
-const clean = function () {
+export const clean = function () {
 	return del(config.dist.root + '/**/*');
 };
-
-module.exports = clean;

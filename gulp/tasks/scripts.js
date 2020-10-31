@@ -1,8 +1,8 @@
-const webpack = require('webpack');
-const webpackConfigMin = require('./../../webpack.config.min.js');
+import webpack from 'webpack';
+import { webpackConfigMin } from './../../webpack.config.min.js';
 
 // Scripts
-const scripts = function (done, errorMain) {
+export const scripts = function (done, errorMain) {
 	webpack(webpackConfigMin, onComplete);
 
 	function onComplete (error, stats) {
@@ -25,5 +25,3 @@ const scripts = function (done, errorMain) {
 		done();
 	}
 };
-
-module.exports = scripts;

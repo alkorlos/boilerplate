@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "name": "bundler",
   "version": "1.0.0",
   "description": "Alkor markup starter kit",

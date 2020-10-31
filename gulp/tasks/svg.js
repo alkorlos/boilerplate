@@ -1,15 +1,15 @@
-const gulp = require('gulp');
+import gulp from 'gulp';
 
-const plumber = require('gulp-plumber');
-const notify = require('gulp-notify');
-const imagemin = require('gulp-imagemin');
-const svgstore = require('gulp-svgstore');
-const rename = require('gulp-rename');
+import plumber from 'gulp-plumber';
+import notify from 'gulp-notify';
+import imagemin from 'gulp-imagemin';
+import svgstore from 'gulp-svgstore';
+import rename from 'gulp-rename';
 
-const config = require('../config');
+import { config } from '../config.js';
 
 // SVG
-const svg = function () {
+export const svg = function () {
 	return gulp.src(config.src.svg)
 		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(imagemin([
@@ -34,5 +34,3 @@ const svg = function () {
 		.pipe(rename('sprite.svg'))
 		.pipe(gulp.dest(config.dist.svg));
 };
-
-module.exports = svg;

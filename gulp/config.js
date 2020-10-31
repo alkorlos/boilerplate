@@ -1,4 +1,4 @@
-const config = {
+export const config = {
 	src: {
 		templates: 'src/templates/',
 		templatesPages: 'src/templates/pages/*.njk',
@@ -38,5 +38,3 @@ const config = {
 		manifest: 'dist/rev/rev-manifest.json'
 	}
 };
-
-module.exports = config;

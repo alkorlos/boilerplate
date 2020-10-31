@@ -1,20 +1,31 @@
-const gulp = require('gulp');
+import gulp from 'gulp';
 
-const plumber = require('gulp-plumber');
-const notify = require('gulp-notify');
-const sourcemaps = require('gulp-sourcemaps');
-const postcss = require('gulp-postcss');
-const csso = require('gulp-csso');
-const rename = require('gulp-rename');
+import plumber from 'gulp-plumber';
+import notify from 'gulp-notify';
+import sourcemaps from 'gulp-sourcemaps';
+import postcss from 'gulp-postcss';
+import csso from 'gulp-csso';
+import rename from 'gulp-rename';
 
-const config = require('../config');
+import postcssImportExtGlob from 'postcss-import-ext-glob';
+import postcssImport from 'postcss-import';
+import postcssPresetEnv from 'postcss-preset-env';
+
+import { config } from '../config.js';
 
 // Styles
-const styles = function () {
+export const styles = function () {
 	return gulp.src(config.src.stylesEntry)
 		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(sourcemaps.init())
-		.pipe(postcss())
+		.pipe(postcss([
+			postcssImportExtGlob,
+			postcssImport,
+			postcssPresetEnv({
+				stage: 1,
+				autoprefixer: true
+			})
+		]))
 		.pipe(rename({
 			extname: '.css'
 		}))
@@ -32,5 +43,3 @@ const styles = function () {
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest(config.dist.css));
 };
-
-module.exports = styles;

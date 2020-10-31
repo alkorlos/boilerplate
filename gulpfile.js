@@ -1,25 +1,25 @@
-const gulp = require('gulp');
+import gulp from 'gulp';
 
-const watch = require('./gulp/tasks/watch');
-const server = require('./gulp/tasks/server');
+import { watch } from './gulp/tasks/watch.js';
+import { server } from './gulp/tasks/server.js';
 
-const clean = require('./gulp/tasks/clean');
+import { clean } from './gulp/tasks/clean.js';
 
-const templates = require('./gulp/tasks/templates');
-const styles = require('./gulp/tasks/styles');
-const scripts = require('./gulp/tasks/scripts');
-const php = require('./gulp/tasks/php');
-const images = require('./gulp/tasks/images');
-const favicon = require('./gulp/tasks/favicon');
-const svg = require('./gulp/tasks/svg');
-const videos = require('./gulp/tasks/videos');
-const fonts = require('./gulp/tasks/fonts');
-const files = require('./gulp/tasks/files');
+import { templates } from './gulp/tasks/templates.js';
+import { styles } from './gulp/tasks/styles.js';
+import { scripts } from './gulp/tasks/scripts.js';
+import { php } from './gulp/tasks/php.js';
+import { images } from './gulp/tasks/images.js';
+import { favicon } from './gulp/tasks/favicon.js';
+import { svg } from './gulp/tasks/svg.js';
+import { videos } from './gulp/tasks/videos.js';
+import { fonts } from './gulp/tasks/fonts.js';
+import { files } from './gulp/tasks/files.js';
 
-const revision = require('./gulp/tasks/revision');
-const htmlManifest = require('./gulp/tasks/html-manifest');
+import { revision } from './gulp/tasks/revision.js';
+import { htmlManifest } from './gulp/tasks/html-manifest.js';
 
-const start = gulp.series(
+export const start = gulp.series(
 	gulp.parallel(
 		templates,
 		styles,
@@ -37,9 +37,7 @@ const start = gulp.series(
 	)
 );
 
-exports.start = start;
-
-const build = gulp.series(
+export const build = gulp.series(
 	clean,
 	gulp.parallel(
 		templates,
@@ -56,5 +54,3 @@ const build = gulp.series(
 	revision,
 	htmlManifest
 );
-
-exports.build = build;
