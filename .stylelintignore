@@ -2,6 +2,9 @@
 node_modules
 dist
 
+# Files
+.eslintrc.cjs
+
 # Src
 src/styles/base/generic.reset.pcss
 src/styles/libraries/**/global
