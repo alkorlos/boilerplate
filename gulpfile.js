@@ -19,6 +19,24 @@ import { files } from './gulp/tasks/files.js';
 import { revision } from './gulp/tasks/revision.js';
 import { htmlManifest } from './gulp/tasks/html-manifest.js';
 
+export const build = gulp.series(
+	clean,
+	gulp.parallel(
+		templates,
+		styles,
+		scripts,
+		php,
+		images,
+		favicon,
+		svg,
+		videos,
+		fonts,
+		files
+	),
+	revision,
+	htmlManifest
+);
+
 export const start = gulp.series(
 	gulp.parallel(
 		templates,
@@ -37,20 +55,4 @@ export const start = gulp.series(
 	)
 );
 
-export const build = gulp.series(
-	clean,
-	gulp.parallel(
-		templates,
-		styles,
-		scripts,
-		php,
-		images,
-		favicon,
-		svg,
-		videos,
-		fonts,
-		files
-	),
-	revision,
-	htmlManifest
-);
+export default start;

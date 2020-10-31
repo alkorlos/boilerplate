@@ -6,7 +6,7 @@
   "description": "Alkor markup starter kit",
   "main": "main.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development npx gulp start",
+    "start": "cross-env NODE_ENV=development npx gulp",
     "build": "cross-env NODE_ENV=production npx gulp build",
     "webpack": "npx webpack --config webpack.config.js --mode development",
     "webpack:production": "npx webpack --config webpack.config.js --mode production",
