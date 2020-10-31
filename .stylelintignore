@@ -3,7 +3,7 @@ node_modules
 dist
 
 # Files
-.eslintrc.cjs
+*.cjs
 
 # Src
 src/styles/base/generic.reset.pcss
