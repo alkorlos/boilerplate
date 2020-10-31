@@ -3,7 +3,7 @@ dist
 
 # Bundler config
 gulp
-.eslintrc.js
+.eslintrc.cjs
 gulpfile.js
 postcss.config.js
 stylelint.config.js
