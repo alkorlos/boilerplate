@@ -1,8 +1,7 @@
 import { fileURLToPath } from 'url';
-import path, { dirname } from 'path';
+import path from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 import config from './gulp/config.js';
 
