@@ -1,7 +1,7 @@
-import { header } from './header/index.js';
+import header from './header/index.js';
 
 const components = function () {
 	header();
 };
 
-export { components };
+export default components;

@@ -2,4 +2,4 @@ const menuMobile = function () {
 
 };
 
-export { menuMobile };
+export default menuMobile;

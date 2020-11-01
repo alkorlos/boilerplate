@@ -1,7 +1,7 @@
-import { menuMobile } from './menu-mobile.js';
+import menuMobile from './menu-mobile.js';
 
 const header = function () {
 	menuMobile();
 };
 
-export { header };
+export default header;
