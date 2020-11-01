@@ -23,8 +23,7 @@ export const server = function () {
 					compiler,
 					{
 						publicPath: '/scripts',
-						writeToDisk: true,
-						logLevel: 'silent'
+						writeToDisk: true
 					}
 				),
 				middleware(

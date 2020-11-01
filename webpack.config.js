@@ -7,6 +7,9 @@ import config from './gulp/config.js';
 
 export const webpackConfig = {
 	mode: 'development',
+	infrastructureLogging: {
+		level: 'none'
+	},
 	entry: {
 		main: path.resolve(__dirname, config.src.scriptsEntry),
 	},
