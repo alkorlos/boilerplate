@@ -6,7 +6,7 @@
     "start": "cross-env NODE_ENV=development npx gulp",
     "build": "cross-env NODE_ENV=production npx gulp build",
     "webpack": "npx webpack --config webpack.config.js --mode development",
-    "webpack:production": "npx webpack --config webpack.config.js --mode production",
+    "webpack:production": "npx webpack --config webpack.config.min.js --mode production",
     "stylelint": "npx stylelint ./src/styles/**/*.pcss",
     "stylelint:fix": "npx stylelint ./src/styles/**/*.pcss --fix",
     "eslint": "npx eslint ./src/scripts/**/*.js",
