@@ -1,5 +1,5 @@
 module.exports = {
-	extends: './stylelint.config.rational-order.js',
+	extends: './stylelint.config.rational-order.cjs',
 	plugins: 'stylelint-order',
 	rules: {
 		'color-hex-case': 'lower', // hex цвета: строчные или прописные буквы: строчные (Stylistic issues)

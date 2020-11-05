@@ -6,7 +6,7 @@ gulp
 .eslintrc.cjs
 gulpfile.js
 postcss.config.js
-stylelint.config.js
-stylelint.config.rational-order.js
+stylelint.config.cjs
+stylelint.config.rational-order.cjs
 webpack.config.js
 webpack.config.min.js
