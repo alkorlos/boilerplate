@@ -25,4 +25,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       # Deploy
-      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/keyhost -o StrictHostKeyChecking=no" --archive --compress --delete . u1126927@alkorlos.dev:/var/www/alkorlos.dev/bundler/
+      - run: cd dist && rsync -e "ssh -i $HOME/.ssh/keyhost -o StrictHostKeyChecking=no" --archive --compress --delete . u1126927@alkorlos.dev:/var/www/u1126927/data/www/alkorlos.dev/bundler/
