@@ -10,7 +10,8 @@
     "stylelint": "npx stylelint ./src/styles/**/*.pcss",
     "stylelint:fix": "npx stylelint ./src/styles/**/*.pcss --fix",
     "eslint": "npx eslint ./src/scripts/**/*.js",
-    "eslint:fix": "npx eslint ./src/scripts/**/*.js --fix"
+    "eslint:fix": "npx eslint ./src/scripts/**/*.js --fix",
+    "deploy": "cd dist && rsync --archive --compress --delete . u1126927@alkorlos.dev:/www/alkorlos.dev/bundler/"
   },
   "author": {
     "name": "Dmitry Statsenko",
