@@ -11,6 +11,9 @@ import postcssImportExtGlob from 'postcss-import-ext-glob';
 import postcssImport from 'postcss-import';
 import postcssPresetEnv from 'postcss-preset-env';
 
+import gulpif from 'gulp-if';
+const mode = process.env.NODE_ENV;
+
 import config from '../config.js';
 
 // Styles
@@ -29,7 +32,9 @@ export const styles = function () {
 		.pipe(rename({
 			extname: '.css'
 		}))
-		.pipe(gulp.dest(config.dist.css))
+		.pipe(gulpif(mode === 'development',
+			gulp.dest(config.dist.css)
+		))
 		.pipe(csso(
 			{
 				restructure: false,
