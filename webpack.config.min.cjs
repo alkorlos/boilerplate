@@ -21,7 +21,7 @@ const webpackConfigMin = {
 	}
 };
 
-if (mode === "production") {
+if (mode === 'development' || mode === 'production') {
 	webpackConfigMin.devtool = 'source-map';
 };
 
