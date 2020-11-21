@@ -1,3 +1,5 @@
+const mode = process.env.NODE_ENV;
+
 const webpackConfigMin = {
 	mode: 'production',
 	entry: {
@@ -7,7 +9,6 @@ const webpackConfigMin = {
 		path: __dirname + '/' + 'dist/js',
 		filename: '[name].js'
 	},
-	devtool: 'source-map',
 	module: {
 		rules: [
 			{
@@ -19,5 +20,10 @@ const webpackConfigMin = {
 		]
 	}
 };
+
+if (mode === "production") {
+	webpackConfigMin.devtool = 'source-map';
+};
+
 
 module.exports = webpackConfigMin;
