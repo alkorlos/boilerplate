@@ -21,7 +21,7 @@ const webpackConfigMin = {
 	}
 };
 
-if (mode === 'development' || mode === 'production') {
+if (mode !== 'obfuscation') {
 	webpackConfigMin.devtool = 'source-map';
 };
 

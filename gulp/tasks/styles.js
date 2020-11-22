@@ -45,7 +45,7 @@ export const styles = function () {
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulpif(mode === 'development' || mode === 'production',
+		.pipe(gulpif(mode !== 'obfuscation',
 			sourcemaps.write('.')
 		))
 		.pipe(gulp.dest(config.dist.css));

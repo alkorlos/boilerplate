@@ -5,7 +5,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development npx gulp",
     "build": "cross-env NODE_ENV=production npx gulp build",
-    "build:pre": "cross-env NODE_ENV=preproduction npx gulp build",
+    "build:obfuscation": "cross-env NODE_ENV=obfuscation npx gulp build",
     "webpack": "npx webpack --config webpack.config.cjs --mode development",
     "webpack:production": "npx webpack --config webpack.config.min.cjs --mode production",
     "stylelint": "npx stylelint ./src/styles/**/*.pcss",
