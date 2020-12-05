@@ -8,7 +8,7 @@ export const config = {
 		scripts: 'src/scripts/**/*.js',
 		scriptsEntry: './src/scripts/main.js',
 		php: 'src/php/**/*.php',
-		images: 'src/images/**/*.{webp,jpg,jpeg,png,svg}',
+		images: 'src/images/**/*.{avif,webp,jpg,jpeg,png,svg}',
 		favicon: 'src/favicon.ico',
 		svg: 'src/svg/**/*.svg',
 		videos: 'src/videos/**/*.{webm,mp4}',
