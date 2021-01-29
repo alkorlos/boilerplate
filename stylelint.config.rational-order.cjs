@@ -240,6 +240,8 @@ const visual = {
 };
 
 const compositing = {
+	emptyLineBefore: 'always',
+	noEmptyLineBetween: true,
 	properties: [
 		'backdrop-filter',
 		'will-change',
