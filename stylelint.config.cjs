@@ -125,12 +125,7 @@ module.exports = {
 		'at-rule-name-space-after': 'always', // Директива: пробел после имени: всегда (Stylistic issues)
 		'at-rule-no-unknown': [true, { // Директива: запретить неизвестные (Possible errors)
 			'ignoreAtRules': [ // Не считаются нарушениями
-				'import-glob',
-				'mixin',
-				'define-mixin',
-				'include',
-				'content',
-				'rules'
+				'import-glob'
 			]
 		}],
 		'at-rule-no-vendor-prefix': true, // Директива: запретить вендорные префиксы (Limit language features)
