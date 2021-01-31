@@ -47,7 +47,7 @@
     "gulp-svgstore": "^7.0.1",
     "postcss": "^8.2.4",
     "postcss-import": "^14.0.0",
-    "postcss-import-ext-glob": "^1.1.0",
+    "postcss-import-ext-glob": "^2.0.1",
     "postcss-preset-env": "^6.7.0",
     "webpack": "^5.19.0",
     "webpack-cli": "^4.4.0",
