@@ -12,7 +12,8 @@
     "stylelint:fix": "npx stylelint ./src/styles/**/*.pcss --fix",
     "eslint": "npx eslint ./src/scripts/**/*.js",
     "eslint:fix": "npx eslint ./src/scripts/**/*.js --fix",
-    "deploy": "cd dist && rsync --archive --compress --delete . u1126927@alkorlos.dev:/var/www/u1126927/data/www/alkorlos.dev/bundler/"
+    "deploy": "cd dist && rsync --archive --compress --delete . u1126927@alkorlos.dev:/var/www/u1126927/data/www/alkorlos.dev/bundler/",
+    "prepare": "husky install"
   },
   "author": {
     "name": "Dmitry Statsenko",
@@ -58,15 +59,10 @@
     "eslint": "^7.19.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-no-autofix": "^1.0.2",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "stylelint": "^13.9.0",
     "stylelint-order": "^4.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.pcss": "npm run stylelint:fix",
