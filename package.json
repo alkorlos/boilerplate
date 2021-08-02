@@ -8,10 +8,10 @@
     "build:obfuscation": "cross-env NODE_ENV=obfuscation npx gulp build",
     "webpack": "npx webpack --config webpack.config.js --mode development",
     "webpack:production": "npx webpack --config webpack.config.min.js --mode production",
-    "stylelint": "npx stylelint ./src/styles/**/*.pcss",
-    "stylelint:fix": "npx stylelint ./src/styles/**/*.pcss --fix",
-    "eslint": "npx eslint ./src/scripts/**/*.js",
-    "eslint:fix": "npx eslint ./src/scripts/**/*.js --fix",
+    "stylelint": "npx stylelint \"./src/styles/**/*.pcss\"",
+    "stylelint:fix": "npx stylelint \"./src/styles/**/*.pcss\" --fix",
+    "eslint": "npx eslint \"./src/scripts/**/*.js\"",
+    "eslint:fix": "npx eslint \"./src/scripts/**/*.js\" --fix",
     "deploy": "cd dist && rsync --archive --compress --delete . u1126927@alkorlos.dev:/var/www/u1126927/data/www/alkorlos.dev/bundler/"
   },
   "author": {
