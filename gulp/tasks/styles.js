@@ -7,10 +7,6 @@ import postcss from 'gulp-postcss';
 import csso from 'gulp-csso';
 import rename from 'gulp-rename';
 
-import postcssImportExtGlob from 'postcss-import-ext-glob';
-import postcssImport from 'postcss-import';
-import postcssPresetEnv from 'postcss-preset-env';
-
 import gulpif from 'gulp-if';
 const mode = process.env.NODE_ENV;
 
@@ -21,14 +17,7 @@ export const styles = function () {
 	return gulp.src(config.src.stylesEntry)
 		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(sourcemaps.init())
-		.pipe(postcss([
-			postcssImportExtGlob,
-			postcssImport,
-			postcssPresetEnv({
-				stage: 1,
-				autoprefixer: true
-			})
-		]))
+		.pipe(postcss())
 		.pipe(rename({
 			extname: '.css'
 		}))

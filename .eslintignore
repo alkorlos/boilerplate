@@ -5,7 +5,7 @@ dist
 gulp
 .eslintrc.cjs
 gulpfile.js
-postcss.config.js
+postcss.config.cjs
 stylelint.config.cjs
 stylelint.config.rational-order.cjs
 webpack.config.js
