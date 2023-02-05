@@ -29,7 +29,7 @@
     "babel-loader": "^9.1.2",
     "browser-sync": "^2.27.11",
     "cross-env": "^7.0.3",
-    "del": "^6.0.0",
+    "del": "^7.0.0",
     "focus-visible": "^5.2.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.2",
