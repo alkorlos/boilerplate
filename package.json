@@ -27,7 +27,7 @@
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.2",
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.11",
     "cross-env": "^7.0.3",
     "del": "^6.0.0",
     "focus-visible": "^5.2.0",
