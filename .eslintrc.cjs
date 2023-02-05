@@ -11,9 +11,8 @@ module.exports = {
 		Atomics: 'readonly',
 		SharedArrayBuffer: 'readonly'
 	},
-	parser: 'babel-eslint', // Так как используется babel
+	parser: '@babel/eslint-parser', // Так как используется babel
 	parserOptions: { // Конфигурация парсера
-		ecmaVersion: 2020,
 		sourceType: 'module'
 	},
 	rules: {
