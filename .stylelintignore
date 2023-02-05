@@ -2,9 +2,6 @@
 node_modules
 dist
 
-# Files
-*.cjs
-
 # Src
 src/styles/base/generic.reset.pcss
 src/styles/libraries/**/global
