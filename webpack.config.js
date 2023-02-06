@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url';
-import path from 'path';
+import { dirname, resolve } from 'path';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import config from './gulp/config.js';
 
@@ -11,10 +11,10 @@ export const webpackConfig = {
 		level: 'none'
 	},
 	entry: {
-		main: path.resolve(__dirname, config.src.scriptsEntry),
+		main: resolve(__dirname, config.src.scriptsEntry),
 	},
 	output: {
-		path: path.resolve(__dirname, config.dist.js),
+		path: resolve(__dirname, config.dist.js),
 		filename: '[name].js'
 	},
 	module: {
