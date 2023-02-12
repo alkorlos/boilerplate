@@ -12,9 +12,6 @@ module.exports = {
 		SharedArrayBuffer: 'readonly'
 	},
 	parser: '@babel/eslint-parser', // Так как используется babel
-	parserOptions: { // Конфигурация парсера
-		sourceType: 'module'
-	},
 	rules: {
 		'accessor-pairs': 'error', // Обеспечить пару getter/setter в объектах и классах: требовать getter для каждого свойства для которого определен setter (Best Practices)
 		'array-bracket-spacing': ['error', 'never'], // Запретить или обеспечить пробелы непосредственно внутри скобок массива: запретить (Stylistic Issues)
