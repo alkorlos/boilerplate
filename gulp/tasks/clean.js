@@ -1,10 +1,10 @@
-import { deleteSync } from 'del';
+import { deleteAsync } from 'del';
 
 import config from '../config.js';
 
 // Clean
 export const clean = function () {
-	return deleteSync([config.dist.root + '/*/']);
+	return deleteAsync([config.dist.root + '/*/']);
 };
 
 export default clean;
