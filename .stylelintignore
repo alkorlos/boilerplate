@@ -3,5 +3,4 @@ node_modules
 dist
 
 # Src
-src/styles/base/generic.reset.pcss
 src/styles/libraries/**/global
