@@ -2,14 +2,14 @@ module.exports = {
 	extends: './stylelint.config.rational-order.cjs',
 	plugins: 'stylelint-order',
 	rules: {
-		'color-hex-case': 'lower', // hex цвета: строчные или прописные буквы: строчные (Stylistic issues)
-		'color-hex-length': 'long', // hex цвета: короткая или длинная запись: длинная (Stylistic issues)
-		'color-no-invalid-hex': true, // hex цвета: запретить неизвестные (Possible errors)
+		"color-function-notation": "modern", // Цвета: современная или устаревшая нотация для цветовых функций: современная
+		"color-no-hex": true, // Цвета: запретить hex цвета
 
 		'font-family-name-quotes': 'always-unless-keyword', // Шрифты: кавычки вокруг имен семейств: да, пока не является ключевым словом (Stylistic issues)
 		'font-family-no-duplicate-names': true, // Шрифты: запретить дублирование семейств (Possible errors)
 		'font-family-no-missing-generic-family-keyword': true, // Шрифты: запретить отсутствие общих семейств (sans-serif, serif) (Possible errors)
 
+		"function-disallowed-list": ["rgba", "hsla", "rgb", "hsl"], // Функции: запретить функции из списка
 		'function-calc-no-unspaced-operator': true, // Функции: запретить отсутствие пробелов в функции calc (Possible errors)
 		'function-comma-newline-after': 'always-multi-line', // Функции: новая строка после ",": всегда при многострочной записи (Stylistic issues)
 		'function-comma-newline-before': 'never-multi-line', // Функции: новая строка до ",": никогда при многострочной записи (Stylistic issues)
