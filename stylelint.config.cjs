@@ -76,6 +76,7 @@ module.exports = {
 		'selector-descendant-combinator-no-non-space': true, // Комбинированные селекторы: запретить символы кроме пробелов (Stylistic issues)
 		'selector-max-id': 0, // Селекторы: максимальное количество id (Limit language features)
 		'selector-pseudo-class-case': 'lower', // Псевдоклассы: строчные или прописные буквы: строчные (Stylistic issues)
+		'selector-pseudo-class-no-unknown': true, // Псевдоклассы: запретить неизвестные (Possible errors)
 		'selector-pseudo-class-parentheses-space-inside': 'never', // Псевдоклассы: пробелы внутри "()" по краям: никогда (Stylistic issues)
 		'selector-pseudo-element-case': 'lower', // Псевдоэлементы: строчные или прописные буквы: строчные (Stylistic issues)
 		'selector-pseudo-element-colon-notation': 'double', // Псевдоэлементы: ":" или "::" для записи: "::" (Stylistic issues)
