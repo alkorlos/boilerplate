@@ -30,6 +30,7 @@ module.exports = {
 		'string-quotes': 'double', // Строки: одиночные или двойные кавычки: двойные (Stylistic issues)
 
 		'unit-case': 'lower', // Единицы измерения: строчные или прописные буквы: строчные (Stylistic issues)
+		"unit-no-unknown": true, // Единицы измерения: запретить неизвестные (Possible errors)
 
 		'value-keyword-case': 'lower', // Значения: строчные или прописные буквы: строчные (Stylistic issues)
 		'value-list-comma-newline-after': 'always-multi-line', // Список значений: новая строка после ",": всегда при многострочной записи (Stylistic issues)
