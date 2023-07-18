@@ -1,11 +1,11 @@
 const special = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: ['all']
 };
 
 const positioning = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: [
 		'position',
@@ -23,7 +23,7 @@ const positioning = {
 };
 
 const boxmodel = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: [
 		'display',
@@ -102,7 +102,7 @@ const boxmodel = {
 };
 
 const typography = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: [
 		'color',
@@ -167,7 +167,7 @@ const typography = {
 };
 
 const visual = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: [
 		'list-style',
@@ -240,7 +240,7 @@ const visual = {
 };
 
 const compositing = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: [
 		'backdrop-filter',
@@ -257,7 +257,7 @@ const compositing = {
 };
 
 const animation = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: [
 		'transition',
@@ -278,7 +278,7 @@ const animation = {
 };
 
 const misc = {
-	emptyLineBefore: 'always',
+	emptyLineBefore: 'threshold',
 	noEmptyLineBetween: true,
 	properties: [
 		'appearance',
@@ -528,6 +528,11 @@ const ruleOrder = [
 module.exports = {
 	rules: {
 		'order/order': ruleOrder,
-		'order/properties-order': propertiesOrder
+		'order/properties-order': [
+			propertiesOrder,
+			{
+				emptyLineMinimumPropertyThreshold: 4
+			},
+		]
 	}
 };
