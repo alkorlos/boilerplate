@@ -100,13 +100,16 @@ module.exports = {
 		'selector-list-comma-space-after': 'always-single-line', // Список селекторов: пробел после ",": всегда при однострочной записи (Stylistic issues)
 		'selector-list-comma-space-before': 'never', // Список селекторов: пробел до ",": никогда (Stylistic issues)
 
-		'rule-empty-line-before': ['always', { // Селекторы: пустая строка до селектора: всегда (Stylistic issues)
-			'except': [
-				'first-nested', // Исключение: селектор первый в блоке
-				'inside-block' // Исключение: селектор внутри блока
-			],
-			'ignore': ['after-comment'] // Игнорировать: селектор после комментария
-		}],
+		'rule-empty-line-before': [
+			'always', // Селекторы: пустая строка до селектора: всегда (Stylistic issues)
+			{
+				'except': [
+					'first-nested', // Исключение: селектор первый в блоке
+					'inside-block' // Исключение: селектор внутри блока
+				],
+				'ignore': ['after-comment'] // Игнорировать: селектор после комментария
+			}
+		],
 
 		'media-feature-colon-space-after': 'always', // Характеристика устройства: пробел после ":": всегда (Stylistic issues)
 		'media-feature-colon-space-before': 'never', // Характеристика устройства: пробел до ":": никогда (Stylistic issues)
@@ -123,31 +126,40 @@ module.exports = {
 		'media-query-list-comma-space-before': 'never-single-line', // Медиавыражение: пробел до ",": никогда при однострочной записи (Stylistic issues)
 		'media-query-no-invalid': true, // Медиавыражение: запретить неизвестные
 
-		'at-rule-empty-line-before': ['always', { // Директива: пустая строка до дерективы: всегда (Stylistic issues)
-			'except': [
-				'first-nested', // Исключение: деректива первая в блоке
-				'inside-block' // Исключение: деректива внутри блока
-			],
-			'ignore': [
-				'after-comment', // Игнорировать: деректива после комментария
-				'blockless-after-blockless' // Игнорировать: несколько деректив подряд
-			]
-		}],
+		'at-rule-empty-line-before': [
+			'always', // Директива: пустая строка до дерективы: всегда (Stylistic issues)
+			{
+				'except': [
+					'first-nested', // Исключение: деректива первая в блоке
+					'inside-block' // Исключение: деректива внутри блока
+				],
+				'ignore': [
+					'after-comment', // Игнорировать: деректива после комментария
+					'blockless-after-blockless' // Игнорировать: несколько деректив подряд
+				]
+			}
+		],
 		'at-rule-name-case': 'lower', // Директива: строчные или прописные буквы: строчные (Stylistic issues)
 		'at-rule-name-space-after': 'always', // Директива: пробел после имени: всегда (Stylistic issues)
-		'at-rule-no-unknown': [true, { // Директива: запретить неизвестные (Possible errors)
-			'ignoreAtRules': [ // Не считаются нарушениями
-				'import-glob'
-			]
-		}],
+		'at-rule-no-unknown': [
+			true, // Директива: запретить неизвестные (Possible errors)
+			{
+				'ignoreAtRules': [ // Не считаются нарушениями
+					'import-glob'
+				]
+			}
+		],
 		'at-rule-no-vendor-prefix': true, // Директива: запретить вендорные префиксы (Limit language features)
 		'at-rule-semicolon-newline-after': 'always', // Директива: новая строка после ";": всегда (Stylistic issues)
 
 		'comment-no-empty': true, // Комментарии: запретить пустые (Possible errors)
 
-		'indentation': ['tab', { // Общие: отступ: табуляция (Stylistic issues)
-			'ignore': 'value' // Игнорировать: внутри значения
-		}],
+		'indentation': [
+			'tab', // Общие: отступ: табуляция (Stylistic issues)
+			{
+				'ignore': 'value' // Игнорировать: внутри значения
+			}
+		],
 
 		'max-empty-lines': 2, // Общие: максимальное число пустых смежных строк (Stylistic issues)
 		'no-duplicate-selectors': true, // Общие: запретить дублирование селекторов (Possible errors)
