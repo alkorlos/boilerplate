@@ -4,6 +4,7 @@ module.exports = {
 	rules: {
 		'color-function-notation': 'modern', // Цвета: современная или устаревшая нотация для цветовых функций: современная
 		'color-no-hex': true, // Цвета: запретить hex цвета
+		'color-named': 'never', // Цвета: запретить именованные
 
 		'font-family-name-quotes': 'always-unless-keyword', // Шрифты: кавычки вокруг имен семейств: да, пока не является ключевым словом (Stylistic issues)
 		'font-family-no-duplicate-names': true, // Шрифты: запретить дублирование семейств (Possible errors)
@@ -13,12 +14,12 @@ module.exports = {
 		'function-calc-no-unspaced-operator': true, // Функции: запретить отсутствие пробелов в функции calc (Possible errors)
 		'function-comma-newline-after': 'always-multi-line', // Функции: новая строка после ",": всегда при многострочной записи (Stylistic issues)
 		'function-comma-newline-before': 'never-multi-line', // Функции: новая строка до ",": никогда при многострочной записи (Stylistic issues)
-		'function-comma-space-after': 'always', // Функции: пробел после ",": всегда (Stylistic issues)
+		'function-comma-space-after': 'always-single-line', // Функции: пробел после ",": всегда при однострочной записи
 		'function-comma-space-before': 'never', // Функции: пробел до ",": никогда (Stylistic issues)
 		'function-linear-gradient-no-nonstandard-direction': true, // Функции: исправлять ошибки в linear-gradient() (Possible errors)
 		'function-max-empty-lines': 0, // Функции: максимальное число пустых строк (Stylistic issues)
 		'function-name-case': 'lower', // Функции: строчные или прописные буквы: строчные (Stylistic issues)
-		'function-parentheses-space-inside': 'never', // Функции: пробелы внутри "()" по краям: никогда (Stylistic issues)
+		'function-parentheses-space-inside': 'never-single-line', // Функции: пробелы внутри "()" по краям: никогда при однострочной записи
 		'function-url-quotes': 'always', // Функции: кавычки для url: всегда (Stylistic issues)
 		'function-whitespace-after': 'always', // Функции: пробел между функциями: всегда (Stylistic issues)
 		'function-no-unknown': true, // Функции: запретить неизвестные
@@ -33,7 +34,12 @@ module.exports = {
 		'unit-case': 'lower', // Единицы измерения: строчные или прописные буквы: строчные (Stylistic issues)
 		'unit-no-unknown': true, // Единицы измерения: запретить неизвестные (Possible errors)
 
-		'value-keyword-case': 'lower', // Значения: строчные или прописные буквы: строчные (Stylistic issues)
+		'value-keyword-case': [ // Значения: строчные или прописные буквы: строчные
+			'lower',
+			{
+				'camelCaseSvgKeywords' : true // Ключевые слова SVG в формате camel case
+			}
+		],
 		'value-list-comma-newline-after': 'always-multi-line', // Список значений: новая строка после ",": всегда при многострочной записи (Stylistic issues)
 		'value-list-comma-newline-before': 'never-multi-line', // Список значений: новая строка до ",": никогда при многострочной записи (Stylistic issues)
 		'value-list-comma-space-after': 'always-single-line', // Список значений: пробел после ",": всегда при однострочной запси (Stylistic issues)
@@ -176,6 +182,25 @@ module.exports = {
 		'custom-property-no-missing-var-function': true, // Запретить отсутствие функции var для кастомных свойств
 		'no-descending-specificity': true, // Запретить использование селекторов с меньшей специфичностью после селекторов с более высокой специфичностью переопределяющих стили
 		'no-invalid-position-at-import-rule': true, // Запретить неправильное позиционирование правил @import
-		'selector-anb-no-unmatchable': true // Запретить неподходящие селекторы An+B
+		'selector-anb-no-unmatchable': true, // Запретить неподходящие селекторы An+B
+		'font-weight-notation': [
+			'numeric', // font-weight: требовать числовое значение
+			{
+				'ignore': [
+					'relative' // Игнорировать: относительные ключевые слова
+				]
+			}
+		],
+		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block', // @keyframes: определить представление селекторов: однотипное представление
+		'number-max-precision' : 2, // Ограничение количества десятичных знаков, разрешенных в числах
+		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
+		'selector-not-notation': 'simple', // Нотация для селекторов псевдокласса :not(): простая
+		'max-nesting-depth' : [
+			0, // Ограничение глубины вложенности
+			{
+				'ignore': ['pseudo-classes'], // Игнорировать: псевдо классы
+				'ignoreAtRules': ['media'] // Игнорировать: операторы из списка
+			}
+		]
 	}
 };

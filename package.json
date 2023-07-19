@@ -60,7 +60,7 @@
     "eslint-plugin-no-autofix": "^1.2.3",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
-    "stylelint": "^15.6.2",
+    "stylelint": "^15.10.2",
     "stylelint-order": "^6.0.3"
   },
   "lint-staged": {
