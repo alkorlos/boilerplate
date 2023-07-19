@@ -87,7 +87,12 @@ module.exports = {
 		'selector-pseudo-element-colon-notation': 'double', // Псевдоэлементы: ":" или "::" для записи: "::" (Stylistic issues)
 		'selector-pseudo-element-no-unknown': true, // Псевдоэлементы: запретить неизвестные (Possible errors)
 		'selector-type-case': 'lower', // Селекторы: строчные или прописные буквы: строчные (Stylistic issues)
-		'selector-type-no-unknown': true, // Селекторы: запретить неизвестные (Possible errors)
+		'selector-type-no-unknown': [
+			true, // Селекторы: запретить неизвестные
+			{
+				ignore: ['custom-elements'], // Игнорировать: пользовательские элементы
+			},
+		],
 		'selector-max-empty-lines': 0, // Селекторы: максимальное число пустых строк (Limit language features)
 
 		'selector-list-comma-newline-after': 'always', // Список селекторов: новая строка после ",": всегда (Stylistic issues)
@@ -159,12 +164,6 @@ module.exports = {
 		'custom-property-no-missing-var-function': true, // Запретить отсутствие функции var для кастомных свойств
 		'no-descending-specificity': true, // Запретить использование селекторов с меньшей специфичностью после селекторов с более высокой специфичностью переопределяющих стили
 		'no-invalid-position-at-import-rule': true, // Запретить неправильное позиционирование правил @import
-		'selector-anb-no-unmatchable': true, // Запретить неподходящие селекторы An+B
-		'selector-type-no-unknown': [ // Запретить неизвестные типы селекторов
-			true,
-			{
-				ignore: ['custom-elements'], // Игнорировать: пользовательские элементы
-			},
-		]
+		'selector-anb-no-unmatchable': true // Запретить неподходящие селекторы An+B
 	}
 };
