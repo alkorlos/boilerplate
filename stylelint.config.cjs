@@ -34,8 +34,8 @@ module.exports = {
 		'unit-case': 'lower', // Единицы измерения: строчные или прописные буквы: строчные (Stylistic issues)
 		'unit-no-unknown': true, // Единицы измерения: запретить неизвестные (Possible errors)
 
-		'value-keyword-case': [ // Значения: строчные или прописные буквы: строчные
-			'lower',
+		'value-keyword-case': [ // Значения: строчные или прописные буквы
+			'lower', // Строчные
 			{
 				'camelCaseSvgKeywords' : true // Ключевые слова SVG в формате camel case
 			}
@@ -93,8 +93,8 @@ module.exports = {
 		'selector-pseudo-element-colon-notation': 'double', // Псевдоэлементы: ":" или "::" для записи: "::" (Stylistic issues)
 		'selector-pseudo-element-no-unknown': true, // Псевдоэлементы: запретить неизвестные (Possible errors)
 		'selector-type-case': 'lower', // Селекторы: строчные или прописные буквы: строчные (Stylistic issues)
-		'selector-type-no-unknown': [
-			true, // Селекторы: запретить неизвестные
+		'selector-type-no-unknown': [ // Селекторы: запретить неизвестные
+			true,
 			{
 				ignore: ['custom-elements'], // Игнорировать: пользовательские элементы
 			},
@@ -106,8 +106,8 @@ module.exports = {
 		'selector-list-comma-space-after': 'always-single-line', // Список селекторов: пробел после ",": всегда при однострочной записи (Stylistic issues)
 		'selector-list-comma-space-before': 'never', // Список селекторов: пробел до ",": никогда (Stylistic issues)
 
-		'rule-empty-line-before': [
-			'always', // Селекторы: пустая строка до селектора: всегда (Stylistic issues)
+		'rule-empty-line-before': [ // Селекторы: пустая строка до селектора
+			'always', // Всегда
 			{
 				'except': [
 					'first-nested', // Исключение: селектор первый в блоке
@@ -132,8 +132,8 @@ module.exports = {
 		'media-query-list-comma-space-before': 'never-single-line', // Медиавыражение: пробел до ",": никогда при однострочной записи (Stylistic issues)
 		'media-query-no-invalid': true, // Медиавыражение: запретить неизвестные
 
-		'at-rule-empty-line-before': [
-			'always', // Директива: пустая строка до дерективы: всегда (Stylistic issues)
+		'at-rule-empty-line-before': [ // Директива: пустая строка до дерективы
+			'always', // Всегда
 			{
 				'except': [
 					'first-nested', // Исключение: деректива первая в блоке
@@ -147,8 +147,8 @@ module.exports = {
 		],
 		'at-rule-name-case': 'lower', // Директива: строчные или прописные буквы: строчные (Stylistic issues)
 		'at-rule-name-space-after': 'always', // Директива: пробел после имени: всегда (Stylistic issues)
-		'at-rule-no-unknown': [
-			true, // Директива: запретить неизвестные (Possible errors)
+		'at-rule-no-unknown': [ // Директива: запретить неизвестные
+			true,
 			{
 				'ignoreAtRules': [ // Не считаются нарушениями
 					'import-glob'
@@ -160,8 +160,8 @@ module.exports = {
 
 		'comment-no-empty': true, // Комментарии: запретить пустые (Possible errors)
 
-		'indentation': [
-			'tab', // Общие: отступ: табуляция (Stylistic issues)
+		'indentation': [ // Общие: отступ
+			'tab', // Табуляция
 			{
 				'ignore': 'value' // Игнорировать: внутри значения
 			}
@@ -183,8 +183,8 @@ module.exports = {
 		'no-descending-specificity': true, // Запретить использование селекторов с меньшей специфичностью после селекторов с более высокой специфичностью переопределяющих стили
 		'no-invalid-position-at-import-rule': true, // Запретить неправильное позиционирование правил @import
 		'selector-anb-no-unmatchable': true, // Запретить неподходящие селекторы An+B
-		'font-weight-notation': [
-			'numeric', // font-weight: требовать числовое значение
+		'font-weight-notation': [ // font-weight
+			'numeric', // Требовать числовое значение
 			{
 				'ignore': [
 					'relative' // Игнорировать: относительные ключевые слова
@@ -195,8 +195,8 @@ module.exports = {
 		'number-max-precision' : 2, // Ограничение количества десятичных знаков, разрешенных в числах
 		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
 		'selector-not-notation': 'simple', // Нотация для селекторов псевдокласса :not(): простая
-		'max-nesting-depth' : [
-			0, // Ограничение глубины вложенности
+		'max-nesting-depth' : [ // Ограничение глубины вложенности
+			0,
 			{
 				'ignore': ['pseudo-classes'], // Игнорировать: псевдо классы
 				'ignoreAtRules': ['media'] // Игнорировать: операторы из списка
