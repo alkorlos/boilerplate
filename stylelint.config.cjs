@@ -21,6 +21,7 @@ module.exports = {
 		'function-parentheses-space-inside': 'never', // Функции: пробелы внутри "()" по краям: никогда (Stylistic issues)
 		'function-url-quotes': 'always', // Функции: кавычки для url: всегда (Stylistic issues)
 		'function-whitespace-after': 'always', // Функции: пробел между функциями: всегда (Stylistic issues)
+		'function-no-unknown': true, // Функции: запретить неизвестные
 
 		'number-leading-zero': 'always', // Числа: начальный ноль для дробных чисел: всегда (Stylistic issues)
 		'number-no-trailing-zeros': true, // Числа: запретить конечный ноль (Stylistic issues)
@@ -45,6 +46,7 @@ module.exports = {
 		'property-no-unknown': true, // Свойства: запретить неизвестные
 
 		'keyframe-declaration-no-important': true, // @keyframes: запретить !important (Possible errors)
+		'keyframe-block-no-duplicate-selectors': true, // @keyframes: запретить дублирование селекторов
 
 		'declaration-bang-space-after': 'never', // Декларации: пробел после "!": никогда (Stylistic issues)
 		'declaration-bang-space-before': 'always', // Декларации: пробел до "!": всегда (Stylistic issues)
@@ -114,6 +116,7 @@ module.exports = {
 		'media-query-list-comma-newline-before': 'never-multi-line', // Медиавыражение: новая строка до ",": никогда при многострочной записи (Stylistic issues)
 		'media-query-list-comma-space-after': 'always-single-line', // Медиавыражение: пробел после ",": всегда при однострочной записи (Stylistic issues)
 		'media-query-list-comma-space-before': 'never-single-line', // Медиавыражение: пробел до ",": никогда при однострочной записи (Stylistic issues)
+		'media-query-no-invalid': true, // Медиавыражение: запретить неизвестные
 
 		'at-rule-empty-line-before': ['always', { // Директива: пустая строка до дерективы: всегда (Stylistic issues)
 			'except': [
@@ -151,6 +154,17 @@ module.exports = {
 		'no-missing-end-of-source-newline': true, // Общие: запретить отсутствующие пустые строки в конце кода (Stylistic issues)
 
 		'named-grid-areas-no-invalid': true, // Запретить недействительные грид-области
-		'no-irregular-whitespace': true // Запретить неправильные пробелы
+		'no-irregular-whitespace': true, // Запретить неправильные пробелы
+		'annotation-no-unknown': true, // Запретить неизвестные аннотации
+		'custom-property-no-missing-var-function': true, // Запретить отсутствие функции var для кастомных свойств
+		'no-descending-specificity': true, // Запретить использование селекторов с меньшей специфичностью после селекторов с более высокой специфичностью переопределяющих стили
+		'no-invalid-position-at-import-rule': true, // Запретить неправильное позиционирование правил @import
+		'selector-anb-no-unmatchable': true, // Запретить неподходящие селекторы An+B
+		'selector-type-no-unknown': [ // Запретить неизвестные типы селекторов
+			true,
+			{
+				ignore: ['custom-elements'], // Игнорировать: пользовательские элементы
+			},
+		]
 	}
 };
