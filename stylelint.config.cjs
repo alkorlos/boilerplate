@@ -42,6 +42,7 @@ module.exports = {
 
 		'property-case': 'lower', // Свойства: строчные или прописные буквы: строчные (Stylistic issues)
 		'property-no-vendor-prefix': true, // Свойства: запретить вендорные префиксы (Limit language features)
+		'property-no-unknown': true, // Свойства: запретить неизвестные
 
 		'keyframe-declaration-no-important': true, // @keyframes: запретить !important (Possible errors)
 
@@ -57,6 +58,7 @@ module.exports = {
 		'declaration-block-semicolon-space-after': 'always-single-line', // Блок деклараций: пробел после ";": всегда при однострочной записи (Stylistic issues)
 		'declaration-block-semicolon-space-before': 'never', // Блок деклараций: пробел до ";": никогда (Stylistic issues)
 		'declaration-block-trailing-semicolon': 'always', // Блок деклараций: ";" в записи свойств: всегда (Stylistic issues)
+		'declaration-block-no-duplicate-custom-properties': true, // Блок деклараций: запретить дублирование кастомных свойств
 
 		'block-closing-brace-empty-line-before': 'never', // Блок: пустая строка до "}": никогда (Stylistic issues)
 		'block-closing-brace-newline-after': 'always', // Блок: новая строка после "}": всегда (Stylistic issues)
@@ -146,6 +148,9 @@ module.exports = {
 		'no-eol-whitespace': true, // Общие: запретить пробелы в конце строк (Stylistic issues)
 		'no-extra-semicolons': true, // Общие: запретить лишние ";", двойные и т.д. (Possible errors)
 		'no-invalid-double-slash-comments': true, // Общие: запретить однострочные комментарии с помощью "//", этот способ может вызывать баги (Possible errors)
-		'no-missing-end-of-source-newline': true // Общие: запретить отсутствующие пустые строки в конце кода (Stylistic issues)
+		'no-missing-end-of-source-newline': true, // Общие: запретить отсутствующие пустые строки в конце кода (Stylistic issues)
+
+		'named-grid-areas-no-invalid': true, // Запретить недействительные грид-области
+		'no-irregular-whitespace': true // Запретить неправильные пробелы
 	}
 };
