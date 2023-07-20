@@ -97,7 +97,7 @@ module.exports = {
 		'value-keyword-case': [ // Значения: строчные или прописные буквы
 			'lower', // Строчные
 			{
-				'camelCaseSvgKeywords' : true // Ключевые слова SVG в формате camel case
+				'camelCaseSvgKeywords': true // Ключевые слова SVG в формате camel case
 			}
 		],
 
@@ -127,14 +127,14 @@ module.exports = {
 		],
 
 		// Max & min
-		'max-nesting-depth' : [ // Ограничение глубины вложенности
+		'max-nesting-depth': [ // Ограничение глубины вложенности
 			0,
 			{
 				'ignore': ['pseudo-classes'], // Игнорировать: псевдо классы
 				'ignoreAtRules': ['media'] // Игнорировать: операторы из списка
 			}
 		],
-		'number-max-precision' : 2, // Ограничение количества десятичных знаков, разрешенных в числах
+		'number-max-precision': 2, // Ограничение количества десятичных знаков, разрешенных в числах
 		'selector-max-id': 0, // Селекторы: максимальное количество id
 		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
 
