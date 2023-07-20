@@ -257,6 +257,6 @@ module.exports = {
 		'max-empty-lines': 2, // Общие: максимальное число пустых смежных строк
 		'no-eol-whitespace': true, // Общие: запретить пробелы в конце строк
 		'no-extra-semicolons': true, // Общие: запретить лишние ";", двойные и т.д.
-		'no-missing-end-of-source-newline': true, // Общие: запретить отсутствующие пустые строки в конце кода
+		'no-missing-end-of-source-newline': true // Общие: запретить отсутствующие пустые строки в конце кода
 	}
 };
