@@ -60,30 +60,21 @@ module.exports = {
 		'unit-no-unknown': true, // Запретить неизвестные единицы измерения
 
 		// Enforce conventions
-		// Allowed, disallowed & required
-		// At-rule
 		'at-rule-no-vendor-prefix': true, // Директива: запретить вендорные префиксы
 
-		// Color
 		'color-named': 'never', // Цвета: запретить именованные
 		'color-no-hex': true, // Цвета: запретить hex цвета
 
-		// Function
 		'function-disallowed-list': ['rgba', 'hsla', 'rgb', 'hsl'], // Функции: запретить функции из списка
 
-		// Length
 		'length-zero-no-unit': true, // Длина: запретить единицы для нулевого значения
 
-		// Media feature
 		'media-feature-name-no-vendor-prefix': true, // Характеристика устройства: запретить вендорные префиксы
 
-		// Property
 		'property-no-vendor-prefix': true, // Свойства: запретить вендорные префиксы
 
-		// Value
 		'value-no-vendor-prefix': true, // Значения: запретить вендорные префиксы
 
-		// Case
 		'function-name-case': 'lower', // Функции: строчные или прописные буквы: строчные
 		'selector-type-case': 'lower', // Селекторы: строчные или прописные буквы: строчные
 		'value-keyword-case': [ // Значения: строчные или прописные буквы
@@ -93,7 +84,6 @@ module.exports = {
 			}
 		],
 
-		// Empty lines
 		'at-rule-empty-line-before': [ // Директива: пустая строка до дерективы
 			'always', // Всегда
 			{
@@ -118,7 +108,6 @@ module.exports = {
 			}
 		],
 
-		// Max & min
 		'max-nesting-depth': [ // Ограничение глубины вложенности
 			0,
 			{
@@ -130,7 +119,6 @@ module.exports = {
 		'selector-max-id': 0, // Селекторы: максимальное количество id
 		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
 
-		// Notation
 		'color-function-notation': 'modern', // Цвета: современная или устаревшая нотация для цветовых функций: современная
 		'font-weight-notation': [ // font-weight
 			'numeric', // Требовать числовое значение
@@ -144,13 +132,11 @@ module.exports = {
 		'selector-not-notation': 'simple', // Нотация для селекторов псевдокласса :not(): простая
 		'selector-pseudo-element-colon-notation': 'double', // Псевдоэлементы: ":" или "::" для записи: "::"
 
-		// Quotes
 		'font-family-name-quotes': 'always-unless-keyword', // Шрифты: кавычки вокруг имен семейств: да, пока не является ключевым словом
 		'function-url-quotes': 'always', // Функции: кавычки для url: всегда
 		'selector-attribute-quotes': 'always', // Селекторы атрибутов: кавычки для значений: всегда
 
 		// Deprecated
-		// Function
 		'function-comma-newline-after': 'always-multi-line', // Функции: новая строка после ",": всегда при многострочной записи
 		'function-comma-newline-before': 'never-multi-line', // Функции: новая строка до ",": никогда при многострочной записи
 		'function-comma-space-after': 'always-single-line', // Функции: пробел после ",": всегда при однострочной записи
@@ -159,40 +145,32 @@ module.exports = {
 		'function-parentheses-space-inside': 'never-single-line', // Функции: пробелы внутри "()" по краям: никогда при однострочной записи
 		'function-whitespace-after': 'always', // Функции: пробел между функциями: всегда
 
-		// Number
 		'number-leading-zero': 'always', // Числа: начальный ноль для дробных чисел: всегда
 		'number-no-trailing-zeros': true, // Числа: запретить конечный ноль
 
-		// String
 		'string-quotes': 'double', // Строки: одиночные или двойные кавычки: двойные
 
-		// Unit
 		'unit-case': 'lower', // Единицы измерения: строчные или прописные буквы: строчные
 
-		// Value list
 		'value-list-comma-newline-after': 'always-multi-line', // Список значений: новая строка после ",": всегда при многострочной записи
 		'value-list-comma-newline-before': 'never-multi-line', // Список значений: новая строка до ",": никогда при многострочной записи
 		'value-list-comma-space-after': 'always-single-line', // Список значений: пробел после ",": всегда при однострочной запси
 		'value-list-comma-space-before': 'never', // Список значений: пробел до ",": никогда
 		'value-list-max-empty-lines': 0, // Список значений: максимальное число пустых строк
 
-		// Property
 		'property-case': 'lower', // Свойства: строчные или прописные буквы: строчные
 
-		// Declaration
 		'declaration-bang-space-after': 'never', // Декларации: пробел после "!": никогда
 		'declaration-bang-space-before': 'always', // Декларации: пробел до "!": всегда
 		'declaration-colon-space-after': 'always-single-line', // Декларации: пробел после ":": всегда при однострочной запси
 		'declaration-colon-space-before': 'never', // Декларации: пробел до ":": никогда
 
-		// Declaration block
 		'declaration-block-semicolon-newline-after': 'always', // Блок деклараций: новая строка после ";": всегда
 		'declaration-block-semicolon-newline-before': 'never-multi-line', // Блок деклараций: новая строка до ";": никогда
 		'declaration-block-semicolon-space-after': 'always-single-line', // Блок деклараций: пробел после ";": всегда при однострочной записи
 		'declaration-block-semicolon-space-before': 'never', // Блок деклараций: пробел до ";": никогда
 		'declaration-block-trailing-semicolon': 'always', // Блок деклараций: ";" в записи свойств: всегда
 
-		// Block
 		'block-closing-brace-empty-line-before': 'never', // Блок: пустая строка до "}": никогда
 		'block-closing-brace-newline-after': 'always', // Блок: новая строка после "}": всегда
 		'block-closing-brace-newline-before': 'always', // Блок: новая строка до "}": всегда
@@ -202,7 +180,6 @@ module.exports = {
 		'block-opening-brace-space-after': 'always-single-line', // Блок: новая строка до "{": всегда при однострочной записи
 		'block-opening-brace-space-before': 'always', // Блок: пробел после "{": всегда
 
-		// Selector
 		'selector-attribute-brackets-space-inside': 'never', // Селекторы атрибутов: пробелы внутри "[]" по краям: никогда
 		'selector-attribute-operator-space-after': 'never', // Селекторы атрибутов: пробелы до оператора: никогда
 		'selector-attribute-operator-space-before': 'never', // Селекторы атрибутов: пробелы после оператора: никогда
@@ -214,13 +191,11 @@ module.exports = {
 		'selector-pseudo-class-parentheses-space-inside': 'never', // Псевдоклассы: пробелы внутри "()" по краям: никогда
 		'selector-pseudo-element-case': 'lower', // Псевдоэлементы: строчные или прописные буквы: строчные
 
-		// Selector list
 		'selector-list-comma-newline-after': 'always', // Список селекторов: новая строка после ",": всегда
 		'selector-list-comma-newline-before': 'never-multi-line', // Список селекторов: новая строка до ",": никогда при многострочной записи
 		'selector-list-comma-space-after': 'always-single-line', // Список селекторов: пробел после ",": всегда при однострочной записи
 		'selector-list-comma-space-before': 'never', // Список селекторов: пробел до ",": никогда
 
-		// Media feature
 		'media-feature-colon-space-after': 'always', // Характеристика устройства: пробел после ":": всегда
 		'media-feature-colon-space-before': 'never', // Характеристика устройства: пробел до ":": никогда
 		'media-feature-name-case': 'lower', // Характеристика устройства: строчные или прописные буквы: строчные
@@ -228,18 +203,15 @@ module.exports = {
 		'media-feature-range-operator-space-after': 'always', // Характеристика устройства диапазон: пробел после оператора: всегда
 		'media-feature-range-operator-space-before': 'always', // Характеристика устройства диапазон: пробел до оператора: всегда
 
-		// Media query list
 		'media-query-list-comma-newline-after': 'always-multi-line', // Медиавыражение: новая строка после ",": всегда при многострочной записи
 		'media-query-list-comma-newline-before': 'never-multi-line', // Медиавыражение: новая строка до ",": никогда при многострочной записи
 		'media-query-list-comma-space-after': 'always-single-line', // Медиавыражение: пробел после ",": всегда при однострочной записи
 		'media-query-list-comma-space-before': 'never-single-line', // Медиавыражение: пробел до ",": никогда при однострочной записи
 
-		// At-rule
 		'at-rule-name-case': 'lower', // Директива: строчные или прописные буквы: строчные
 		'at-rule-name-space-after': 'always', // Директива: пробел после имени: всегда
 		'at-rule-semicolon-newline-after': 'always', // Директива: новая строка после ";": всегда
 
-		// General / Sheet
 		'indentation': [ // Общие: отступ
 			'tab', // Табуляция
 			{
