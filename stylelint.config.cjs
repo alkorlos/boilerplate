@@ -60,49 +60,49 @@ module.exports = {
 		'unit-no-unknown': true, // Запретить неизвестные единицы измерения
 
 		// Enforce conventions
-		'at-rule-no-vendor-prefix': true, // Директива: запретить вендорные префиксы
+		'at-rule-no-vendor-prefix': true, // Запретить вендорные префиксы для директив
 
-		'color-named': 'never', // Цвета: запретить именованные
-		'color-no-hex': true, // Цвета: запретить hex цвета
+		'color-named': 'never', // Запретить именованные цвета
+		'color-no-hex': true, // Запретить hex цвета
 
-		'function-disallowed-list': ['rgba', 'hsla', 'rgb', 'hsl'], // Функции: запретить функции из списка
+		'function-disallowed-list': ['rgba', 'hsla', 'rgb', 'hsl'], // Запретить функции из списка
 
-		'length-zero-no-unit': true, // Длина: запретить единицы для нулевого значения
+		'length-zero-no-unit': true, // Запретить единицы для нулевого значения
 
-		'media-feature-name-no-vendor-prefix': true, // Характеристика устройства: запретить вендорные префиксы
+		'media-feature-name-no-vendor-prefix': true, // Запретить вендорные префиксы для медиафич
 
-		'property-no-vendor-prefix': true, // Свойства: запретить вендорные префиксы
+		'property-no-vendor-prefix': true, // Запретить вендорные префиксы для свойств
 
-		'value-no-vendor-prefix': true, // Значения: запретить вендорные префиксы
+		'value-no-vendor-prefix': true, // Запретить вендорные префиксы для значений
 
-		'function-name-case': 'lower', // Функции: строчные или прописные буквы: строчные
-		'selector-type-case': 'lower', // Селекторы: строчные или прописные буквы: строчные
-		'value-keyword-case': [ // Значения: строчные или прописные буквы
+		'function-name-case': 'lower', // Строчные или прописные буквы для имен функций: строчные
+		'selector-type-case': 'lower', // Строчные или прописные буквы для селекторов: строчные
+		'value-keyword-case': [ // Строчные или прописные буквы для значений
 			'lower', // Строчные
 			{
 				'camelCaseSvgKeywords': true // Ключевые слова SVG в формате camel case
 			}
 		],
 
-		'at-rule-empty-line-before': [ // Директива: пустая строка до дерективы
+		'at-rule-empty-line-before': [ // Пустая строка перед дерективой
 			'always', // Всегда
 			{
-				'except': [
-					'first-nested', // Исключение: деректива первая в блоке
-					'inside-block' // Исключение: деректива внутри блока
+				'except': [ // Исключение
+					'first-nested', // Деректива первая в блоке
+					'inside-block' // Деректива внутри блока
 				],
-				'ignore': [
-					'after-comment', // Игнорировать: деректива после комментария
-					'blockless-after-blockless' // Игнорировать: несколько деректив подряд
+				'ignore': [ // Игнорировать
+					'after-comment', // Деректива после комментария
+					'blockless-after-blockless' // Несколько деректив подряд
 				]
 			}
 		],
-		'rule-empty-line-before': [ // Селекторы: пустая строка до селектора
+		'rule-empty-line-before': [ // Пустая строка перед правилом
 			'always', // Всегда
 			{
-				'except': [
-					'first-nested', // Исключение: селектор первый в блоке
-					'inside-block' // Исключение: селектор внутри блока
+				'except': [ // Исключение
+					'first-nested', // Селектор первый в блоке
+					'inside-block' // Селектор внутри блока
 				],
 				'ignore': ['after-comment'] // Игнорировать: селектор после комментария
 			}
@@ -116,25 +116,25 @@ module.exports = {
 			}
 		],
 		'number-max-precision': 2, // Ограничение количества десятичных знаков, разрешенных в числах
-		'selector-max-id': 0, // Селекторы: максимальное количество id
+		'selector-max-id': 0, // Ограничение количества id в селекторах
 		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
 
-		'color-function-notation': 'modern', // Цвета: современная или устаревшая нотация для цветовых функций: современная
-		'font-weight-notation': [ // font-weight
-			'numeric', // Требовать числовое значение
+		'color-function-notation': 'modern', // Современная или устаревшая нотация для цветовых функций: современная
+		'font-weight-notation': [ // Числовая или именованная нотация для насыщенности
+			'numeric', // Числовая
 			{
 				'ignore': [
 					'relative' // Игнорировать: относительные ключевые слова
 				]
 			}
 		],
-		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block', // @keyframes: определить представление селекторов: однотипное представление
-		'selector-not-notation': 'simple', // Нотация для селекторов псевдокласса :not(): простая
-		'selector-pseudo-element-colon-notation': 'double', // Псевдоэлементы: ":" или "::" для записи: "::"
+		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block', // Ключевое слово или процентная нотация для @keyframes: однотипное представление
+		'selector-not-notation': 'simple', // Простая или сложная нотация для селекторов псевдокласса :not(): простая
+		'selector-pseudo-element-colon-notation': 'double', // ":" или "::" для записи псевдоэлементов: "::"
 
-		'font-family-name-quotes': 'always-unless-keyword', // Шрифты: кавычки вокруг имен семейств: да, пока не является ключевым словом
-		'function-url-quotes': 'always', // Функции: кавычки для url: всегда
-		'selector-attribute-quotes': 'always', // Селекторы атрибутов: кавычки для значений: всегда
+		'font-family-name-quotes': 'always-unless-keyword', // Требовать или запрещать кавычки для имен семейств шрифтов: всегда, пока не является ключевым словом
+		'function-url-quotes': 'always', // Требовать или запрещать кавычки для url: всегда
+		'selector-attribute-quotes': 'always', // Требовать или запрещать кавычки для значений атрибутов: всегда
 
 		// Deprecated
 		'function-comma-newline-after': 'always-multi-line', // Функции: новая строка после ",": всегда при многострочной записи
