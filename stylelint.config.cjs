@@ -77,7 +77,7 @@ module.exports = {
 
 		'function-name-case': 'lower', // Строчные или прописные буквы для имен функций: строчные
 		'selector-type-case': 'lower', // Строчные или прописные буквы для селекторов: строчные
-		'value-keyword-case': [ // Строчные или прописные буквы для значений
+		'value-keyword-case': [ // Строчные или прописные буквы для ключевых слов значений
 			'lower', // Строчные
 			{
 				'camelCaseSvgKeywords': true // Ключевые слова SVG в формате camel case
