@@ -3,50 +3,40 @@ module.exports = {
 	plugins: 'stylelint-order',
 	rules: {
 		// Avoid errors
-		// Descending
-		'no-descending-specificity': true, // Запретить использование селекторов с меньшей специфичностью после селекторов с более высокой специфичностью переопределяющих стили
+		'no-descending-specificity': true, // Запретить селекторы с меньшей специфичностью после переопределяющих селекторов с более высокой специфичностью
 
-		// Duplicate
-		'declaration-block-no-duplicate-custom-properties': true, // Блок деклараций: запретить дублирование кастомных свойств
-		'declaration-block-no-duplicate-properties': true, // Блок деклараций: запретить дублирование свойств
-		'font-family-no-duplicate-names': true, // Шрифты: запретить дублирование семейств
-		'keyframe-block-no-duplicate-selectors': true, // @keyframes: запретить дублирование селекторов
-		'no-duplicate-at-import-rules': true, // Общие: запретить дублирование @import
-		'no-duplicate-selectors': true, // Общие: запретить дублирование селекторов
+		'declaration-block-no-duplicate-custom-properties': true, // Запретить дублирование кастомных свойств внутри блоков деклараций
+		'declaration-block-no-duplicate-properties': true, // Запретить дублирование свойств внутри блоков деклараций
+		'font-family-no-duplicate-names': true, // Запретить дублирование имен внутри семейств шрифтов
+		'keyframe-block-no-duplicate-selectors': true, // Запретить дублирование селекторов внутри @keyframes
+		'no-duplicate-at-import-rules': true, // Запретить дублирование @import
+		'no-duplicate-selectors': true, // Запретить дублирование селекторов
 
-		// Empty
-		'block-no-empty': true, // Блок: запретить пустые блоки
-		'comment-no-empty': true, // Комментарии: запретить пустые
-		'no-empty-source': true, // Общие: запретить пустой код (например \n\t)
+		'block-no-empty': true, // Запретить пустые блоки
+		'comment-no-empty': true, // Запретить пустые комментарии
+		'no-empty-source': true, // Запретить пустой исходный код
 
-		// Invalid
-		'function-calc-no-unspaced-operator': true, // Функции: запретить отсутствие пробелов в функции calc
-		'keyframe-declaration-no-important': true, // @keyframes: запретить !important
-		'media-query-no-invalid': true, // Медиавыражение: запретить неизвестные
-		'named-grid-areas-no-invalid': true, // Запретить недействительные грид-области
-		'no-invalid-double-slash-comments': true, // Общие: запретить однострочные комментарии с помощью "//", этот способ может вызывать баги
-		'no-invalid-position-at-import-rule': true, // Запретить неправильное позиционирование правил @import
-		'string-no-newline': true, // Строки: запретить переносы внутри
+		'function-calc-no-unspaced-operator': true, // Запретить операторы без пробелов внутри функции calc
+		'keyframe-declaration-no-important': true, // Запретить !important внутри @keyframes
+		'media-query-no-invalid': true, // Запретить недопустимые медиавыражения
+		'named-grid-areas-no-invalid': true, // Запретить недопустимые грид-области
+		'no-invalid-double-slash-comments': true, // Запретить комментарии с помощью "//"
+		'no-invalid-position-at-import-rule': true, // Запретить недопустимое позиционирование правил @import
+		'string-no-newline': true, // Запретить недопустимые переносы внутри строк
 
-		// Irregular
 		'no-irregular-whitespace': true, // Запретить неправильные пробелы
 
-		// Missing
 		'custom-property-no-missing-var-function': true, // Запретить отсутствие функции var для кастомных свойств
-		'font-family-no-missing-generic-family-keyword': true, // Шрифты: запретить отсутствие общих семейств (sans-serif, serif)
+		'font-family-no-missing-generic-family-keyword': true, // Запретить отсутствие общего имени шрифта (sans-serif, serif) внутри семейства шрифта
 
-		// Non-standard
-		'function-linear-gradient-no-nonstandard-direction': true, // Функции: исправлять ошибки в linear-gradient()
+		'function-linear-gradient-no-nonstandard-direction': true, // Запретить нестандартные значения направления для функций линейных градиентов
 
-		// Overrides
-		'declaration-block-no-shorthand-property-overrides': true, // Блок деклараций: запретить короткие записи свойств если они переопределяют обычную запись
+		'declaration-block-no-shorthand-property-overrides': true, // Запретить краткую форму записи свойств если они переопределяют развернутую запись
 
-		// Unmatchable
 		'selector-anb-no-unmatchable': true, // Запретить неподходящие селекторы An+B
 
-		// Unknown
 		'annotation-no-unknown': true, // Запретить неизвестные аннотации
-		'at-rule-no-unknown': [ // Директива: запретить неизвестные
+		'at-rule-no-unknown': [ // Запретить неизвестные директивы
 			true,
 			{
 				'ignoreAtRules': [ // Не считаются нарушениями
@@ -54,18 +44,20 @@ module.exports = {
 				]
 			}
 		],
-		'function-no-unknown': true, // Функции: запретить неизвестные
-		'media-feature-name-no-unknown': true, // Характеристика устройства: запретить неизвестные
-		'property-no-unknown': true, // Свойства: запретить неизвестные
-		'selector-pseudo-class-no-unknown': true, // Псевдоклассы: запретить неизвестные
-		'selector-pseudo-element-no-unknown': true, // Псевдоэлементы: запретить неизвестные
-		'selector-type-no-unknown': [ // Селекторы: запретить неизвестные
+		'function-no-unknown': true, // Запретить неизвестные функции
+		'media-feature-name-no-unknown': true, // Запретить неизвестные медиафичи
+		'property-no-unknown': true, // Запретить неизвестные свойства
+		'selector-pseudo-class-no-unknown': true, // Запретить неизвестные псевдоклассы
+		'selector-pseudo-element-no-unknown': true, // Запретить неизвестные псевдоэлементы
+		'selector-type-no-unknown': [ // Запретить неизвестные селекторы
 			true,
 			{
-				ignore: ['custom-elements'], // Игнорировать: пользовательские элементы
+				'ignore': [ // Игнорировать
+					'custom-elements' // Пользовательские элементы
+				],
 			},
 		],
-		'unit-no-unknown': true, // Единицы измерения: запретить неизвестные
+		'unit-no-unknown': true, // Запретить неизвестные единицы измерения
 
 		// Enforce conventions
 		// Allowed, disallowed & required
