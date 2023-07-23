@@ -5,10 +5,10 @@ module.exports = {
 		// Avoid errors
 		'no-descending-specificity': true, // Запретить селекторы с меньшей специфичностью после переопределяющих селекторов с более высокой специфичностью
 
-		'declaration-block-no-duplicate-custom-properties': true, // Запретить дублирование кастомных свойств внутри блоков деклараций
-		'declaration-block-no-duplicate-properties': true, // Запретить дублирование свойств внутри блоков деклараций
-		'font-family-no-duplicate-names': true, // Запретить дублирование имен внутри семейств шрифтов
-		'keyframe-block-no-duplicate-selectors': true, // Запретить дублирование селекторов внутри @keyframes
+		'declaration-block-no-duplicate-custom-properties': true, // Запретить дублирование кастомных свойств в блоках деклараций
+		'declaration-block-no-duplicate-properties': true, // Запретить дублирование свойств в блоках деклараций
+		'font-family-no-duplicate-names': true, // Запретить дублирование имен в семействах шрифтов
+		'keyframe-block-no-duplicate-selectors': true, // Запретить дублирование селекторов в @keyframes
 		'no-duplicate-at-import-rules': true, // Запретить дублирование @import
 		'no-duplicate-selectors': true, // Запретить дублирование селекторов
 
@@ -16,18 +16,18 @@ module.exports = {
 		'comment-no-empty': true, // Запретить пустые комментарии
 		'no-empty-source': true, // Запретить пустой исходный код
 
-		'function-calc-no-unspaced-operator': true, // Запретить операторы без пробелов внутри функции calc
-		'keyframe-declaration-no-important': true, // Запретить !important внутри @keyframes
+		'function-calc-no-unspaced-operator': true, // Запретить недопустимые операторы без пробелов в функции calc
+		'keyframe-declaration-no-important': true, // Запретить недопустимые !important в @keyframes
 		'media-query-no-invalid': true, // Запретить недопустимые медиавыражения
 		'named-grid-areas-no-invalid': true, // Запретить недопустимые грид-области
-		'no-invalid-double-slash-comments': true, // Запретить комментарии с помощью "//"
+		'no-invalid-double-slash-comments': true, // Запретить недопустимые комментарии с помощью "//"
 		'no-invalid-position-at-import-rule': true, // Запретить недопустимое позиционирование правил @import
-		'string-no-newline': true, // Запретить недопустимые переносы внутри строк
+		'string-no-newline': true, // Запретить недопустимые переносы в строках
 
-		'no-irregular-whitespace': true, // Запретить неправильные пробелы
+		'no-irregular-whitespace': true, // Запретить нестандартные пробелы
 
 		'custom-property-no-missing-var-function': true, // Запретить отсутствие функции var для кастомных свойств
-		'font-family-no-missing-generic-family-keyword': true, // Запретить отсутствие общего имени шрифта (sans-serif, serif) внутри семейства шрифта
+		'font-family-no-missing-generic-family-keyword': true, // Запретить отсутствие общего имени шрифта (sans-serif, serif) в семействах шрифтов
 
 		'function-linear-gradient-no-nonstandard-direction': true, // Запретить нестандартные значения направления для функций линейных градиентов
 
@@ -141,7 +141,7 @@ module.exports = {
 		'function-comma-newline-before': 'never-multi-line', // Требовать перевод строки или запрещать пробел до запятых в функции: никогда при многострочной записи
 		'function-comma-space-after': 'always-single-line', // Требовать или запрещать пробел после запятых в функциях: всегда при однострочной записи
 		'function-comma-space-before': 'never', // Требовать или запрещать пробел до запятых в функциях: никогда
-		'function-max-empty-lines': 0, // Ограничить количество смежных пустых строк внутри функций
+		'function-max-empty-lines': 0, // Ограничить количество смежных пустых строк в функциях
 		'function-parentheses-space-inside': 'never-single-line', // Требовать или запрещать пробелы внутри скобок функций: никогда при однострочной записи
 		'function-whitespace-after': 'always', // Требовать или запрещать пробел после функций: всегда
 
@@ -156,7 +156,7 @@ module.exports = {
 		'value-list-comma-newline-before': 'never-multi-line', // Требовать перевод строки или запрещать пробел до запятой в списоке значений: никогда при многострочной записи
 		'value-list-comma-space-after': 'always-single-line', // Требовать или запрещать пробел после запятых в списках значений: всегда при однострочной запси
 		'value-list-comma-space-before': 'never', // Требовать или запрещать пробел до запятых в списках значений: никогда
-		'value-list-max-empty-lines': 0, // Ограничить количество смежных пустых строк внутри списоков значений
+		'value-list-max-empty-lines': 0, // Ограничить количество смежных пустых строк в списоках значений
 
 		'property-case': 'lower', // Строчные или прописные буквы для свойств: строчные
 
@@ -181,12 +181,12 @@ module.exports = {
 		'block-opening-brace-space-before': 'always', // Требовать или запрещать пробел до открывающей скобки блока: всегда
 
 		'selector-attribute-brackets-space-inside': 'never', // Требовать или запрещать пробел внутри скобок в селекторе атрибутов: никогда
-		'selector-attribute-operator-space-after': 'never', // Требовать или запрещать пробел после операторов внутри селекторов атрибутов: никогда
-		'selector-attribute-operator-space-before': 'never', // Требовать или запрещать пробел до операторов внутри селекторов атрибутов: никогда
+		'selector-attribute-operator-space-after': 'never', // Требовать или запрещать пробел после операторов в селекторах атрибутов: никогда
+		'selector-attribute-operator-space-before': 'never', // Требовать или запрещать пробел до операторов в селекторах атрибутов: никогда
 		'selector-combinator-space-after': 'always', // Требовать или запрещать пробел после комбинированных селекторов: всегда
 		'selector-combinator-space-before': 'always', // Требовать или запрещать пробел до комбинированных селекторов: всегда
 		'selector-descendant-combinator-no-non-space': true, // Запретить не пробельные символы для комбинаторов потомков селекторов
-		'selector-max-empty-lines': 0, // Ограничить количество смежных пустых строк внутри селекторов
+		'selector-max-empty-lines': 0, // Ограничить количество смежных пустых строк в селекторах
 		'selector-pseudo-class-case': 'lower', // Строчные или прописные буквы для псевдоклассов: строчные
 		'selector-pseudo-class-parentheses-space-inside': 'never', // Требовать или запрещать пробел внутри скобок в псевдоклассах: никогда
 		'selector-pseudo-element-case': 'lower', // Строчные или прописные буквы для псевдоэлементов: строчные
