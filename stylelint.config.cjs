@@ -151,7 +151,7 @@ module.exports = {
 		'function-parentheses-space-inside': 'never-single-line', // Требовать или запретить пробел внутри скобок функций: никогда при однострочной записи
 		'function-whitespace-after': 'always', // Требовать или запретить пробел после функций: всегда
 
-		'number-leading-zero': 'always', // Требовать или запрещать начальный ноль для дробных чисел меньше 1: всегда
+		'number-leading-zero': 'always', // Требовать или запретить начальный ноль для дробных чисел меньше 1: всегда
 		'number-no-trailing-zeros': true, // Запретить конечный ноль в числах
 
 		'string-quotes': 'double', // Одиночные или двойные кавычки вокруг строк: двойные
@@ -175,14 +175,14 @@ module.exports = {
 		'declaration-block-semicolon-newline-before': 'never-multi-line', // Требовать перенос строки или запретить пробел до точки с запятой в блоке деклараций: никогда
 		'declaration-block-semicolon-space-after': 'always-single-line', // Требовать или запретить пробел после точки с запятой в блоке деклараций: всегда при однострочной записи
 		'declaration-block-semicolon-space-before': 'never', // Требовать или запретить пробел до точки с запятой в блоке деклараций: никогда
-		'declaration-block-trailing-semicolon': 'always', // Требовать или запрещать точку с запятой в пределах блоков деклараций: всегда
+		'declaration-block-trailing-semicolon': 'always', // Требовать или запретить точку с запятой в пределах блоков деклараций: всегда
 
-		'block-closing-brace-empty-line-before': 'never', // Требовать или запрещать перевод строки до закрывающий скобки блока: никогда
+		'block-closing-brace-empty-line-before': 'never', // Требовать или запретить пустую строку до закрывающий скобки блока: никогда
 		'block-closing-brace-newline-after': 'always', // Требовать перенос строки или запретить пробел после закрывающей скобки блока: всегда
 		'block-closing-brace-newline-before': 'always', // Требовать перенос строки или запретить пробел до закрывающей скобки блока: всегда
 		'block-closing-brace-space-after': 'always-single-line', // Требовать или запретить пробел после закрывающей скобки блока: всегда при однострочной записи
 		'block-closing-brace-space-before': 'always-single-line', // Требовать или запретить пробел до закрывающей скобки блока: всегда при однострочной записи
-		'block-opening-brace-newline-after': 'always', // Требовать перевод строки после открывающей скобки блока: всегда
+		'block-opening-brace-newline-after': 'always', // Требовать перенос строки после открывающей скобки блока: всегда
 		'block-opening-brace-space-after': 'always-single-line', // Требовать или запретить пробел после открывающей скобки блока: всегда при однострочной записи
 		'block-opening-brace-space-before': 'always', // Требовать или запретить пробел до открывающей скобки блока: всегда
 
@@ -216,7 +216,7 @@ module.exports = {
 
 		'at-rule-name-case': 'lower', // Строчные или прописные буквы для директив: строчные
 		'at-rule-name-space-after': 'always', // Требовать пробел после имени директивы: всегда
-		'at-rule-semicolon-newline-after': 'always', // Требовать перевод строки после точки с запятой в директивах: всегда
+		'at-rule-semicolon-newline-after': 'always', // Требовать перенос строки после точки с запятой в директивах: всегда
 
 		'indentation': [ // Отступ
 			'tab', // Табуляция
@@ -229,6 +229,6 @@ module.exports = {
 		'max-empty-lines': 2, // Ограничить количество смежных пустых строк
 		'no-eol-whitespace': true, // Запретить пробелы в конце строк
 		'no-extra-semicolons': true, // Запретить лишние точки с запятой
-		'no-missing-end-of-source-newline': true // Запретить перевод строки в конце исходного кода
+		'no-missing-end-of-source-newline': true // Запретить перенос строки в конце исходного кода
 	}
 };
