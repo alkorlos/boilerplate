@@ -16,7 +16,7 @@ module.exports = {
 		'comment-no-empty': true, // Запретить пустые комментарии
 		'no-empty-source': true, // Запретить пустой исходный код
 
-		'function-calc-no-unspaced-operator': true, // Запретить недопустимые операторы без пробелов в пределах функции calc
+		'function-calc-no-unspaced-operator': true, // Запретить недопустимые операторы без пробелов в пределах функций calc
 		'keyframe-declaration-no-important': true, // Запретить недопустимые !important в пределах @keyframes
 		'media-query-no-invalid': true, // Запретить недопустимые медиавыражения
 		'named-grid-areas-no-invalid': true, // Запретить недопустимые грид-области
@@ -67,7 +67,7 @@ module.exports = {
 
 		'function-disallowed-list': ['rgba', 'hsla', 'rgb', 'hsl'], // Указать список запрещенных функций
 
-		'length-zero-no-unit': true, // Запретить единицы для нулевого значения
+		'length-zero-no-unit': true, // Запретить единицы для нулевых значений
 
 		'media-feature-name-no-vendor-prefix': true, // Запретить вендорные префиксы для медиафич
 
@@ -84,7 +84,7 @@ module.exports = {
 			}
 		],
 
-		'at-rule-empty-line-before': [ // Требовать или запретить пустую строку до дерективы
+		'at-rule-empty-line-before': [ // Требовать или запретить пустую строку до деректив
 			'always', // Всегда
 			{
 				'except': [ // Исключение
@@ -97,7 +97,7 @@ module.exports = {
 				]
 			}
 		],
-		'rule-empty-line-before': [ // Требовать или запретить пустую строку до правила
+		'rule-empty-line-before': [ // Требовать или запретить пустую строку до правил
 			'always', // Всегда
 			{
 				'except': [ // Исключение
@@ -126,7 +126,7 @@ module.exports = {
 		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
 
 		'color-function-notation': 'modern', // Указать современную или устаревшую нотацию для цветовых функций: современная
-		'font-weight-notation': [ // Указать числовая или именованная нотация для насыщенности
+		'font-weight-notation': [ // Указать числовая или именованная нотация для насыщенностей
 			'numeric', // Числовая
 			{
 				'ignore': [ // Игнорировать
@@ -139,7 +139,7 @@ module.exports = {
 		'selector-pseudo-element-colon-notation': 'double', // Указать ":" или "::" для применимых псевдоэлементов: "::"
 
 		'font-family-name-quotes': 'always-unless-keyword', // Требовать или запретить кавычки для имен семейств шрифтов: всегда, пока не является ключевым словом
-		'function-url-quotes': 'always', // Требовать или запретить кавычки для url: всегда
+		'function-url-quotes': 'always', // Требовать или запретить кавычки для urls: всегда
 		'selector-attribute-quotes': 'always', // Требовать или запретить кавычки для значений атрибутов: всегда
 
 		// Deprecated
