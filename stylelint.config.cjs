@@ -62,10 +62,10 @@ module.exports = {
 		// Enforce conventions
 		'at-rule-no-vendor-prefix': true, // Запретить вендорные префиксы для директив
 
-		'color-named': 'never', // Запретить именованные цвета
+		'color-named': 'never', // Требовать или запретить именованные цвета: никогда
 		'color-no-hex': true, // Запретить hex цвета
 
-		'function-disallowed-list': ['rgba', 'hsla', 'rgb', 'hsl'], // Запретить функции из списка
+		'function-disallowed-list': ['rgba', 'hsla', 'rgb', 'hsl'], // Указать список запрещенных функций
 
 		'length-zero-no-unit': true, // Запретить единицы для нулевого значения
 
@@ -75,16 +75,16 @@ module.exports = {
 
 		'value-no-vendor-prefix': true, // Запретить вендорные префиксы для значений
 
-		'function-name-case': 'lower', // Строчные или прописные буквы для имен функций: строчные
-		'selector-type-case': 'lower', // Строчные или прописные буквы для селекторов: строчные
-		'value-keyword-case': [ // Строчные или прописные буквы для ключевых слов значений
+		'function-name-case': 'lower', // Указать строчные или прописные буквы для имен функций: строчные
+		'selector-type-case': 'lower', // Указать строчные или прописные буквы для селекторов: строчные
+		'value-keyword-case': [ // Указать строчные или прописные буквы для ключевых слов значений
 			'lower', // Строчные
 			{
 				'camelCaseSvgKeywords': true // Ключевые слова SVG в формате camel case
 			}
 		],
 
-		'at-rule-empty-line-before': [ // Пустая строка перед дерективой
+		'at-rule-empty-line-before': [ // Требовать или запретить пустую строку перед дерективой
 			'always', // Всегда
 			{
 				'except': [ // Исключение
@@ -97,7 +97,7 @@ module.exports = {
 				]
 			}
 		],
-		'rule-empty-line-before': [ // Пустая строка перед правилом
+		'rule-empty-line-before': [ // Требовать или запретить пустую строку перед правилом
 			'always', // Всегда
 			{
 				'except': [ // Исключение
@@ -121,12 +121,12 @@ module.exports = {
 				]
 			}
 		],
-		'number-max-precision': 2, // Ограничение количества десятичных знаков, разрешенных в числах
-		'selector-max-id': 0, // Ограничение количества id в селекторах
+		'number-max-precision': 2, // Ограничение количества десятичных знаков разрешенных в числах
+		'selector-max-id': 0, // Ограничение количества селекторов id в селекторе
 		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
 
-		'color-function-notation': 'modern', // Современная или устаревшая нотация для цветовых функций: современная
-		'font-weight-notation': [ // Числовая или именованная нотация для насыщенности
+		'color-function-notation': 'modern', // Указать современную или устаревшую нотацию для цветовых функций: современная
+		'font-weight-notation': [ // Указать числовая или именованная нотация для насыщенности
 			'numeric', // Числовая
 			{
 				'ignore': [ // Игнорировать
@@ -134,13 +134,13 @@ module.exports = {
 				]
 			}
 		],
-		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block', // Ключевое слово или процентная нотация для @keyframes: однотипное представление
-		'selector-not-notation': 'simple', // Простая или сложная нотация для селекторов псевдокласса :not(): простая
-		'selector-pseudo-element-colon-notation': 'double', // ":" или "::" для записи псевдоэлементов: "::"
+		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block', // Указать ключевое слово или процентная нотация для @keyframes: однотипное представление
+		'selector-not-notation': 'simple', // Указать простая или сложная нотация для селекторов псевдокласса :not(): простая
+		'selector-pseudo-element-colon-notation': 'double', // Указать ":" или "::" для применимых псевдоэлементов: "::"
 
-		'font-family-name-quotes': 'always-unless-keyword', // Требовать или запрещать кавычки для имен семейств шрифтов: всегда, пока не является ключевым словом
-		'function-url-quotes': 'always', // Требовать или запрещать кавычки для url: всегда
-		'selector-attribute-quotes': 'always', // Требовать или запрещать кавычки для значений атрибутов: всегда
+		'font-family-name-quotes': 'always-unless-keyword', // Требовать или запретить кавычки для имен семейств шрифтов: всегда, пока не является ключевым словом
+		'function-url-quotes': 'always', // Требовать или запретить кавычки для url: всегда
+		'selector-attribute-quotes': 'always', // Требовать или запретить кавычки для значений атрибутов: всегда
 
 		// Deprecated
 		'function-comma-newline-after': 'always-multi-line', // Требовать перевод строки или запрещать пробел после запятых в функции: всегда при многострочной записи
