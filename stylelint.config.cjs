@@ -27,11 +27,11 @@ module.exports = {
 		'no-irregular-whitespace': true, // Запретить нестандартные пробелы
 
 		'custom-property-no-missing-var-function': true, // Запретить отсутствие функции var для кастомных свойств
-		'font-family-no-missing-generic-family-keyword': true, // Запретить отсутствие общего имени шрифта (sans-serif, serif) в пределах семейств шрифтов
+		'font-family-no-missing-generic-family-keyword': true, // Запретить отсутствие общего ключевого слова семейства в пределах семейств шрифтов
 
-		'function-linear-gradient-no-nonstandard-direction': true, // Запретить нестандартные значения направления для функций линейных градиентов
+		'function-linear-gradient-no-nonstandard-direction': true, // Запретить нестандартные значения направления для функций линейного градиента
 
-		'declaration-block-no-shorthand-property-overrides': true, // Запретить краткую форму записи свойств если они переопределяют развернутую запись
+		'declaration-block-no-shorthand-property-overrides': true, // Запретить сокращенные свойства если они переопределяют полные свойства
 
 		'selector-anb-no-unmatchable': true, // Запретить неподходящие селекторы An+B
 
@@ -39,7 +39,7 @@ module.exports = {
 		'at-rule-no-unknown': [ // Запретить неизвестные директивы
 			true,
 			{
-				'ignoreAtRules': [ // Не считаются нарушениями
+				'ignoreAtRules': [ // Игнорировать
 					'import-glob'
 				]
 			}
