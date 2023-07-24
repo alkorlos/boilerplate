@@ -1,5 +1,5 @@
 module.exports = {
-	extends: './stylelint.config.rational-order.cjs',
+	extends: './stylelint.config.order.cjs',
 	plugins: 'stylelint-order',
 	rules: {
 		// Avoid errors
