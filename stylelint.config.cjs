@@ -221,14 +221,7 @@ module.exports = {
 		'at-rule-name-space-after': 'always', // Требовать пробел после имен директив: всегда
 		'at-rule-semicolon-newline-after': 'always', // Требовать перенос строки после точки с запятой в директивах: всегда
 
-		'indentation': [ // Указать отступ
-			'tab', // Табуляция
-			{
-				'ignore': [ // Игнорировать
-					'value' // Значения
-				]
-			}
-		],
+		'indentation': 'tab', // Указать отступ: табуляция
 		'max-empty-lines': 2, // Ограничить количество смежных пустых строк
 		'no-eol-whitespace': true, // Запретить пробелы в конце строк
 		'no-extra-semicolons': true, // Запретить лишние точки с запятой
