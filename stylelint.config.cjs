@@ -44,8 +44,10 @@ module.exports = {
 				]
 			}
 		],
+		'declaration-property-value-no-unknown': true, // Запретить неизвестные значения для свойств в пределах деклараций
 		'function-no-unknown': true, // Запретить неизвестные функции
 		'media-feature-name-no-unknown': true, // Запретить неизвестные медиафичи
+		'media-feature-name-value-no-unknown': true, // Запретить неизвестные значения для медиафич
 		'property-no-unknown': true, // Запретить неизвестные свойства
 		'selector-pseudo-class-no-unknown': true, // Запретить неизвестные псевдоклассы
 		'selector-pseudo-element-no-unknown': true, // Запретить неизвестные псевдоэлементы
@@ -114,14 +116,13 @@ module.exports = {
 			0,
 			{
 				'ignore': [ // Игнорировать
+					'blockless-at-rules', // Директивы содержащие только другие правила и не имеющие блоков деклараций
 					'pseudo-classes' // Псевдо классы
 				],
-				'ignoreAtRules': [ // Игнорировать директивы
-					'media'
-				]
 			}
 		],
 		'number-max-precision': 2, // Ограничение количества десятичных знаков разрешенных в числах
+		'selector-max-compound-selectors': 2, // Ограничение количества составных селекторов в селекторе
 		'selector-max-id': 0, // Ограничение количества селекторов id в селекторе
 		'selector-max-universal': 2, // Ограничение количества универсальных селекторов в селекторе
 
@@ -134,6 +135,7 @@ module.exports = {
 				]
 			}
 		],
+		'import-notation': 'string', // Указать строковую или URL-нотацию для правил @import: строковая
 		'keyframe-selector-notation': 'percentage-unless-within-keyword-only-block', // Указать ключевое слово или процентная нотация для @keyframes: однотипное представление
 		'selector-not-notation': 'simple', // Указать простая или сложная нотация для селекторов псевдокласса :not(): простая
 		'selector-pseudo-element-colon-notation': 'double', // Указать ":" или "::" для применимых псевдоэлементов: "::"
@@ -168,6 +170,7 @@ module.exports = {
 
 		'declaration-bang-space-after': 'never', // Требовать или запретить пробел после восклицательного знака в декларациях: никогда
 		'declaration-bang-space-before': 'always', // Требовать или запретить пробел до восклицательного знака в декларациях: всегда
+		'declaration-colon-newline-after': 'always-multi-line', // Требовать перенос строки или запретить пробел после двоеточия в декларациях: всегда при многострочной записи
 		'declaration-colon-space-after': 'always-single-line', // Требовать или запретить пробел после двоеточия в декларациях: всегда при однострочной записи
 		'declaration-colon-space-before': 'never', // Требовать или запретить пробел до двоеточия в декларациях: никогда
 
