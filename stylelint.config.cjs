@@ -44,7 +44,6 @@ module.exports = {
 				]
 			}
 		],
-		'declaration-property-value-no-unknown': true, // Запретить неизвестные значения для свойств в пределах деклараций
 		'function-no-unknown': true, // Запретить неизвестные функции
 		'media-feature-name-no-unknown': true, // Запретить неизвестные медиафичи
 		'media-feature-name-value-no-unknown': true, // Запретить неизвестные значения для медиафич
