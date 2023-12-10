@@ -3,7 +3,7 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
 import { nunjucksCompile } from 'gulp-nunjucks';
-import nunjucksBase from 'nunjucks';
+import nunjucks from 'nunjucks';
 import prettyHtml from 'gulp-pretty-html';
 
 import config from '../config.js';
@@ -16,7 +16,7 @@ export const templates = function () {
 			nunjucksCompile(
 				{},
 				{
-					env: new nunjucksBase.Environment(new nunjucksBase.FileSystemLoader(config.src.templates))
+					env: new nunjucks.Environment(new nunjucks.FileSystemLoader(config.src.templates))
 				}
 			)
 		)
