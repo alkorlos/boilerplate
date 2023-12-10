@@ -2,7 +2,7 @@ import gulp from 'gulp';
 
 import plumber from 'gulp-plumber';
 import notify from 'gulp-notify';
-import nunjucks from 'gulp-nunjucks';
+import { nunjucksCompile } from 'gulp-nunjucks';
 import nunjucksBase from 'nunjucks';
 import prettyHtml from 'gulp-pretty-html';
 
@@ -13,7 +13,7 @@ export const templates = function () {
 	return gulp.src([config.src.templatesPages, config.src.templatesException])
 		.pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
 		.pipe(
-			nunjucks.compile(
+			nunjucksCompile(
 				{},
 				{
 					env: new nunjucksBase.Environment(new nunjucksBase.FileSystemLoader(config.src.templates))
