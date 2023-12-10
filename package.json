@@ -34,7 +34,7 @@
     "gulp-changed": "^5.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-if": "^3.0.0",
-    "gulp-imagemin": "^8.0.0",
+    "gulp-imagemin": "^9.0.0",
     "gulp-notify": "^4.0.0",
     "gulp-nunjucks": "^5.1.0",
     "gulp-plumber": "^1.2.1",
