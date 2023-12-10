@@ -31,7 +31,7 @@
     "cross-env": "^7.0.3",
     "del": "^7.1.0",
     "gulp": "^4.0.2",
-    "gulp-changed": "^4.0.3",
+    "gulp-changed": "^5.0.1",
     "gulp-csso": "^4.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",

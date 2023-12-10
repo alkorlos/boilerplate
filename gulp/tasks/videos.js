@@ -1,6 +1,7 @@
 import gulp from 'gulp';
 
 import changed from 'gulp-changed';
+import { compareContents } from 'gulp-changed';
 
 import config from '../config.js';
 
@@ -8,7 +9,7 @@ import config from '../config.js';
 export const videos = function () {
 	return gulp.src(config.src.videos)
 		.pipe(changed(config.dist.videos, {
-			hasChanged: changed.compareContents
+			hasChanged: compareContents
 		}))
 		.pipe(gulp.dest(config.dist.videos));
 };
