@@ -29,8 +29,4 @@ export const webpackConfig = {
 	}
 };
 
-if (process.env.SCRIPTS_SOURCEMAPS === 'true') {
-	webpackConfig.devtool = 'source-map';
-};
-
 export default webpackConfig;
