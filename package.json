@@ -4,8 +4,8 @@
   "main": "main.js",
   "scripts": {
     "start": "npx gulp --env-file=.env.development",
-    "build": "npx gulp build --env-file=.env.production",
-    "build:obfuscation": "npx gulp build",
+    "build": "rm -rf dist && npx gulp build --env-file=.env.production",
+    "build:obfuscation": "rm -rf dist && npx gulp build",
     "webpack": "npx webpack --config webpack.config.dev.js",
     "webpack:production": "npx webpack --config webpack.config.prod.js",
     "stylelint": "npx stylelint \"./src/styles/**/*.pcss\"",
@@ -28,7 +28,6 @@
     "@babel/preset-env": "^7.23.5",
     "babel-loader": "^9.1.3",
     "browser-sync": "^2.29.3",
-    "del": "^7.1.0",
     "gulp": "^4.0.2",
     "gulp-changed": "^5.0.1",
     "gulp-csso": "^4.0.1",

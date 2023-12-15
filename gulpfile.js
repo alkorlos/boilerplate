@@ -3,8 +3,6 @@ import gulp from 'gulp';
 import watch from './gulp/tasks/watch.js';
 import server from './gulp/tasks/server.js';
 
-import clean from './gulp/tasks/clean.js';
-
 import templates from './gulp/tasks/templates.js';
 import styles from './gulp/tasks/styles.js';
 import scripts from './gulp/tasks/scripts.js';
@@ -20,7 +18,6 @@ import revision from './gulp/tasks/revision.js';
 import htmlManifest from './gulp/tasks/html-manifest.js';
 
 export const build = gulp.series(
-	clean,
 	gulp.parallel(
 		templates,
 		styles,

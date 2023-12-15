@@ -16,7 +16,6 @@ export const config = {
 		files: 'src/files/**/*'
 	},
 	dist: {
-		root: 'dist',
 		rootEntry: '!dist',
 		html: 'dist',
 		htmlEntry: 'dist/index.html',
