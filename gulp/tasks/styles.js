@@ -8,7 +8,6 @@ import csso from 'gulp-csso';
 import rename from 'gulp-rename';
 
 import gulpif from 'gulp-if';
-const mode = process.env.NODE_ENV;
 
 import config from '../config.js';
 
@@ -21,7 +20,7 @@ export const styles = function () {
 		.pipe(rename({
 			extname: '.css'
 		}))
-		.pipe(gulpif(mode === 'development',
+		.pipe(gulpif(process.env.STYLES_ORIGINAL === 'true',
 			gulp.dest(config.dist.css)
 		))
 		.pipe(csso(
@@ -34,7 +33,7 @@ export const styles = function () {
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulpif(mode !== 'obfuscation',
+		.pipe(gulpif(process.env.STYLES_SOURCEMAPS === 'true',
 			sourcemaps.write('.')
 		))
 		.pipe(gulp.dest(config.dist.css));
