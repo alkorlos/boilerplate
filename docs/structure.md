@@ -27,7 +27,7 @@ bundler/
 |── postcss.config.js
 |── stylelint.config.js
 |── stylelint.config.rational-order.js
-|── webpack.config.js
+|── webpack.config.dev.js
 ```
 
 * `/docs` - документация к репозиторию;
@@ -55,4 +55,4 @@ bundler/
 * `postcss.config.js` - конфигурация PostCSS:
 * `stylelint.config.js` - конфигурация stylelint:
 * `stylelint.config.rational-order.js` - порядок свойств, селекторов и директив для stylelint:
-* `webpack.config.js` - конфигурация webpack.
+* `webpack.config.dev.js` - конфигурация webpack.
