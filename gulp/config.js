@@ -5,7 +5,6 @@ export const config = {
 		templatesException: '!src/templates/**/_*.njk',
 		styles: 'src/styles/**/*.pcss',
 		stylesEntry: 'src/styles/style.pcss',
-		scripts: 'src/scripts/**/*.js',
 		scriptsEntry: './src/scripts/main.js',
 		php: 'src/php/**/*.php',
 		images: 'src/images/**/*.{avif,webp,jpg,jpeg,png,svg}',
@@ -16,14 +15,11 @@ export const config = {
 		files: 'src/files/**/*'
 	},
 	dist: {
-		rootEntry: '!dist',
 		html: 'dist',
 		htmlEntry: 'dist/index.html',
 		css: 'dist/css',
-		cssEntry: 'dist/css/style.css',
 		cssEntryMin: 'dist/css/style.min.css',
 		js: 'dist/js',
-		jsEntry: 'dist/js/main.js',
 		jsEntryMin: 'dist/js/main.min.js',
 		php: 'dist/php',
 		images: 'dist/images',
