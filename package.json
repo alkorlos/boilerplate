@@ -7,7 +7,7 @@
     "build": "npx gulp build --env-file=.env.production",
     "build:obfuscation": "npx gulp build",
     "webpack": "npx webpack --config webpack.config.js",
-    "webpack:production": "npx webpack --config webpack.config.min.js",
+    "webpack:production": "npx webpack --config webpack.config.prod.js",
     "stylelint": "npx stylelint \"./src/styles/**/*.pcss\"",
     "stylelint:fix": "npx stylelint \"./src/styles/**/*.pcss\" --fix",
     "eslint": "npx eslint \"./src/scripts/**/*.js\"",

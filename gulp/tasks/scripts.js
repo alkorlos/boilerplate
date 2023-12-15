@@ -1,5 +1,5 @@
 import webpack from 'webpack';
-import webpackConfigMin from './../../webpack.config.min.js';
+import webpackConfigMin from './../../webpack.config.prod.js';
 
 // Scripts
 export const scripts = function (done, errorMain) {

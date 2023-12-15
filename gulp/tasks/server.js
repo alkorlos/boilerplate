@@ -4,7 +4,7 @@ import middleware from 'webpack-dev-middleware';
 
 import config from '../config.js';
 import webpackConfig from './../../webpack.config.js';
-import webpackConfigMin from './../../webpack.config.min.js';
+import webpackConfigMin from './../../webpack.config.prod.js';
 
 const compiler = webpack(webpackConfig);
 const compilerMin = webpack(webpackConfigMin);

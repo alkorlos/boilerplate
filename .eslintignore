@@ -9,4 +9,4 @@ postcss.config.cjs
 stylelint.config.cjs
 stylelint.config.rational-order.cjs
 webpack.config.js
-webpack.config.min.js
+webpack.config.prod.js
