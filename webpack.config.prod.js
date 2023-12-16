@@ -5,6 +5,8 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import config from './gulp/config.js';
 
+import { useScriptsSourceMaps } from './gulp/env.config.js';
+
 export const webpackConfigMin = {
 	mode: 'production',
 	entry: {
@@ -26,7 +28,7 @@ export const webpackConfigMin = {
 	}
 };
 
-if (process.env.SCRIPTS_SOURCEMAPS === 'true') {
+if (useScriptsSourceMaps) {
 	webpackConfigMin.devtool = 'source-map';
 };
 

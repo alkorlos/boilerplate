@@ -11,6 +11,8 @@ import gulpif from 'gulp-if';
 
 import config from '../config.js';
 
+import { useStylesOriginal, useStylesSourceMaps } from '../env.config.js';
+
 // Styles
 export const styles = function () {
 	return gulp.src(config.src.stylesEntry)
@@ -20,7 +22,7 @@ export const styles = function () {
 		.pipe(rename({
 			extname: '.css'
 		}))
-		.pipe(gulpif(process.env.STYLES_ORIGINAL === 'true',
+		.pipe(gulpif(useStylesOriginal,
 			gulp.dest(config.dist.css)
 		))
 		.pipe(csso(
@@ -33,7 +35,7 @@ export const styles = function () {
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulpif(process.env.STYLES_SOURCEMAPS === 'true',
+		.pipe(gulpif(useStylesSourceMaps,
 			sourcemaps.write('.')
 		))
 		.pipe(gulp.dest(config.dist.css));
