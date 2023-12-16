@@ -3,9 +3,9 @@ import { dirname, resolve } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-import config from './gulp/paths.config.js';
+import config from './paths.config.js';
 
-import { useScriptsSourceMaps } from './gulp/env.config.js';
+import { useScriptsSourceMaps } from './env.config.js';
 
 export const webpackConfigMin = {
 	mode: 'production',

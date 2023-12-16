@@ -3,7 +3,7 @@ import { dirname, resolve } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-import config from './gulp/paths.config.js';
+import config from './paths.config.js';
 
 export const webpackConfig = {
 	mode: 'development',

@@ -1,6 +1,6 @@
 import gulp from 'gulp';
 
-import config from '../paths.config.js';
+import config from '../../paths.config.js';
 
 // Favicon
 export const favicon = function () {

@@ -2,7 +2,7 @@ import browserSync from 'browser-sync';
 import webpack from 'webpack';
 import middleware from 'webpack-dev-middleware';
 
-import config from '../paths.config.js';
+import config from '../../paths.config.js';
 import webpackConfig from './../../webpack.config.dev.js';
 import webpackConfigMin from './../../webpack.config.prod.js';
 

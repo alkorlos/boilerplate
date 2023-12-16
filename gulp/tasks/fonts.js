@@ -3,7 +3,7 @@ import gulp from 'gulp';
 import changed from 'gulp-changed';
 import { compareContents } from 'gulp-changed';
 
-import config from '../paths.config.js';
+import config from '../../paths.config.js';
 
 // Fonts
 export const fonts = function () {

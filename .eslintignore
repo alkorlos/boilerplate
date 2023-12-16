@@ -4,6 +4,7 @@ dist
 # Bundler config
 gulp
 .eslintrc.cjs
+env.config.js
 gulpfile.js
 postcss.config.cjs
 stylelint.config.cjs

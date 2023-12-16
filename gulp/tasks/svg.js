@@ -6,7 +6,7 @@ import imagemin, { svgo } from 'gulp-imagemin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
 
-import config from '../paths.config.js';
+import config from '../../paths.config.js';
 
 // SVG
 export const svg = function () {

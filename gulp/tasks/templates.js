@@ -6,7 +6,7 @@ import { nunjucksCompile } from 'gulp-nunjucks';
 import nunjucks from 'nunjucks';
 import prettyHtml from 'gulp-pretty-html';
 
-import config from '../paths.config.js';
+import config from '../../paths.config.js';
 
 // Templates
 export const templates = function () {
