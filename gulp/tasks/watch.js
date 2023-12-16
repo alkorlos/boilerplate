@@ -10,7 +10,7 @@ import videos from './videos.js';
 import fonts from './fonts.js';
 import files from './files.js';
 
-import config from '../config.js';
+import config from '../paths.config.js';
 
 // Watch
 export const watch = function () {

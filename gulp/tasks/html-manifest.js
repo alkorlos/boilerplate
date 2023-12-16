@@ -3,7 +3,7 @@ import revCollector from 'gulp-rev-collector';
 
 import fs from 'fs';
 
-import config from '../config.js';
+import config from '../paths.config.js';
 
 // HTML manifest
 export const htmlManifest = function (done) {

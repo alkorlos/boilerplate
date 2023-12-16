@@ -9,7 +9,7 @@ import rename from 'gulp-rename';
 
 import gulpif from 'gulp-if';
 
-import config from '../config.js';
+import config from '../paths.config.js';
 
 import { useStylesOriginal, useStylesSourceMaps } from '../env.config.js';
 
