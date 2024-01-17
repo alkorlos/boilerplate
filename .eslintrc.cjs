@@ -126,7 +126,7 @@ module.exports = {
 		'no-func-assign': 'error', // Запретить переопределение объявлений function (Possible Errors)
 		'no-global-assign': 'error', // Запретить присваивание нативным объектам или глобальным переменным только для чтения (Best Practices)
 		'no-implied-eval': 'error', // Запретить подразумеваемый eval() (Best Practices) #todo
-		'no-inner-declarations': ['error', 'functions'], // Запретить объявление пременных или объявление function во вложенных блоках: запретить объявление function во вложенных блоках (Possible Errors)
+		'no-inner-declarations': ['error', 'functions'], // Запретить объявление переменных или объявление function во вложенных блоках: запретить объявление function во вложенных блоках (Possible Errors)
 		'no-invalid-regexp': 'error', // Запретить недопустимые строки регулярного выражения в конструкторах RegExp (Possible Errors)
 		'no-irregular-whitespace': 'error', // Запретить нестандартные пробельные символы (Possible Errors)
 		'no-iterator': 'error', // Запретить итератор: использование свойства __iterator__ (Best Practices)
