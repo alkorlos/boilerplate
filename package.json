@@ -2,6 +2,14 @@
   "private": true,
   "type": "module",
   "main": "main.js",
+  "author": {
+    "name": "Dmitry Statsenko",
+    "email": "alkor.sx@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alkorlos/bundler"
+  },
   "scripts": {
     "start": "npx gulp --env-file=.env.development",
     "build": "rm -rf dist && npx gulp build --env-file=.env.production",
@@ -14,14 +22,6 @@
     "eslint:fix": "npx eslint \"./src/scripts/**/*.js\" --fix",
     "deploy": "cd dist && rsync --archive --compress --delete . u1126927@alkorlos.dev:/var/www/u1126927/data/www/alkorlos.dev/bundler/",
     "prepare": "husky install"
-  },
-  "author": {
-    "name": "Dmitry Statsenko",
-    "email": "alkor.sx@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alkorlos/bundler"
   },
   "dependencies": {
     "@babel/core": "^7.23.5",
