@@ -23,6 +23,10 @@
     "deploy": "cd dist && rsync --archive --compress --delete . u1126927@alkorlos.dev:/var/www/u1126927/data/www/alkorlos.dev/bundler/",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.pcss": "npm run stylelint:fix",
+    "*.js": "npm run eslint:fix"
+  },
   "dependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
@@ -60,9 +64,5 @@
     "lint-staged": "^15.2.0",
     "stylelint": "^15.10.2",
     "stylelint-order": "^6.0.3"
-  },
-  "lint-staged": {
-    "*.pcss": "npm run stylelint:fix",
-    "*.js": "npm run eslint:fix"
   }
 }
