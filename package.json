@@ -1,12 +1,12 @@
 {
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alkorlos/boilerplate"
+  },
   "author": {
     "name": "Dmitry Statsenko",
     "email": "alkor.sx@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alkorlos/bundler"
   },
   "type": "module",
   "main": "main.js",
