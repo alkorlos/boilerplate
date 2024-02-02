@@ -7,38 +7,38 @@
 		<title>Site</title>
 
 		{# Styles #}
-		<link href="css/style.min.css" rel="stylesheet">
+		<link href="./css/style.min.css" rel="stylesheet">
 
-		<link href="fonts/OpenSans-Regular.woff2" type="font/woff2" rel="preload" as="font" crossorigin>
+		<link href="./fonts/OpenSans-Regular.woff2" type="font/woff2" rel="preload" as="font" crossorigin>
 		<style>
 			@font-face {
 				font-weight: 400;
 				font-family: "open-sans";
 				font-style: normal;
 				font-display: swap;
-				src: url("fonts/OpenSans-Regular.woff2") format("woff2");
+				src: url("./fonts/OpenSans-Regular.woff2") format("woff2");
 			}
 		</style>
 
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 
 		{# Scripts #}
-		<script src="js/main.min.js" type="module"></script>
+		<script src="./js/main.min.js" type="module"></script>
 	</head>
 
 	<body class="body">
-		{% include "_inspections.njk" %}
+		{% include "./_inspections.njk" %}
 
 		<div class="wrapper">
 			{# Header #}
-			{% include "components/_header.njk" %}
+			{% include "./components/_header.njk" %}
 
 			{% block inspection %} {% endblock %}
 
 			{% block content %} {% endblock %}
 
 			{# Footer #}
-			{% include "components/_footer.njk" %}
+			{% include "./components/_footer.njk" %}
 		</div>
 	</body>
 </html>
