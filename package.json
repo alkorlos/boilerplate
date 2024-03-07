@@ -11,7 +11,7 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "start": "npx gulp --env-file=.env.development",
+    "dev": "npx gulp --env-file=.env.development",
     "build": "rm -rf dist && npx gulp build --env-file=.env.production",
     "build:obfuscation": "rm -rf dist && npx gulp build",
     "webpack": "npx webpack --config webpack.config.dev.js",
